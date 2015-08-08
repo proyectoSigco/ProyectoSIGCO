@@ -215,7 +215,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- Horizontal Form -->
               <div class="box box-info">
                 <div class="box-header with-border">
-                  <h1 class="box-title">Los campos con * son obligatorios</h1>
+                   <p><h2 class="box-title">En este formulario podra realizar el registro de un nuevo producto </h2></p>
+                    <h1 class="box-title">Los campos con * son obligatorios</h1>
                 </div><!-- /.box-header -->
                 <!-- form start -->
                 <form class="form-horizontal" id="defaultForm">
@@ -224,7 +225,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="form-group">
 
                               <label class="col-sm-2 col-sm-2 control-label" for="codigoProducto">Código Producto* </label>
-                            
+
                               <div class="col-sm-6">
 
                                   <input class="form-control" name="codigoProducto" id="codigoProducto" type="text" placeholder="23443" required>
@@ -234,7 +235,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <div class="form-group">
 
                               <label class="col-sm-2 col-sm-2 control-label" for="nombreProducto">Nombre* </label>
-                            
+
                               <div class="col-sm-6">
 
                                   <input class="form-control" name="nombreProducto" id="nombreProducto" type="text" maxlength="10" placeholder="Desengrasante Industrial" required>
@@ -243,42 +244,42 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           </div>
 
                           <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
                           <label class="col-sm-2 col-sm-2 control-label" for="descriptionProducto">Descripcion*</label>
-                          <!--FinLabel-->  
+                          <!--FinLabel-->
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
                                 <textarea class="form-control" name="descriptionProducto" id="descriptionProducto" type="text" maxlength="100" placeholder="" rows="5"></textarea>
                             <!-- FinInput -->
-                          </div>                        
+                          </div>
                           </div>
 
                           <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
                           <label class="col-sm-2 col-sm-2 control-label" for="unidadProducto">Unidad de Medida*</label>
-                          <!--FinLabel-->  
+                          <!--FinLabel-->
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
                             <select class="form-control" name="unidadProducto" id="unidadProducto" type="text" placeholder="3278600">
-                              <option name="unidadMedida" value="">Gr</option>
-                              <option name="unidadMedida" value="">cm3</option>
-                              <option name="unidadMedida" value="">Lt</option>
+                              <option name="unidadMedida" value="Gr">Gr</option>
+                              <option name="unidadMedida" value="cm3">cm3</option>
+                              <option name="unidadMedida" value="Lt">Lt</option>
                               <option name="unidadMedida" value=""></option>
                             </select>
                             <!-- FinInput -->
-                          </div>                        
+                          </div>
                           </div>
 
                              <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
                           <label class="col-sm-2 col-sm-2 control-label" for="ivaProducto">IVA*</label>
-                          <!--FinLabel-->  
+                          <!--FinLabel-->
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
                             <input class="form-control" name="ivaProducto" id="ivaProducto" type="text" maxlength="20" placeholder="16%">
 
                             <!-- FinInput -->
-                          </div>                        
+                          </div>
                           </div>
 
 
@@ -291,47 +292,47 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           </div>
 
                           <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="cantidadProducto">Cantidad</label>
-                          <!--FinLabel-->  
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
+                          <label class="col-sm-2 col-sm-2 control-label" min="0" for="cantidadProducto">Cantidad</label>
+                          <!--FinLabel-->
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
-                              <input class="form-control" name="cantidad" id="cantidadProducto" type="number" maxlength="20" placeholder="20" required title="Este campo es requerido">
+                              <input class="form-control" name="cantidadProducto" id="cantidadProducto" type="number" min="1" maxlength="20" placeholder="20" required title="Este campo es requerido">
 
                             <!-- FinInput -->
-                          </div>                        
+                          </div>
                           </div>
 
                           <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
                           <label class="col-sm-2 col-sm-2 control-label" for="presentacionProducto">Presentación</label>
-                          <!--FinLabel-->  
+                          <!--FinLabel-->
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
                               <select class="form-control" name="presentacionProducto" id="presentacionProducto" type="text" required title="Este campo es requerido" >
-                                  <option value="">Galon</option>
-                                  <option value="">Tambor</option>
-                                  <option value="">Batea</option>
+                                  <option value="Galon">Galon</option>
+                                  <option value="Tambor">Tambor</option>
+                                  <option value="frasco">frasco</option>
                               </select>
                             <!-- FinInput -->
-                          </div>                        
+                          </div>
                           </div>
 
                           <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
                           <label class="col-sm-2 col-sm-2 control-label" for="categoriaProducto">Categoria*</label>
-                          <!--FinLabel-->  
+                          <!--FinLabel-->
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
-                              <select class="form-control" name="categoriaProducto" id="categoriaProducto" type="number" maxlength="20" placeholder="10" required title="Este campo es requerido">
-                                  <option value="">Desengrasantes</option>
-                                  <option value="">Analisis Agua</option>
-                                  <option value="">Industrial</option>
+                              <select class="form-control" name="categoriaProducto" id="categoriaProducto"  required title="Este campo es requerido">
+                                  <option value="Desengrasantes">Desengrasantes</option>
+                                  <option value="Analisis Agua">Analisis Agua</option>
+                                  <option value="Industrial">Industrial</option>
                               </select>
 
 
                             <!-- FinInput -->
-                          </div>                        
+                          </div>
                           </div>
 
                   <div class="box-footer">
@@ -339,7 +340,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </div><!-- /.box-footer -->
                    </div>
                 </form>
-             
+
             </div>
 
         </section><!-- /.content -->
@@ -348,13 +349,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Main Footer -->
       <footer class="main-footer">
         <!-- To the right -->
-       
+
         <!-- Default to the left -->
         <strong>Copyright &copy; 2015 <a href="#">NOMBRE EMPRESA</a>.</strong> All rights reserved.
       </footer>
 
       <!-- Control Sidebar -->
-      
+
       <!-- Add the sidebar's background. This div must be placed
            immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
@@ -374,7 +375,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           fixed layout. -->
   </body>
   <script type="text/javascript">
-$(document).ready(function() {    
+$(document).ready(function() {
     $('#defaultForm').formValidation({
         message: 'This value is not valid',
         icon: {
@@ -390,115 +391,95 @@ $(document).ready(function() {
                 locale: 'es_ES',
 
         fields: {
-            idcliente: {
+            codigoProducto: {
                 validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
-                    },
-                     integer: {
-                        message: 'Solo se permite el ingreso de números'
                     }
                 }
             },
-            idproducto: {
+            nombreProducto: {
                 validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
-                    },
-                     integer: {
-                        message: 'Solo se permite el ingreso de números'
                     }
+
                 }
             },
-            nombrecliente: {
+            descriptionProducto: {
                 validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
-                    },
-                    regexp: {
-                        regexp: /^[a-z\sñÑ]+$/i,
-                        message: 'Solo se permiten letras'
-                    },
-                    stringLength: {
-                        min: 3,
-                        max: 30,
-                        message: 'Este campo debe tener mínimo 3 caracteres y máximo 30'
                     }
-                }
-            },
-            telefono:{
-              validators:{
-                 notEmpty:{
-                    message: 'Este campo es requerido'
-                  },
-                  integer:{
-                    message: 'Solo se permite el ingreso de números'
-                  },
-                 
-                  stringLength:{
-                    min:7,
-                    max:11,
-                    message: 'Este campo debe tener mínimo 7 números y máximo 11'
-                  }
-
-              }
 
 
-            },
-            
-            direccion:{
-              validators:{
-                notEmpty:{
-                    message: 'Este campo es requerido'
-                }
-              }
-            },
-            fecha:{
-              validators:{
-                date: {
-                        format: 'DD/MM/YYYY',
-                        message: 'Ingrese una fecha válida'
-                  },
-                  notEmpty:{
-                    message: 'Este campo es requerido'
+                },
+                stringLength: {
+                    min: 3,
+                    max: 30,
+                    message: 'Este campo debe tener mínimo 3 caracteres y máximo 30'
                 }
 
-                }
             },
-            email: {
+            unidadProducto: {
                 validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
-                    },
-                    emailAddress: {
-                        message: 'Ingrese un correo electrónico válido'
                     }
+
                 }
+
             },
-            cantidad:{
-              validators:{
+
+            ivaProducto: {
+                validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
                     },
                     integer:{
-                      message: 'Solo se permiten números'
+                        message: 'Solo se permiten números'
+                    }
+                }
+            },
+            valorProducto: {
+                validators: {
+                    integer: {
+
+                        message: 'Solo se permiten números'
+                    },
+                    notEmpty: {
+                        message: 'Este campo es requerido'
                     }
 
-              }
-
+                }
             },
-
-            iva:{
+            cantidadProducto: {
+                validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
                     },
-
-                    integer:{
-                      message: 'Solo se permiten números'
+                    integer: {
+                        message: 'Solo se permiten números'
                     }
+                }
+            },
+            presentacionProducto: {
+                validators: {
+                    notEmpty: {
+                        message: 'Este campo es requerido'
+                    }
+                }
+
+            },
+
+            categoriaProducto: {
+                validators: {
+                    notEmpty: {
+                        message: 'Este campo es requerido'
+                    }
+                }
             }
-        
-    
+
         }
     });
 });
