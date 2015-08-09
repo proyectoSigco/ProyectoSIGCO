@@ -21,6 +21,6 @@ if (isset($_POST['codigoProducto'])) {
     $producto->setCategoria($_POST['categoriaProducto']);
     $mensaje = $fachada->registrarProducto($producto);
 
-    header("Location: ../../paginas/formularios/producto.html?mensaje=".$mensaje);
+    header("Location: ../../paginas/formularios/producto.php?mensaje=".$mensaje);
 
 }

@@ -19,9 +19,9 @@ class ProductoDao {
             $query->bindParam(7, $productoDto->getPresentacion());
             $query->bindParam(8, $productoDto->getCategoriaProducto());
             $query->execute();
-            $this->mensaje="Registrado";
+            $this->mensaje="Producto  Registrado";
         } catch (Exception $ex) {
-            $this->$mensaje = $ex->getMessage();
+            $this->mensaje = $ex->getMessage();
         }
         $cnn =null;
         return $this->mensaje;
@@ -43,10 +43,10 @@ class ProductoDao {
                 $this->mensaje = "Registrado";
             }
             catch(Exception $ex){
-                $this->$mensaje=$ex->getMessage();
+                $this->mensaje=$ex->getMessage();
             }
             $cnn=null;
-            return $mensaje;
+            return $this->mensaje;
             }
          public function listarProductos(PDO $cnn){
              try {

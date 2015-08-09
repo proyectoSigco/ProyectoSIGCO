@@ -28,7 +28,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script type="text/javascript" src="../../plugins/jQuery/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="../../plugins/formvalidation/formValidation.js"></script>
     <script type="text/javascript" src="../../plugins/formvalidation/framework/bootstrap.js"></script>
-    <script type="text/javascript" src="../../plugins/js/language/es_ES.js"></script>
+
 
     
     <!-- FORMVALIDATION -->
@@ -41,7 +41,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <![endif]-->
 
       <!--noty messajes-->
-      <link href="../../plugins/animate/animate.css">
+      <link href="../../plugins/animate/animate.css" rel="stylesheet" type="text/css" />
       <script src="../../plugins/messajes/jquery.noty.packaged.min.js"></script>
       <!-- FORMVALIDATION -->
 
@@ -501,7 +501,7 @@ $(document).ready(function() {
 <?php
   if (isset($_GET['mensaje'])) {
       ?>
-<div class="row"><br><br>
+<div id="respuesta" class="row"><br><br>
     <div class="col-md-6"></div>
     <div class="col-md-1 text-center"><h4><?php echo $mensaje = $_GET['mensaje']?></h4></div>
     <div class="col-md-5"></div>
@@ -510,25 +510,21 @@ $(document).ready(function() {
   }
   ?>
 <script>
-    var form = $( "#defaultForm");
-    var req = new XMLHttpRequest();
-    req.open('GET', document.location, false);
-    req.send(null);
-    var headers = req.getAllResponseHeaders().toLowerCase();
 
-
+    var div ='<?php echo $mensaje = $_GET['mensaje']?>' 
+    var myData = div.textContent;
+    alert(myData);
     $("#registro").click(function() {
-
-        if (true) {
+        if (myData) {
             var n = noty({
-                text: headers,
+                text: myData,
                 theme: 'relax',
                 layout: 'centerRight',
                 closeWith: ['click', 'hover'],
                 type: 'success',
                 animation: {
                     open: 'animated bounceInRight', // Animate.css class names
-                    close: 'animated flipInX' // Animate.css class names
+                    close: 'animated bounceOutRight', // Animate.css class names
                 }
 
             });

@@ -28,14 +28,14 @@
       <file leaf-file-name="ProductoDao.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/Productos/productos.dao/ProductoDao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="1656">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="-18.0" vertical-offset="378" max-vertical-offset="1656">
+              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
               <folding>
-                <marker date="1439090109924" expanded="true" signature="181:227" placeholder="INSERT INTO ..." />
-                <marker date="1439090109924" expanded="true" signature="1193:1295" placeholder="UPDATE produ..." />
-                <marker date="1439090109924" expanded="true" signature="2379:2403" placeholder="select * fro..productos..." />
-                <marker date="1439090109924" expanded="true" signature="2746:2788" placeholder="select * fro..productos..." />
-                <marker date="1439090109924" expanded="true" signature="3190:3240" placeholder="UPDATE produ..." />
+                <marker date="1439100810976" expanded="true" signature="181:227" placeholder="INSERT INTO ..." />
+                <marker date="1439100810976" expanded="true" signature="1202:1304" placeholder="UPDATE produ..." />
+                <marker date="1439100810976" expanded="true" signature="2393:2417" placeholder="select * fro..productos..." />
+                <marker date="1439100810976" expanded="true" signature="2760:2802" placeholder="select * fro..productos..." />
+                <marker date="1439100810976" expanded="true" signature="3204:3254" placeholder="UPDATE produ..." />
               </folding>
             </state>
           </provider>
@@ -54,18 +54,18 @@
       <file leaf-file-name="ControladorProducto.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/Controladores/ControladorProducto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="558">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="558">
+              <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="producto.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/paginas/formularios/producto.html">
+      <file leaf-file-name="producto.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/paginas/formularios/producto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2688588" vertical-offset="9239" max-vertical-offset="9810">
-              <caret line="521" column="16" selection-start-line="521" selection-start-column="16" selection-end-line="521" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.6079855" vertical-offset="8899" max-vertical-offset="9738">
+              <caret line="513" column="56" selection-start-line="513" selection-start-column="56" selection-end-line="513" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -74,8 +74,8 @@
       <file leaf-file-name="ordenDeCompra.html" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documentos/9.Centralita/web/Theme(1)/Theme/ordenDeCompra.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.819672" vertical-offset="4958" max-vertical-offset="8550">
-              <caret line="285" column="59" selection-start-line="285" selection-start-column="59" selection-end-line="285" selection-end-column="85" />
+            <state vertical-scroll-proportion="-53.032787" vertical-offset="3767" max-vertical-offset="8550">
+              <caret line="389" column="39" selection-start-line="389" selection-start-column="38" selection-end-line="389" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -121,16 +121,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cotizacion.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginas/formularios/cotizacion.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-186.0" vertical-offset="3510" max-vertical-offset="9648">
-              <caret line="474" column="25" selection-start-line="474" selection-start-column="25" selection-end-line="474" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="IdeDocumentHistory">
@@ -138,11 +128,11 @@
       <list>
         <option value="$PROJECT_DIR$/php/fachada/FUsuario.php" />
         <option value="$PROJECT_DIR$/php/Productos/productos.dto/ProductoDto.php" />
-        <option value="$PROJECT_DIR$/php/Productos/productos.dao/ProductoDao.php" />
-        <option value="$PROJECT_DIR$/paginas/formularios/producto.php" />
         <option value="$PROJECT_DIR$/php/fachada/Facade.php" />
-        <option value="$PROJECT_DIR$/php/Controladores/ControladorProducto.php" />
+        <option value="$PROJECT_DIR$/php/Productos/productos.dao/ProductoDao.php" />
         <option value="$PROJECT_DIR$/paginas/formularios/producto.html" />
+        <option value="$PROJECT_DIR$/php/Controladores/ControladorProducto.php" />
+        <option value="$PROJECT_DIR$/paginas/formularios/producto.php" />
       </list>
     </option>
   </component>
@@ -207,25 +197,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paginaWebProyecto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paginaWebProyecto" />
+              <option name="myItemId" value="paginas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="messajes" />
+              <option name="myItemId" value="formularios" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -313,7 +289,9 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -381,6 +359,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Documentos/9.Centralita/web/Theme(1)/Theme/ordenDeCompra.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-53.032787" vertical-offset="3767" max-vertical-offset="8550">
+          <caret line="389" column="39" selection-start-line="389" selection-start-column="38" selection-end-line="389" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/Productos/productos.dto/ProductoDto.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-65.333336" vertical-offset="216" max-vertical-offset="2160">
@@ -389,40 +375,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/PDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.111111" vertical-offset="18366" max-vertical-offset="24516">
+          <caret line="1031" column="20" selection-start-line="1031" selection-start-column="20" selection-end-line="1031" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/Productos/productos.dao/ProductoDao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="1656">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="-18.0" vertical-offset="378" max-vertical-offset="1656">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
           <folding>
-            <marker date="1439090109924" expanded="true" signature="181:227" placeholder="INSERT INTO ..." />
-            <marker date="1439090109924" expanded="true" signature="1193:1295" placeholder="UPDATE produ..." />
-            <marker date="1439090109924" expanded="true" signature="2379:2403" placeholder="select * fro..productos..." />
-            <marker date="1439090109924" expanded="true" signature="2746:2788" placeholder="select * fro..productos..." />
-            <marker date="1439090109924" expanded="true" signature="3190:3240" placeholder="UPDATE produ..." />
+            <marker date="1439100810976" expanded="true" signature="181:227" placeholder="INSERT INTO ..." />
+            <marker date="1439100810976" expanded="true" signature="1202:1304" placeholder="UPDATE produ..." />
+            <marker date="1439100810976" expanded="true" signature="2393:2417" placeholder="select * fro..productos..." />
+            <marker date="1439100810976" expanded="true" signature="2760:2802" placeholder="select * fro..productos..." />
+            <marker date="1439100810976" expanded="true" signature="3204:3254" placeholder="UPDATE produ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/Controladores/ControladorProducto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="558">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="558">
+          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documentos/9.Centralita/web/Theme(1)/Theme/ordenDeCompra.html">
+    <entry file="file://$PROJECT_DIR$/paginas/formularios/producto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.819672" vertical-offset="4958" max-vertical-offset="8550">
-          <caret line="285" column="59" selection-start-line="285" selection-start-column="59" selection-end-line="285" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginas/formularios/producto.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2688588" vertical-offset="9239" max-vertical-offset="9810">
-          <caret line="521" column="16" selection-start-line="521" selection-start-column="16" selection-end-line="521" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.6079855" vertical-offset="8899" max-vertical-offset="9738">
+          <caret line="513" column="56" selection-start-line="513" selection-start-column="56" selection-end-line="513" selection-end-column="56" />
           <folding />
         </state>
       </provider>
