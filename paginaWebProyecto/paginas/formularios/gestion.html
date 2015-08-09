@@ -39,13 +39,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-      <!--noty messajes-->
-      <link href="../../plugins/animate/animate.css">
-      <script src="../../plugins/messajes/jquery.noty.packaged.min.js"></script>
-      <!-- FORMVALIDATION -->
-
-
   </head>
   <!--
   BODY TAG OPTIONS:
@@ -209,11 +202,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Registrar Producto
+            Registrar Cotización
 <!--            <small>Optional description</small>-->
           </h1>
           <ol class="breadcrumb">
-            <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Registrar Producto</a></li>
+            <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Registrar Cotización</a></li>
           </ol>
         </section>
 
@@ -222,135 +215,155 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- Horizontal Form -->
               <div class="box box-info">
                 <div class="box-header with-border">
-                   <p><h2 class="box-title">En este formulario podra realizar el registro de un nuevo producto </h2></p>
-                    <h1 class="box-title">Los campos con * son obligatorios</h1>
+                  <h1 class="box-title">Los campos con * son obligatorios</h1>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form class="form-horizontal" id="defaultForm" action="../../php/Controladores/ControladorProducto.php" method="post">
+                <form class="form-horizontal" id="defaultForm">
                   <div class="box-body">
 
                     <div class="form-group">
 
-                              <label class="col-sm-2 col-sm-2 control-label" for="codigoProducto">Código Producto* </label>
-
+                              <label class="col-sm-2 col-sm-2 control-label" for="codigo">Código Cliente* </label>
+                            
                               <div class="col-sm-6">
 
-                                  <input class="form-control" name="codigoProducto" id="codigoProducto" type="text" placeholder="23443" required>
+                                  <input class="form-control" name="idcliente" id="codigo" type="text" placeholder="12355" required>
 
                               </div>
                           </div>
                           <div class="form-group">
 
-                              <label class="col-sm-2 col-sm-2 control-label" for="nombreProducto">Nombre* </label>
-
+                              <label class="col-sm-2 col-sm-2 control-label" for="producto">Código Producto* </label>
+                            
                               <div class="col-sm-6">
 
-                                  <input class="form-control" name="nombreProducto" id="nombreProducto" type="text" maxlength="10" placeholder="Desengrasante Industrial" required>
+                                  <input class="form-control" name="idproducto" id="producto" type="text" maxlength="10" placeholder="1287350" required>
 
                               </div>
                           </div>
 
                           <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
-                          <label class="col-sm-2 col-sm-2 control-label" for="descriptionProducto">Descripcion*</label>
-                          <!--FinLabel-->
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <label class="col-sm-2 col-sm-2 control-label" for="cliente">Nombre Cliente*</label>
+                          <!--FinLabel-->  
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
-                                <textarea class="form-control" name="descriptionProducto" id="descriptionProducto" type="text" maxlength="100" placeholder="" rows="5"></textarea>
+                                <input class="form-control" name="nombrecliente" id="cliente" type="text" maxlength="20" placeholder="Ecopetrol">
                             <!-- FinInput -->
-                          </div>
+                          </div>                        
                           </div>
 
                           <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
-                          <label class="col-sm-2 col-sm-2 control-label" for="unidadProducto">Unidad de Medida*</label>
-                          <!--FinLabel-->
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <label class="col-sm-2 col-sm-2 control-label" for="telefono">Teléfono*</label>
+                          <!--FinLabel-->  
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
-                            <select class="form-control" name="unidadProducto" id="unidadProducto" type="text" placeholder="3278600">
-                              <option name="unidadMedida" value="Gr">Gr</option>
-                              <option name="unidadMedida" value="cm3">cm3</option>
-                              <option name="unidadMedida" value="Lt">Lt</option>
-                              <option name="unidadMedida" value=""></option>
-                            </select>
+                            <input class="form-control" name="telefono" id="telefono" type="text" placeholder="3278600">
                             <!-- FinInput -->
-                          </div>
+                          </div>                        
                           </div>
 
                              <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
-                          <label class="col-sm-2 col-sm-2 control-label" for="ivaProducto">IVA*</label>
-                          <!--FinLabel-->
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <label class="col-sm-2 col-sm-2 control-label" for="direccion">Dirección*</label>
+                          <!--FinLabel-->  
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
-                            <input class="form-control" name="ivaProducto" id="ivaProducto" type="text" maxlength="20" placeholder="16%">
+                            <input class="form-control" name="direccion" id="direccion" type="text" maxlength="20" placeholder="Cra 79 No 31c-71">
 
                             <!-- FinInput -->
-                          </div>
+                          </div>                        
                           </div>
 
 
                           <div class="form-group">
-                          <label class="col-sm-2 col-sm-2 control-label" for="valorProducto">Valor*</label>
+                          <label class="col-sm-2 col-sm-2 control-label" for="fecha">Fecha*</label>
                           <div class="col-sm-6">
-                           <input class="form-control" id="valorProducto" name="valorProducto" type="text" placeholder="54555" required>
+                           <input class="form-control" name="fecha" type="text" placeholder="12/12/1993" required>
 
                           </div>
                           </div>
 
                           <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
-                          <label class="col-sm-2 col-sm-2 control-label" min="0" for="ImagenProducto">Imágen</label>
-                          <!--FinLabel-->
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <label class="col-sm-2 col-sm-2 control-label" for="email">E-mail*</label>
+                          <!--FinLabel-->  
                           <div class="col-sm-6">
-                                <input  name="ImagenProducto" id="ImagenProducto" type="file" multiple=true class="file" required title="Este campo es requerido">
-                          </div>
                             <!-- InicioInput poner class="form-control"-->
-
+                              <input class="form-control" name="email" id="email" type="text" maxlength="20" placeholder="email@ecopetro.com">
 
                             <!-- FinInput -->
-                          </div>
+                          </div>                        
                           </div>
 
                           <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
-                          <label class="col-sm-2 col-sm-2 control-label" for="presentacionProducto">Presentación</label>
-                          <!--FinLabel-->
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <label class="col-sm-2 col-sm-2 control-label" for="cantidad">Cantidad</label>
+                          <!--FinLabel-->  
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
-                              <select class="form-control" name="presentacionProducto" id="presentacionProducto" type="text" required title="Este campo es requerido" >
-                                  <option value="1111">Galon</option>
-                                  <option value="1112">Tambor</option>
-                                  <option value="1113">frasco</option>
-                              </select>
+                              <input class="form-control" name="cantidad" id="cantidad" type="number" maxlength="20" placeholder="20" required title="Este campo es requerido">
+
                             <!-- FinInput -->
-                          </div>
+                          </div>                        
                           </div>
 
                           <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
-                          <label class="col-sm-2 col-sm-2 control-label" for="categoriaProducto">Categoria*</label>
-                          <!--FinLabel-->
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <label class="col-sm-2 col-sm-2 control-label" for="subtotal">Subtotal*</label>
+                          <!--FinLabel-->  
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
-                              <select class="form-control" name="categoriaProducto" id="categoriaProducto"  required title="Este campo es requerido">
-                                  <option value="2221">Desengrasantes</option>
-                                  <option value="2222">Analisis Agua</option>
-                                  <option value="2223">Industrial</option>
-                              </select>
-
+                              <input class="form-control" name="subtotal" type="text" maxlength="20" placeholder="$500.000" required title="Este campo es requerido" disabled>
 
                             <!-- FinInput -->
+                          </div>                        
                           </div>
+
+                          <div class="form-group">
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <label class="col-sm-2 col-sm-2 control-label" for="iva">IVA*</label>
+                          <!--FinLabel-->  
+                          <div class="col-sm-6">
+                            <!-- InicioInput poner class="form-control"-->
+                              <input class="form-control" name="iva" id="iva" type="number" maxlength="20" placeholder="5%" required title="Este campo es requerido">
+
+                            <!-- FinInput -->
+                          </div>                        
                           </div>
+
+                          <div class="form-group">
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <label class="col-sm-2 col-sm-2 control-label" for="total">Total*</label>
+                          <!--FinLabel-->  
+                          <div class="col-sm-6">
+                            <!-- InicioInput poner class="form-control"-->
+                              <input class="form-control" name="total" id="total" type="text" maxlength="20" placeholder="$650.000" required title="Este campo es requerido" disabled>
+
+                            <!-- FinInput -->
+                          </div>                        
+                          </div>
+                             
+                             <div class="form-group">
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
+                          <label class="col-sm-2 col-sm-2 control-label" for="observaciones">Observaciones:</label>
+                          <!--FinLabel-->  
+                          <div class="col-sm-6">
+                            <!-- InicioInput poner class="form-control"-->
+                           <input class="form-control" name="observaciones" id="observaciones" type="text" maxlength="100" placeholder="Llamar a primera hora para despachar">
+
+                            <!-- FinInput -->
+                          </div>                        
+                          </div>
+                    
 
                   <div class="box-footer">
-                    <button name="registro" id="registro" value="Registrarse" type="submit" class="btn btn-info pull-left">Registrar</button>
+                    <button type="submit" class="btn btn-info pull-left">Registrar</button>
                   </div><!-- /.box-footer -->
-
+                   </div>
                 </form>
-          
-
+             
             </div>
 
         </section><!-- /.content -->
@@ -359,13 +372,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Main Footer -->
       <footer class="main-footer">
         <!-- To the right -->
-
+       
         <!-- Default to the left -->
         <strong>Copyright &copy; 2015 <a href="#">NOMBRE EMPRESA</a>.</strong> All rights reserved.
       </footer>
 
       <!-- Control Sidebar -->
-
+      
       <!-- Add the sidebar's background. This div must be placed
            immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
@@ -385,7 +398,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           fixed layout. -->
   </body>
   <script type="text/javascript">
-$(document).ready(function() {
+$(document).ready(function() {    
     $('#defaultForm').formValidation({
         message: 'This value is not valid',
         icon: {
@@ -401,140 +414,117 @@ $(document).ready(function() {
                 locale: 'es_ES',
 
         fields: {
-            codigoProducto: {
+            idcliente: {
                 validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
+                    },
+                     integer: {
+                        message: 'Solo se permite el ingreso de números'
                     }
                 }
             },
-            nombreProducto: {
+            idproducto: {
                 validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
+                    },
+                     integer: {
+                        message: 'Solo se permite el ingreso de números'
                     }
-
                 }
             },
-            descriptionProducto: {
+            nombrecliente: {
                 validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
+                    },
+                    regexp: {
+                        regexp: /^[a-z\sñÑ]+$/i,
+                        message: 'Solo se permiten letras'
+                    },
+                    stringLength: {
+                        min: 3,
+                        max: 30,
+                        message: 'Este campo debe tener mínimo 3 caracteres y máximo 30'
                     }
-
-
-                },
-                stringLength: {
-                    min: 3,
-                    max: 30,
-                    message: 'Este campo debe tener mínimo 3 caracteres y máximo 30'
                 }
+            },
+            telefono:{
+              validators:{
+                 notEmpty:{
+                    message: 'Este campo es requerido'
+                  },
+                  integer:{
+                    message: 'Solo se permite el ingreso de números'
+                  },
+                 
+                  stringLength:{
+                    min:7,
+                    max:11,
+                    message: 'Este campo debe tener mínimo 7 números y máximo 11'
+                  }
+
+              }
+
 
             },
-            unidadProducto: {
+            
+            direccion:{
+              validators:{
+                notEmpty:{
+                    message: 'Este campo es requerido'
+                }
+              }
+            },
+            fecha:{
+              validators:{
+                date: {
+                        format: 'DD/MM/YYYY',
+                        message: 'Ingrese una fecha válida'
+                  },
+                  notEmpty:{
+                    message: 'Este campo es requerido'
+                }
+
+                }
+            },
+            email: {
                 validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
+                    },
+                    emailAddress: {
+                        message: 'Ingrese un correo electrónico válido'
                     }
-
                 }
-
             },
-
-            ivaProducto: {
-                validators: {
+            cantidad:{
+              validators:{
                     notEmpty: {
                         message: 'Este campo es requerido'
                     },
                     integer:{
-                        message: 'Solo se permiten números'
+                      message: 'Solo se permiten números'
                     }
-                }
-            },
-            valorProducto: {
-                validators: {
-                    integer: {
 
-                        message: 'Solo se permiten números'
+              }
+
+            },
+
+            iva:{
+                    notEmpty: {
+                        message: 'Este campo es requerido'
                     },
-                    notEmpty: {
-                        message: 'Este campo es requerido'
-                    }
 
-                }
-            },
-            ImagenProducto: {
-                validators: {
-                    notEmpty: {
-                        message: 'Este campo es requerido'
+                    integer:{
+                      message: 'Solo se permiten números'
                     }
-
-                }
-            },
-            presentacionProducto: {
-                validators: {
-                    notEmpty: {
-                        message: 'Este campo es requerido'
-                    }
-                }
-
-            },
-
-            categoriaProducto: {
-                validators: {
-                    notEmpty: {
-                        message: 'Este campo es requerido'
-                    }
-                }
             }
-
+        
+    
         }
     });
 });
-
-
-
-
 </script>
-
 </html>
-<?php
-  if (isset($_GET['mensaje'])) {
-      ?>
-<div class="row"><br><br>
-    <div class="col-md-6"></div>
-    <div class="col-md-1 text-center"><h4><?php echo $mensaje = $_GET['mensaje']?></h4></div>
-    <div class="col-md-5"></div>
-</div>
-<?php
-  }
-  ?>
-<script>
-    var form = $( "#defaultForm");
-    var req = new XMLHttpRequest();
-    req.open('GET', document.location, false);
-    req.send(null);
-    var headers = req.getAllResponseHeaders().toLowerCase();
-
-
-    $("#registro").click(function() {
-
-        if (true) {
-            var n = noty({
-                text: headers,
-                theme: 'relax',
-                layout: 'centerRight',
-                closeWith: ['click', 'hover'],
-                type: 'success',
-                animation: {
-                    open: 'animated bounceInRight', // Animate.css class names
-                    close: 'animated flipInX' // Animate.css class names
-                }
-
-            });
-        }
-    });
-
-
-
-</script>
