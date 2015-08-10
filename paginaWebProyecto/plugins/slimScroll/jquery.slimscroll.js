@@ -29,7 +29,7 @@
         opacity: .4,
         // enables always-on mode for the scrollbar
         alwaysVisible: false,
-        // check if we should hide the scrollbar when user is hovering over
+        // check if we should hide the scrollbar when iterator is hovering over
         disableFadeOut: false,
         // sets visibility of the rail
         railVisible: false,
@@ -49,7 +49,7 @@
         allowPageScroll: false,
         // scroll amount applied to each mouse wheel step
         wheelStep: 20,
-        // scroll amount applied when user is using gestures
+        // scroll amount applied when iterator is using gestures
         touchScrollStep: 200,
         // sets border radius
         borderRadius: '7px',
@@ -260,7 +260,7 @@
             e.originalEvent.preventDefault();
             if (e.originalEvent.targetTouches.length)
             {
-              // see how far user swiped
+              // see how far iterator swiped
               var diff = (touchDif - e.originalEvent.targetTouches[0].pageY) / o.touchScrollStep;
               // scroll content
               scrollContent(diff, true);
@@ -286,7 +286,7 @@
             }
             if (e.originalEvent.touches.length)
             {
-              // see how far user swiped
+              // see how far iterator swiped
               var diff = (touchDif - e.originalEvent.touches[0].pageY) / o.touchScrollStep;
               // scroll content
               scrollContent(diff, true);

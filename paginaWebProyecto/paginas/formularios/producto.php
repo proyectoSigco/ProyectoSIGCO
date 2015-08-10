@@ -498,26 +498,17 @@ $(document).ready(function() {
 </script>
 
 </html>
-<?php
-  if (isset($_GET['mensaje'])) {
-      ?>
-<div id="respuesta" class="row"><br><br>
-    <div class="col-md-6"></div>
-    <div class="col-md-1 text-center"><h4><?php echo $mensaje = $_GET['mensaje']?></h4></div>
-    <div class="col-md-5"></div>
-</div>
-<?php
-  }
-  ?>
 <script>
 
-    var div ='<?php echo $mensaje = $_GET['mensaje']?>' 
-    var myData = div.textContent;
-    alert(myData);
+    var myvar = <?php if (isset($_GET['mensaje']))
+                {
+                echo json_encode($_GET['mensaje']);
+                } ?>;
+    alert(myvar);
     $("#registro").click(function() {
-        if (myData) {
+        if (myvar) {
             var n = noty({
-                text: myData,
+                text:myvar ,
                 theme: 'relax',
                 layout: 'centerRight',
                 closeWith: ['click', 'hover'],

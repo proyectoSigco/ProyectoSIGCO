@@ -1,7 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7028eff5-0d6c-421a-8863-0878f38c66d0" name="Default" comment="" />
+    <list default="true" id="7028eff5-0d6c-421a-8863-0878f38c66d0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/ckeditor/CHANGES.md" afterPath="$PROJECT_DIR$/plugins/ckeditor/CHANGES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/chartjs/Chart.js" afterPath="$PROJECT_DIR$/plugins/chartjs/Chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CrearMeta.html" afterPath="$PROJECT_DIR$/CrearMeta.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/fachada/Facade.php" afterPath="$PROJECT_DIR$/php/fachada/Facade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Index.html" afterPath="$PROJECT_DIR$/Index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/ckeditor/LICENSE.md" afterPath="$PROJECT_DIR$/plugins/ckeditor/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/Readme.md" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/Readme.md" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/Readme.txt" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/Readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/ckeditor/plugins/about/dialogs/about.js" afterPath="$PROJECT_DIR$/plugins/ckeditor/plugins/about/dialogs/about.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app.js" afterPath="$PROJECT_DIR$/dist/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/bootstrap.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/bootstrap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" afterPath="$PROJECT_DIR$/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" afterPath="$PROJECT_DIR$/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/plugins/ckeditor/ckeditor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/columns.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/columns.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paginas/formularios/cotizacion.html" afterPath="$PROJECT_DIR$/paginas/formularios/cotizacion.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/js/dataTables.colVis.js" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/js/dataTables.colVis.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.js" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.js" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/js/dataTables.scroller.js" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/js/dataTables.scroller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/disable-child-rows.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/disable-child-rows.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/exclude_columns.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/exclude_columns.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fastclick/fastclick.js" afterPath="$PROJECT_DIR$/plugins/fastclick/fastclick.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fastclick/fastclick.min.js" afterPath="$PROJECT_DIR$/plugins/fastclick/fastclick.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/fixedHeader.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/fixedHeader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form copia.html" afterPath="$PROJECT_DIR$/form copia.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/formvalidation/formValidation.js" afterPath="$PROJECT_DIR$/plugins/formvalidation/formValidation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.css" afterPath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.js" afterPath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paginas/formularios/gestion.html" afterPath="$PROJECT_DIR$/paginas/formularios/gestion.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/index.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/index.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/index.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/index.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/jQuery/jquery-1.11.3.js" afterPath="$PROJECT_DIR$/plugins/jQuery/jquery-1.11.3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/date/jquery-ui.js" afterPath="$PROJECT_DIR$/date/jquery-ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/jQueryUI/jquery-ui.js" afterPath="$PROJECT_DIR$/plugins/jQueryUI/jquery-ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables.min.js" afterPath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.js" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.pie.js" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.pie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/date/external/jquery/jquery.js" afterPath="$PROJECT_DIR$/date/external/jquery/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/slimScroll/jquery.slimscroll.js" afterPath="$PROJECT_DIR$/plugins/slimScroll/jquery.slimscroll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/sparkline/jquery.sparkline.js" afterPath="$PROJECT_DIR$/plugins/sparkline/jquery.sparkline.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/daterangepicker/moment.js" afterPath="$PROJECT_DIR$/plugins/daterangepicker/moment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/mouseover.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/mouseover.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paginas/formularios/producto.php" afterPath="$PROJECT_DIR$/paginas/formularios/producto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/realtime.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/realtime.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/reset.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/reset.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_column.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_column.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_multi.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_multi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_os.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_os.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_single.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_single.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/server-side_processing.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/server-side_processing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/simple.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/simple.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/simple.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/simple.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/simple.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/simple.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/simple.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/simple.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/data/ssp.php" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/data/ssp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/state_save.html" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/state_save.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="paginaWebProyecto.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -28,8 +97,8 @@
       <file leaf-file-name="ProductoDao.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/Productos/productos.dao/ProductoDao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.0" vertical-offset="378" max-vertical-offset="1656">
-              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+            <state vertical-scroll-proportion="6.259259" vertical-offset="943" max-vertical-offset="1656">
+              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
               <folding>
                 <marker date="1439100810976" expanded="true" signature="181:227" placeholder="INSERT INTO ..." />
                 <marker date="1439100810976" expanded="true" signature="1202:1304" placeholder="UPDATE produ..." />
@@ -37,6 +106,61 @@
                 <marker date="1439100810976" expanded="true" signature="2760:2802" placeholder="select * fro..productos..." />
                 <marker date="1439100810976" expanded="true" signature="3204:3254" placeholder="UPDATE produ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listado.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../PHPCRUD/listado.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.333333" vertical-offset="486" max-vertical-offset="1332">
+              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modificar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../PHPCRUD/modificar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9259259" vertical-offset="385" max-vertical-offset="1098">
+              <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productoListar.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/paginas/formularios/productoListar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="4.3075438" vertical-offset="2417" max-vertical-offset="6120">
+              <caret line="258" column="35" selection-start-line="258" selection-start-column="35" selection-end-line="258" selection-end-column="35" />
+              <folding>
+                <marker date="1439186758369" expanded="true" signature="11265:11456" placeholder="..." />
+                <marker date="1439186758369" expanded="true" signature="11713:12058" placeholder="..." />
+                <marker date="1439186758369" expanded="true" signature="12420:12604" placeholder="..." />
+                <marker date="1439186758369" expanded="true" signature="13122:13333" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="producto.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paginas/formularios/producto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-172.40741" vertical-offset="4705" max-vertical-offset="9576">
+              <caret line="520" column="15" selection-start-line="520" selection-start-column="15" selection-end-line="520" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resultados.html" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documentos/9.Centralita/web/Theme(1)/Theme/resultados.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.3333335" vertical-offset="2538" max-vertical-offset="5508">
+              <caret line="152" column="49" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="49" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,68 +178,18 @@
       <file leaf-file-name="ControladorProducto.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/Controladores/ControladorProducto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="558">
-              <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+            <state vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="558">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="producto.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/paginas/formularios/producto.php">
+      <file leaf-file-name="controlador.usuarios.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../PHPCRUD/controladores/controlador.usuarios.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6079855" vertical-offset="8899" max-vertical-offset="9738">
-              <caret line="513" column="56" selection-start-line="513" selection-start-column="56" selection-end-line="513" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ordenDeCompra.html" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documentos/9.Centralita/web/Theme(1)/Theme/ordenDeCompra.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-53.032787" vertical-offset="3767" max-vertical-offset="8550">
-              <caret line="389" column="39" selection-start-line="389" selection-start-column="38" selection-end-line="389" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Conexion.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/Utilidades/Conexion.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="378">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Facade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/fachada/Facade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="648">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registro.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../PHPCRUD/registro.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="900">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gestion.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginas/formularios/gestion.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="9648">
-              <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+            <state vertical-scroll-proportion="-7.5555553" vertical-offset="354" max-vertical-offset="918">
+              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -123,16 +197,20 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/php/fachada/FUsuario.php" />
         <option value="$PROJECT_DIR$/php/Productos/productos.dto/ProductoDto.php" />
-        <option value="$PROJECT_DIR$/php/fachada/Facade.php" />
         <option value="$PROJECT_DIR$/php/Productos/productos.dao/ProductoDao.php" />
         <option value="$PROJECT_DIR$/paginas/formularios/producto.html" />
-        <option value="$PROJECT_DIR$/php/Controladores/ControladorProducto.php" />
         <option value="$PROJECT_DIR$/paginas/formularios/producto.php" />
+        <option value="$PROJECT_DIR$/php/Controladores/ControladorProducto.php" />
+        <option value="$PROJECT_DIR$/php/fachada/Facade.php" />
+        <option value="$PROJECT_DIR$/paginas/formularios/productoListar.php" />
       </list>
     </option>
   </component>
@@ -146,7 +224,7 @@
     <option name="width" value="1368" />
     <option name="height" value="742" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -184,6 +262,96 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="paginaWebProyecto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paginaWebProyecto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paginaWebProyecto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paginaWebProyecto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paginaWebProyecto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Productos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paginaWebProyecto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paginaWebProyecto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Productos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="productos.dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paginaWebProyecto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paginaWebProyecto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fachada" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paginaWebProyecto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paginaWebProyecto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controladores" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,7 +428,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -351,26 +519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/fachada/Facade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="648">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documentos/9.Centralita/web/Theme(1)/Theme/ordenDeCompra.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-53.032787" vertical-offset="3767" max-vertical-offset="8550">
           <caret line="389" column="39" selection-start-line="389" selection-start-column="38" selection-end-line="389" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Productos/productos.dto/ProductoDto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-65.333336" vertical-offset="216" max-vertical-offset="2160">
-          <caret line="110" column="40" selection-start-line="110" selection-start-column="40" selection-end-line="110" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -383,10 +535,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../PHPCRUD/controladores/controlador.usuarios.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5555553" vertical-offset="354" max-vertical-offset="918">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documentos/9.Centralita/web/Theme(1)/Theme/resultadosorden.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.4500906" vertical-offset="2653" max-vertical-offset="5508">
+          <caret line="253" column="51" selection-start-line="155" selection-start-column="21" selection-end-line="253" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../PHPCRUD/fachada/FUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5744681" vertical-offset="0" max-vertical-offset="648">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Controladores/ControladorProducto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="558">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Productos/productos.dto/ProductoDto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-65.333336" vertical-offset="216" max-vertical-offset="2160">
+          <caret line="110" column="40" selection-start-line="110" selection-start-column="40" selection-end-line="110" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/fachada/Facade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71276593" vertical-offset="84" max-vertical-offset="648">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/Productos/productos.dao/ProductoDao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.0" vertical-offset="378" max-vertical-offset="1656">
-          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        <state vertical-scroll-proportion="6.259259" vertical-offset="943" max-vertical-offset="1656">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
           <folding>
             <marker date="1439100810976" expanded="true" signature="181:227" placeholder="INSERT INTO ..." />
             <marker date="1439100810976" expanded="true" signature="1202:1304" placeholder="UPDATE produ..." />
@@ -397,19 +597,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/Controladores/ControladorProducto.php">
+    <entry file="file://$PROJECT_DIR$/../../PHPCRUD/listado.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="558">
-          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+        <state vertical-scroll-proportion="-9.333333" vertical-offset="486" max-vertical-offset="1332">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../PHPCRUD/modificar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9259259" vertical-offset="385" max-vertical-offset="1098">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documentos/9.Centralita/web/Theme(1)/Theme/resultados.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3333335" vertical-offset="2538" max-vertical-offset="5508">
+          <caret line="152" column="49" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/paginas/formularios/producto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6079855" vertical-offset="8899" max-vertical-offset="9738">
-          <caret line="513" column="56" selection-start-line="513" selection-start-column="56" selection-end-line="513" selection-end-column="56" />
+        <state vertical-scroll-proportion="-172.40741" vertical-offset="4705" max-vertical-offset="9576">
+          <caret line="520" column="15" selection-start-line="520" selection-start-column="15" selection-end-line="520" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginas/formularios/productoListar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.3075438" vertical-offset="2417" max-vertical-offset="6120">
+          <caret line="258" column="35" selection-start-line="258" selection-start-column="35" selection-end-line="258" selection-end-column="35" />
+          <folding>
+            <marker date="1439186758369" expanded="true" signature="11265:11456" placeholder="..." />
+            <marker date="1439186758369" expanded="true" signature="11713:12058" placeholder="..." />
+            <marker date="1439186758369" expanded="true" signature="12420:12604" placeholder="..." />
+            <marker date="1439186758369" expanded="true" signature="13122:13333" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -15,17 +15,17 @@ class Facade {
          return $this->objDao->registrarProducto($productoDto,$this->con);
 
     }
-    public  function getUsers(){
+    public  function getProductos(){
         return $this->objDao->listarProductos($this->con);
     }
-    public  function  getUser($userId){
+    public  function  obtenerProducto($userId){
         return $this->objDao->buscarProducto($userId, $this->con);
     }
-    public function updateUser(ProductosDto $usuarioDto){
+    public function actualizarProducto(ProductosDto $usuarioDto){
 
         return $this->objDao->modificarProducto($usuarioDto,$this->con);
     }
-    public function  deleteUser($idUser){
+    public function  cancelarProducto($idUser){
         return $this->objDao->cancelarProducto($idUser,$this->con);
     }
 }
