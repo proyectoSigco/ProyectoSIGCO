@@ -254,8 +254,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <td><?php echo $iterator['Iva']; ?></td>
                               <td><?php echo $iterator['Valor']; ?></td>
                               <td>
-                                  <a href="producto.php?id=<?php echo $iterator['IdProducto']; ?>"> <button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
-                                  <button id="modificar" class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  <a href="modificar.php?id=<?php echo $iterator['IdProducto']; ?>"><button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
+                                  <a href="../../php/Controladores/ControladorProducto.php?idproducto=<?php echo $iterator['IdProducto']; ?>"><button  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
+
                               </td>
 
                           </tr>

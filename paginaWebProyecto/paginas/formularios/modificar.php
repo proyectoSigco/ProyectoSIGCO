@@ -1,4 +1,6 @@
+
 <!DOCTYPE html>
+
 <!--
 This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
@@ -226,8 +228,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <h1 class="box-title">Los campos con * son obligatorios</h1>
                 </div><!-- /.box-header -->
                 <!-- form start -->
+
                 <form class="form-horizontal" id="defaultForm" action="../../php/Controladores/ControladorProducto.php" method="post">
                   <div class="box-body">
+                      <?php
+                      require '../../php/fachada/Facade.php';
+                      require '../../php/Utilidades/Conexion.php';
+                      require_once  '../../php/Productos/productos.dao/ProductoDao.php';
+                      $modificar= new Facade();
+                      $T=$modificar->obtenerProducto($_GET['id']);
+                      foreach($T as $iterator) {
+
+                      ?>
 
                     <div class="form-group">
 
@@ -235,7 +247,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                               <div class="col-sm-6">
 
-                                  <input class="form-control" name="codigoProducto" id="codigoProducto" type="text" placeholder="23443" required>
+                                  <input class="form-control" name="codigoProducto2" id="codigoProducto" type="text" placeholder="23443" required value="<?php echo $iterator['IdProducto'];?>" readonly>
 
                               </div>
                           </div>
@@ -245,7 +257,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                               <div class="col-sm-6">
 
-                                  <input class="form-control" name="nombreProducto" id="nombreProducto" type="text" maxlength="10" placeholder="Desengrasante Industrial" required>
+                                  <input class="form-control" name="nombreProducto" id="nombreProducto" type="text" maxlength="10" value="<?php echo $iterator['Nombre'];?>" required>
 
                               </div>
                           </div>
@@ -256,7 +268,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <!--FinLabel-->
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
-                                <textarea class="form-control" name="descriptionProducto" id="descriptionProducto" type="text" maxlength="100" placeholder="" rows="5"></textarea>
+                                <textarea class="form-control" name="descriptionProducto" id="descriptionProducto" type="text" maxlength="100" placeholder="<?php echo $iterator['Descripcion'];?>" rows="5"></textarea>
                             <!-- FinInput -->
                           </div>
                           </div>
@@ -268,7 +280,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
                             <select class="form-control" name="unidadProducto" id="unidadProducto" type="text" placeholder="3278600">
-                              <option name="unidadMedida" value="Gr">Gr</option>
+                              <option name="unidadMedida" value="value="<?php echo $iterator['UnidadMedida'];?>"">Gr</option>
                               <option name="unidadMedida" value="cm3">cm3</option>
                               <option name="unidadMedida" value="Lt">Lt</option>
                               <option name="unidadMedida" value=""></option>
@@ -283,7 +295,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <!--FinLabel-->
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
-                            <input class="form-control" name="ivaProducto" id="ivaProducto" type="text" maxlength="20" placeholder="16%">
+                            <input class="form-control" name="ivaProducto" id="ivaProducto" type="text" maxlength="20" value="<?php echo $iterator['Iva'];?>">
 
                             <!-- FinInput -->
                           </div>
@@ -293,24 +305,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <div class="form-group">
                           <label class="col-sm-2 col-sm-2 control-label" for="valorProducto">Valor*</label>
                           <div class="col-sm-6">
-                           <input class="form-control" id="valorProducto" name="valorProducto" type="text" placeholder="54555" required>
+                           <input class="form-control" id="valorProducto" name="valorProducto" type="text" value="<?php echo $iterator['Valor'];?>" required>
 
                           </div>
                           </div>
 
-                          <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
-                          <label class="col-sm-2 col-sm-2 control-label" min="0" for="ImagenProducto">Imágen</label>
-                          <!--FinLabel-->
-                          <div class="col-sm-6">
-                                <input  name="ImagenProducto" id="ImagenProducto" type="file" multiple=true class="file" required title="Este campo es requerido">
-                          </div>
-                            <!-- InicioInput poner class="form-control"-->
 
-
-                            <!-- FinInput -->
-                          </div>
-                          </div>
 
                           <div class="form-group">
                           <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
@@ -319,16 +319,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
                               <select class="form-control" name="presentacionProducto" id="presentacionProducto" type="text" required title="Este campo es requerido" >
+
                                   <?php
-                                  require '../../php/fachada/Facade.php';
-                                  require '../../php/Utilidades/Conexion.php';
-                                  require_once  '../../php/Productos/productos.dao/ProductoDao.php';
+
                                   $producto = new Facade();
                                   $Productos = $producto->obtenerPresentacionProducto();
-                                  foreach($Productos as $iterator) { ?>
-                                  <option value="<?php echo $iterator['IdPresentacion']; ?>"><?php echo $iterator['Nombre']; ?></option>
+                                  $especifico= $producto->presentacionId($iterator['Presentacion_IdPresentacion']);
+                                  foreach($especifico as $name){?>
+                                      <option value="<?php echo $name['IdPresentacion']; ?>"><?php echo $name['Nombre']; ?></option>
                                   <?php
                                   }?>
+
+                                  <?php
+                                 foreach($Productos as $iterator) { ?>
+                                     <option value="<?php echo $iterator['IdPresentacion']; ?>"><?php echo $iterator['Nombre']; ?></option>
+
+                                 <?php
+                                 }?>
                               </select>
 
                             <!-- FinInput -->
@@ -355,8 +362,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </div><!-- /.box-footer -->
 
                 </form>
-          
-
+<?php } ?>
             </div>
 
         </section><!-- /.content -->
