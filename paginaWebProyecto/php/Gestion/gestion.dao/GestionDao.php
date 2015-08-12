@@ -6,16 +6,13 @@ class GestionDao {
 
          $mensaje = "";
         try {
-            $query = $cnn->prepare("INSERT INTO Gestion  VALUES(?,?,?,?,?,?,?,?,?,?)");
-            $query->bindParam(1, $gestionDto->getIdGestion());
-            $query->bindParam(2, $gestionDto->getIdUsuario());
-            $query->bindParam(3, $gestionDto->getIdCliente());
-            $query->bindParam(4, $gestionDto->getEstado());
-            $query->bindParam(5, $gestionDto->getTemaProducto());
-            $query->bindParam(6, $gestionDto->getAsistentes());
-            $query->bindParam(7, $gestionDto->getObservaciones());
-            $query->bindParam(8, $gestionDto->getLugar());
-            $query->bindParam(9, $gestionDto->getFechaVisita());
+            $query = $cnn->prepare("INSERT INTO Gestion  VALUES(1,?,1,?,?,?,?,?,?,?)");
+            $query->bindParam(2, $gestionDto->getIdCliente());
+            $query->bindParam(4, $gestionDto->getTemaProducto());
+            $query->bindParam(5, $gestionDto->getAsistentes());
+            $query->bindParam(6, $gestionDto->getObservaciones());
+            $query->bindParam(7, $gestionDto->getLugar());
+            $query->bindParam(8, $gestionDto->getFechaVisita());
             $query->execute();
             $mensaje="Registrado";
         } catch (Exception $ex) {
