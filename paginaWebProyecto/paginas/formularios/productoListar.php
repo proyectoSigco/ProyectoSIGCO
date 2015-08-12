@@ -241,7 +241,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           </thead>
                           <tbody>
                           <?php
-                          require '../../php/fachada/Facade.php';
+                          require '../../php/fachada/FacadeProducto.php';
                           require '../../php/Utilidades/Conexion.php';
                           require_once  '../../php/Productos/productos.dao/ProductoDao.php';
                           $producto = new Facade();

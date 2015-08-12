@@ -71,7 +71,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Admin</b>LTE</span>
+          <span class="logo-lg"><b>SI</b>GCO</span>
         </a>
 
         <!-- Header Navbar -->
@@ -202,11 +202,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Registrar Cotización
+            Registrar Visita
 <!--            <small>Optional description</small>-->
           </h1>
           <ol class="breadcrumb">
-            <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Registrar Cotización</a></li>
+            <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Registrar Visita</a></li>
           </ol>
         </section>
 
@@ -218,145 +218,101 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <h1 class="box-title">Los campos con * son obligatorios</h1>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form class="form-horizontal" id="defaultForm">
+                <form class="form-horizontal" id="defaultForm" method="post" action="">
                   <div class="box-body">
 
-                    <div class="form-group">
+                          <div class="form-group">
 
-                              <label class="col-sm-2 col-sm-2 control-label" for="codigo">Código Cliente* </label>
-                            
+                              <label class="col-sm-2 col-sm-2 control-label" for="idcliente">NIT Cliente* </label>
+
                               <div class="col-sm-6">
 
-                                  <input class="form-control" name="idcliente" id="codigo" type="text" placeholder="12355" required>
+                                  <select class="form-control" name="idcliente" id="idcliente">
+                                      <option>814200</option>
+                                      <option>910101</option>
+                                  </select>
 
                               </div>
                           </div>
                           <div class="form-group">
+                              <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
+                              <label class="col-sm-2 col-sm-2 control-label" for="cliente">Nombre Cliente:</label>
+                              <!--FinLabel-->
+                              <div class="col-sm-6">
+                                  <!-- InicioInput poner class="form-control"-->
+                                  <input class="form-control" name="cliente" id="cliente" type="text" maxlength="20" placeholder="Ecopetrol" readonly>
+                                  <!-- FinInput -->
+                              </div>
+                          </div>
+                          <div class="form-group">
 
-                              <label class="col-sm-2 col-sm-2 control-label" for="producto">Código Producto* </label>
+                              <label class="col-sm-2 col-sm-2 control-label" for="tipoVisita">Tipo Visita </label>
                             
                               <div class="col-sm-6">
 
-                                  <input class="form-control" name="idproducto" id="producto" type="text" maxlength="10" placeholder="1287350" required>
-
+                                  <select class="form-control" name="tipoVisita" id="tipoVisita" >
+                                      <option>Asesoria</option>
+                                      <option>Capacitación</option>
+                                  </select>
                               </div>
                           </div>
 
                           <div class="form-group">
                           <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="cliente">Nombre Cliente*</label>
+                          <label class="col-sm-2 col-sm-2 control-label" for="temaproducto" id="labProducto">Tema*</label>
                           <!--FinLabel-->  
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
-                                <input class="form-control" name="nombrecliente" id="cliente" type="text" maxlength="20" placeholder="Ecopetrol">
+                                <input class="form-control" name="temaproducto" id="temaproducto" type="text" maxlength="20" placeholder="Desengrasantes">
                             <!-- FinInput -->
                           </div>                        
                           </div>
 
                           <div class="form-group">
                           <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="telefono">Teléfono*</label>
+                          <label class="col-sm-2 col-sm-2 control-label" for="asistentes">Asistentes*</label>
                           <!--FinLabel-->  
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
-                            <input class="form-control" name="telefono" id="telefono" type="text" placeholder="3278600">
-                            <!-- FinInput -->
-                          </div>                        
-                          </div>
-
-                             <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="direccion">Dirección*</label>
-                          <!--FinLabel-->  
-                          <div class="col-sm-6">
-                            <!-- InicioInput poner class="form-control"-->
-                            <input class="form-control" name="direccion" id="direccion" type="text" maxlength="20" placeholder="Cra 79 No 31c-71">
-
-                            <!-- FinInput -->
-                          </div>                        
-                          </div>
-
-
-                          <div class="form-group">
-                          <label class="col-sm-2 col-sm-2 control-label" for="fecha">Fecha*</label>
-                          <div class="col-sm-6">
-                           <input class="form-control" name="fecha" type="text" placeholder="12/12/1993" required>
-
-                          </div>
-                          </div>
-
-                          <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="email">E-mail*</label>
-                          <!--FinLabel-->  
-                          <div class="col-sm-6">
-                            <!-- InicioInput poner class="form-control"-->
-                              <input class="form-control" name="email" id="email" type="text" maxlength="20" placeholder="email@ecopetro.com">
-
+                            <input class="form-control" name="asistentes" id="asistentes" type="number" placeholder="" min="1">
                             <!-- FinInput -->
                           </div>                        
                           </div>
 
                           <div class="form-group">
                           <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="cantidad">Cantidad</label>
+                          <label class="col-sm-2 col-sm-2 control-label" for="observaciones">Observaciones*</label>
                           <!--FinLabel-->  
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
-                              <input class="form-control" name="cantidad" id="cantidad" type="number" maxlength="20" placeholder="20" required title="Este campo es requerido">
+                            <textarea class="form-control" name="observaciones" id="observaciones" type="text" maxlength="20" >
 
+                            </textarea>
                             <!-- FinInput -->
                           </div>                        
+                          </div>
+
+
+                          <div class="form-group">
+                          <label class="col-sm-2 col-sm-2 control-label" for="lugar">Lugar*</label>
+                          <div class="col-sm-6">
+                           <input class="form-control" name="lugar" type="text" id="lugar" placeholder="Carrera 15 # 24 10" required>
+
+                          </div>
                           </div>
 
                           <div class="form-group">
                           <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="subtotal">Subtotal*</label>
+                          <label class="col-sm-2 col-sm-2 control-label" for="fechaVisita">Fecha de visita</label>
                           <!--FinLabel-->  
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
-                              <input class="form-control" name="subtotal" type="text" maxlength="20" placeholder="$500.000" required title="Este campo es requerido" disabled>
+                              <input class="form-control" name="fechaVisita" id="fechaVisita" type="date" maxlength="20" placeholder="2010-08-12">
 
                             <!-- FinInput -->
                           </div>                        
                           </div>
 
-                          <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="iva">IVA*</label>
-                          <!--FinLabel-->  
-                          <div class="col-sm-6">
-                            <!-- InicioInput poner class="form-control"-->
-                              <input class="form-control" name="iva" id="iva" type="number" maxlength="20" placeholder="5%" required title="Este campo es requerido">
-
-                            <!-- FinInput -->
-                          </div>                        
-                          </div>
-
-                          <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="total">Total*</label>
-                          <!--FinLabel-->  
-                          <div class="col-sm-6">
-                            <!-- InicioInput poner class="form-control"-->
-                              <input class="form-control" name="total" id="total" type="text" maxlength="20" placeholder="$650.000" required title="Este campo es requerido" disabled>
-
-                            <!-- FinInput -->
-                          </div>                        
-                          </div>
-                             
-                             <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="observaciones">Observaciones:</label>
-                          <!--FinLabel-->  
-                          <div class="col-sm-6">
-                            <!-- InicioInput poner class="form-control"-->
-                           <input class="form-control" name="observaciones" id="observaciones" type="text" maxlength="100" placeholder="Llamar a primera hora para despachar">
-
-                            <!-- FinInput -->
-                          </div>                        
-                          </div>
-                    
 
                   <div class="box-footer">
                     <button type="submit" class="btn btn-info pull-left">Registrar</button>
@@ -418,31 +374,24 @@ $(document).ready(function() {
                 validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
-                    },
-                     integer: {
-                        message: 'Solo se permite el ingreso de números'
                     }
+
                 }
             },
-            idproducto: {
+            cliente: {
+                validators: {
+                    notEmpty: {
+                        message: 'Este campo es requerido'
+                    }
+
+                }
+            },
+            tipoVisita: {
                 validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
                     },
-                     integer: {
-                        message: 'Solo se permite el ingreso de números'
-                    }
-                }
-            },
-            nombrecliente: {
-                validators: {
-                    notEmpty: {
-                        message: 'Este campo es requerido'
-                    },
-                    regexp: {
-                        regexp: /^[a-z\sñÑ]+$/i,
-                        message: 'Solo se permiten letras'
-                    },
+
                     stringLength: {
                         min: 3,
                         max: 30,
@@ -450,81 +399,55 @@ $(document).ready(function() {
                     }
                 }
             },
-            telefono:{
-              validators:{
-                 notEmpty:{
-                    message: 'Este campo es requerido'
-                  },
-                  integer:{
-                    message: 'Solo se permite el ingreso de números'
-                  },
-                 
-                  stringLength:{
-                    min:7,
-                    max:11,
-                    message: 'Este campo debe tener mínimo 7 números y máximo 11'
-                  }
-
-              }
-
-
-            },
-            
-            direccion:{
-              validators:{
-                notEmpty:{
-                    message: 'Este campo es requerido'
-                }
-              }
-            },
-            fecha:{
-              validators:{
-                date: {
-                        format: 'DD/MM/YYYY',
-                        message: 'Ingrese una fecha válida'
-                  },
-                  notEmpty:{
-                    message: 'Este campo es requerido'
-                }
-
-                }
-            },
-            email: {
+            asistentes: {
                 validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
                     },
-                    emailAddress: {
-                        message: 'Ingrese un correo electrónico válido'
+                    integer: {
+                        message: 'Solo se permite el ingreso de números'
+                    },
+
+                    stringLength: {
+                        min: 1,
+                        max: 11,
+                        message: 'Este campo debe tener mínimo 7 números y máximo 11'
+                    }
+
+                }
+
+
+            },
+
+            lugar: {
+                validators: {
+                    notEmpty: {
+                        message: 'Este campo es requerido'
                     }
                 }
             },
-            cantidad:{
-              validators:{
+            fechaVisita: {
+                validators: {
+                    date: {
+                        format: 'DD/MM/YYYY',
+                        message: 'Ingrese una fecha válida'
+                    },
                     notEmpty: {
                         message: 'Este campo es requerido'
-                    },
-                    integer:{
-                      message: 'Solo se permiten números'
                     }
 
-              }
-
-            },
-
-            iva:{
-                    notEmpty: {
-                        message: 'Este campo es requerido'
-                    },
-
-                    integer:{
-                      message: 'Solo se permiten números'
-                    }
+                }
             }
-        
-    
         }
-    });
+        });
 });
+
+      $('#tipoVisita').on('change',function(){
+          if($('#tipoVisita').val()=='Capacitación'){
+              $('#labProducto').text('Producto*');
+          } else{
+              $('#labProducto').text('Tema*');
+          }
+      });
 </script>
 </html>

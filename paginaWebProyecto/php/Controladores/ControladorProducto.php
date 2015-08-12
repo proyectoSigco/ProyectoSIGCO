@@ -4,7 +4,7 @@ require_once '../Productos/productos.dao/ProductoDao.php';
 require_once '../Productos/productos.dto/ProductoDto.php';
 require_once '../Controladores/ControladorProducto.php';
 require_once '../Utilidades/Conexion.php';
-require_once '../fachada/Facade.php';
+require_once '../fachada/FacadeProducto.php';
 if (isset ($_GET['idproducto'])){
     $fachada = new Facade();
     $fachada->cancelarProducto($_GET['idproducto']);

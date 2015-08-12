@@ -78,7 +78,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Admin</b>LTE</span>
+          <span class="logo-lg"><b>SI</b>GCO</span>
         </a>
 
         <!-- Header Navbar -->
@@ -320,7 +320,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <!-- InicioInput poner class="form-control"-->
                               <select class="form-control" name="presentacionProducto" id="presentacionProducto" type="text" required title="Este campo es requerido" >
                                   <?php
-                                  require '../../php/fachada/Facade.php';
+                                  require '../../php/fachada/FacadeProducto.php';
                                   require '../../php/Utilidades/Conexion.php';
                                   require_once  '../../php/Productos/productos.dao/ProductoDao.php';
                                   $producto = new Facade();
