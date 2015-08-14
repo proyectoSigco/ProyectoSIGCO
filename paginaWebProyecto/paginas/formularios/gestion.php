@@ -228,8 +228,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="col-sm-6">
 
                                   <select class="form-control" name="idcliente" id="idcliente">
-                                      <option>814200</option>
-                                      <option>910101</option>
+                                      <?php
+                                      require '../../php/fachada/FacadeGestion.php';
+                                      require '../../php/Utilidades/Conexion.php';
+                                      require_once  '../../php/Gestion/gestion.dao/GestionDao.php';
+                                      $empresa = new FacadeGestion();
+                                      $empresas = $empresa->obtenerEmpresas();
+                                      foreach($empresas as $iterator) { ?>
+                                          <option value="<?php echo $iterator['IdCliente']; ?>"><?php echo $iterator['IdCliente']; ?></option>
+                                      <?php
+                                      }?>
                                   </select>
 
                               </div>
@@ -240,7 +248,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <!--FinLabel-->
                               <div class="col-sm-6">
                                   <!-- InicioInput poner class="form-control"-->
-                                  <input class="form-control" name="cliente" id="cliente" type="text" maxlength="20" placeholder="Ecopetrol" readonly>
+                                  <input class="form-control" name="cliente" id="cliente" type="text" maxlength="20" value="<?php echo $iterator['Nombre']?>" readonly>
                                   <!-- FinInput -->
                               </div>
                           </div>
@@ -295,18 +303,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           </div>                        
                           </div>
 
-                          <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="observaciones">Observaciones*</label>
-                          <!--FinLabel-->  
+                      <div class="form-group">
+                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
+                          <label class="col-sm-2 col-sm-2 control-label" for="observaciones">Descripcion*</label>
+                          <!--FinLabel-->
                           <div class="col-sm-6">
-                            <!-- InicioInput poner class="form-control"-->
-                            <textarea class="form-control" name="observaciones" id="observaciones" rows="5" >
-
-                            </textarea>
-                            <!-- FinInput -->
-                          </div>                        
+                              <!-- InicioInput poner class="form-control"-->
+                              <textarea class="form-control" name="observaciones" id="observaciones" type="text" maxlength="100" placeholder="" rows="5"></textarea>
+                              <!-- FinInput -->
                           </div>
+                      </div>
 
 
                           <div class="form-group">

@@ -35,8 +35,8 @@ Class FacadeGestion {
     public function  presentacionId($idUser){
         return $this->objDao->presentacionId($idUser,$this->con);
     }
-    public function  obtenerPresentacionProducto(){
-        return $this->objDao->obtenerPresentacionProducto($this->con);
+    public function  obtenerEmpresas(){
+        return $this->objDao->obtenerEmpresas($this->con);
     }
     public function  obtenerCategoriaProducto(){
         return $this->objDao->obtenerPresentacionProducto($this->con);

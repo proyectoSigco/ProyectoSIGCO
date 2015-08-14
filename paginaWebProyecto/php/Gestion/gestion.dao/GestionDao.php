@@ -84,6 +84,19 @@ class GestionDao {
         } catch (Exception $ex) {
             echo 'Error' . $ex->getMessage();
         }
+        return $this->mensaje;
+    }
+    public function obtenerEmpresas(PDO $cnn) {
+
+        try {
+            $listarGesion = 'Select * from cliente';
+            $query = $cnn->prepare($listarGesion);
+            $query->execute();
+            return $query->fetchAll();
+        } catch (Exception $ex) {
+            echo 'Error' . $ex->getMessage();
+        }
+        return $this->mensaje;
     }
 
 }
