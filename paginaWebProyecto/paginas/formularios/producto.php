@@ -506,15 +506,16 @@ $(document).ready(function() {
 </html>
 <script>
 
-    var myvar = <?php if (isset($_GET['mensaje']))
+    /*var myvar = <?php if (isset($_GET['mensaje']))
                 {
                 echo json_encode($_GET['mensaje']);
                 } ?>;
-    alert(myvar);
-    $("#registro").click(function() {
-        if (myvar) {
+    alert(myvar);*/
+
+    /*$("#registro").click(function() {
+
             var n = noty({
-                text:myvar ,
+                text:$.get( "producto.php" ) ,
                 theme: 'relax',
                 layout: 'centerRight',
                 closeWith: ['click', 'hover'],
@@ -525,9 +526,12 @@ $(document).ready(function() {
                 }
 
             });
-        }
+    });*/
+    $("#registro").click(function(){
+        $.get("producto.php", function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
     });
-
 
 
 </script>

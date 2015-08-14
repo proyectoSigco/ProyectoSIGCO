@@ -6,18 +6,17 @@ class ProductoDao {
    private $mensaje="";
     public function registrarProducto(ProductosDto $productoDto,PDO $cnn) {
 
-
+        $estado=1;
         try {
-            $query = $cnn->prepare("INSERT INTO productos  VALUES(?,?,?,?,?,?,?,?)");
-            $query->bindParam(1, $productoDto->getIdProducto());
-            $query->bindParam(2, $productoDto->getNombreProducto());
-            $query->bindParam(3, $productoDto->getDescripcion());
-            $query->bindParam(4, $productoDto->getUnidadMedida());
-            $query->bindParam(5, $productoDto->getIva());
-            $query->bindParam(6, $productoDto->getValorUnitario());
-            //$query->bindParam(7, $productoDto->getImagenProducto());
-            $query->bindParam(7, $productoDto->getPresentacion());
-            $query->bindParam(8, $productoDto->getCategoriaProducto());
+            $query = $cnn->prepare('INSERT INTO productos (Nombre,Descripcion,UnidadMedida,Iva,Valor,IdPresentacion,IdCategoria,estado ) VALUES(?,?,?,?,?,?,?,?)');
+            $query->bindParam(1, $productoDto->getNombreProducto());
+            $query->bindParam(2, $productoDto->getDescripcion());
+            $query->bindParam(3, $productoDto->getUnidadMedida());
+            $query->bindParam(4, $productoDto->getIva());
+            $query->bindParam(5, $productoDto->getValorUnitario());
+            $query->bindParam(6, $productoDto->getPresentacion());
+            $query->bindParam(7, $productoDto->getCategoriaProducto());
+            $query->bindParam(8,$estado);
             $query->execute();
             $this->mensaje="Producto  Registrado";
         } catch (Exception $ex) {

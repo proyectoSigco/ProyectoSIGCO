@@ -8,7 +8,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta charset="UTF-8">
     <title>| Inicio</title>
     <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, iterator-scalable=no" name="viewport">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.4 -->
     <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Font Awesome Icons -->
@@ -28,7 +28,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script type="text/javascript" src="../../plugins/jQuery/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="../../plugins/formvalidation/formValidation.js"></script>
     <script type="text/javascript" src="../../plugins/formvalidation/framework/bootstrap.js"></script>
-    <script type="text/javascript" src="../../plugins/js/language/es_ES.js"></script>
+
 
     
     <!-- FORMVALIDATION -->
@@ -39,6 +39,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+      <!--noty messajes-->
+      <link href="../../plugins/animate/animate.css" rel="stylesheet" type="text/css" />
+      <script src="../../plugins/messajes/jquery.noty.packaged.min.js"></script>
+      <!-- FORMVALIDATION -->
+
+
   </head>
   <!--
   BODY TAG OPTIONS:
@@ -71,7 +78,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>SI</b>GCO</span>
+          <span class="logo-lg"><b>Admin</b>LTE</span>
         </a>
 
         <!-- Header Navbar -->
@@ -87,13 +94,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="dropdown user user-menu">
                 <!-- Menu Toggle Button -->
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <!-- The iterator image in the navbar-->
+                  <!-- The user image in the navbar-->
                   <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image" />
                   <!-- hidden-xs hides the username on small devices so only the image appears. -->
                   <span class="hidden-xs">Julian Castaño</span>
                 </a>
                 <ul class="dropdown-menu">
-                  <!-- The iterator image in the menu -->
+                  <!-- The user image in the menu -->
                   <li class="user-header">
                     <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     <p>
@@ -124,7 +131,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
 
-          <!-- Sidebar iterator panel (optional) -->
+          <!-- Sidebar user panel (optional) -->
           <div class="user-panel">
             <div class="pull-left image">
               <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
@@ -202,11 +209,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Registrar Visita
+            Gestión de visitas
 <!--            <small>Optional description</small>-->
           </h1>
           <ol class="breadcrumb">
-            <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Registrar Visita</a></li>
+            <li class="active"><a href="#"><i class="fa fa-dashboard"></i>Gestión</a></li>
           </ol>
         </section>
 
@@ -215,127 +222,51 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- Horizontal Form -->
               <div class="box box-info">
                 <div class="box-header with-border">
-                  <h1 class="box-title">Los campos con * son obligatorios</h1>
+                   <p><h2 class="box-title">Capacitaciónes-Asesorias</h2></p>
                 </div><!-- /.box-header -->
-                <!-- form start -->
-                <form class="form-horizontal" id="defaultForm" method="post" action="../../php/Controladores/ControladorGestion.php">
-                  <div class="box-body">
+                  <div class="content-panel">
+                      <table class="table table-striped table-advance table-hover">
+                          <hr>
+                          <thead>
+                          <tr>
+                              <th><i class="fa fa-bullhorn"></i> Codigo Gestion</th>
+                              <th><i class="fa fa-bookmark"></i>Tema</th>
+                              <th><i class=" fa fa-edit"></i> Asistentes</th>
+                              <th><i class=" fa fa-edit"></i>Observaciones</th>
+                              <th><i class=" fa fa-actions"></i>Lugar</th>
+                              <th><i class=" fa fa-actions"></i>Estado</th>
+                              <th><i class=" fa fa-actions"></i>Fecha</th>
+                              <th>Acciónes</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <?php
+                          require '../../php/fachada/FacadeGestion.php';
+                          require '../../php/Utilidades/Conexion.php';
+                          require_once  '../../php/Gestion/gestion.dao/GestionDao.php';
+                          $gestion = new FacadeGestion();
+                          $gestiones = $gestion->getGestiones();
+                          foreach($gestiones as $iterator) { ?>
+                          <tr>
+                              <td><?php echo $iterator['IdGestion']; ?> <a href="#"></a></td>
+                              <td><?php echo $iterator['TemaProducto']; ?></td>
+                              <td><?php echo $iterator['Asistentes']; ?></td>
+                              <td ><?php echo $iterator['Observaciones']; ?></td>
+                              <td><?php echo $iterator['Lugar']; ?></td>
+                              <td  ><span id="<?php echo $iterator['IdGestion']; ?>" class="label label-warning label-mini"><?php echo $iterator['Estado']; ?></span></td>
+                              <td><?php echo $iterator['Fecha']; ?></td>
+                              <td>
+                                  <a href="modificar.php?id=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
+                                  <a href="../../php/Controladores/ControladorGestion.php?idproducto=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
 
-                          <div class="form-group">
+                              </td>
 
-                              <label class="col-sm-2 col-sm-2 control-label" for="idcliente">NIT Cliente* </label>
-
-                              <div class="col-sm-6">
-
-                                  <select class="form-control" name="idcliente" id="idcliente">
-                                      <option>814200</option>
-                                      <option>910101</option>
-                                  </select>
-
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
-                              <label class="col-sm-2 col-sm-2 control-label" for="cliente">Nombre Cliente:</label>
-                              <!--FinLabel-->
-                              <div class="col-sm-6">
-                                  <!-- InicioInput poner class="form-control"-->
-                                  <input class="form-control" name="cliente" id="cliente" type="text" maxlength="20" placeholder="Ecopetrol" readonly>
-                                  <!-- FinInput -->
-                              </div>
-                          </div>
-                          <div class="form-group">
-
-                              <label class="col-sm-2 col-sm-2 control-label" for="tipoVisita">Tipo Visita </label>
-                            
-                              <div class="col-sm-6">
-
-                                  <select class="form-control" name="tipoVisita" id="tipoVisita" >
-                                      <option>Asesoria</option>
-                                      <option>Capacitación</option>
-                                  </select>
-                              </div>
-                          </div>
-
-                          <div class="form-group" id="producto" hidden="true">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="temaproducto" id="labProducto" >Producto*</label>
-                          <!--FinLabel-->  
-                          <div class="col-sm-6">
-                            <!-- InicioInput poner class="form-control"-->
-                                <select class="form-control" name="temaproducto" id="producto">
-                                        <option value="1">Ecopetrol</option>
-                                        <option value="1">Texaco</option>
-
-                                </select>
-                            <!-- FinInput -->
-                          </div>
-
-                          </div>
-                      <div class="form-group" id="tema" >
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->
-                          <label class="col-sm-2 col-sm-2 control-label"  >Tema*</label>
-                          <!--FinLabel-->
-                          <div class="col-sm-6">
-                              <!-- InicioInput poner class="form-control"-->
-                              <input class="form-control" name="tema"  type="text" maxlength="20" placeholder="Desengrasantes">
-                              <!-- FinInput -->
-                          </div>
-
-                      </div>
-
-                          <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="asistentes">Asistentes*</label>
-                          <!--FinLabel-->  
-                          <div class="col-sm-6">
-                            <!-- InicioInput poner class="form-control"-->
-                            <input class="form-control" name="asistentes" id="asistentes" type="number" placeholder="" min="1">
-                            <!-- FinInput -->
-                          </div>                        
-                          </div>
-
-                          <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="observaciones">Observaciones*</label>
-                          <!--FinLabel-->  
-                          <div class="col-sm-6">
-                            <!-- InicioInput poner class="form-control"-->
-                            <textarea class="form-control" name="observaciones" id="observaciones" rows="5" >
-
-                            </textarea>
-                            <!-- FinInput -->
-                          </div>                        
-                          </div>
-
-
-                          <div class="form-group">
-                          <label class="col-sm-2 col-sm-2 control-label" for="lugar">Lugar*</label>
-                          <div class="col-sm-6">
-                           <input class="form-control" name="lugar" type="text" id="lugar" placeholder="Carrera 15 # 24 10" required>
-
-                          </div>
-                          </div>
-
-                          <div class="form-group">
-                          <!-- InicioLabel poner class="col-sm-2 col-sm-2 control-label" -->  
-                          <label class="col-sm-2 col-sm-2 control-label" for="fechaVisita">Fecha de visita</label>
-                          <!--FinLabel-->  
-                          <div class="col-sm-6">
-                            <!-- InicioInput poner class="form-control"-->
-                              <input class="form-control" name="fechaVisita" id="fechaVisita" type="date" maxlength="20" placeholder="2010-08-12">
-
-                            <!-- FinInput -->
-                          </div>                        
-                          </div>
-
-
-                  <div class="box-footer">
-                    <button type="submit" id="registrar" class="btn btn-info pull-left">Registrar</button>
-                  </div><!-- /.box-footer -->
-                   </div>
-                </form>
-             
+                          </tr>
+                        <?php
+                        }?>
+                        </tbody>
+                      </table>
+                  </div><!-- /content-panel -->
             </div>
 
         </section><!-- /.content -->
@@ -344,13 +275,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Main Footer -->
       <footer class="main-footer">
         <!-- To the right -->
-       
+
         <!-- Default to the left -->
         <strong>Copyright &copy; 2015 <a href="#">NOMBRE EMPRESA</a>.</strong> All rights reserved.
       </footer>
 
       <!-- Control Sidebar -->
-      
+
       <!-- Add the sidebar's background. This div must be placed
            immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
@@ -366,109 +297,47 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
           Both of these plugins are recommended to enhance the
-          iterator experience. Slimscroll is required when using the
+          user experience. Slimscroll is required when using the
           fixed layout. -->
   </body>
-  <script type="text/javascript">
-$(document).ready(function() {    
-    $('#defaultForm').formValidation({
-        message: 'This value is not valid',
-        icon: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-         /*err: {
-            // You can set it to popover
-            // The message then will be shown in Bootstrap popover
-            container: 'tooltip'
-        },*/
-                locale: 'es_ES',
+    <script>
+        $("#modificar").click(function() {
+                var n = noty({
+                    text:'Desea eliminar este Registro' ,
+                    theme: 'relax',
+                    layout: 'center',
+                    closeWith: ['click', 'hover'],
+                    buttons: [
+                        {addClass: 'btn btn-primary', text: 'Ok', onClick: function($noty) {
 
-        fields: {
-            idcliente: {
-                validators: {
-                    notEmpty: {
-                        message: 'Este campo es requerido'
+                            // this = button element
+                            // $noty = $noty element
+
+                            $noty.close();
+                            noty({text: 'You clicked "Ok" button', type: 'success'});
+                        }
+                        },
+                        {addClass: 'btn btn-danger', text: 'Cancel', onClick: function($noty) {
+                            $noty.close();
+                            noty({text: 'You clicked "Cancel" button', type: 'error'});
+                        }
+                        }
+                    ],
+                    type: 'confirm',
+                    animation: {
+                        open: 'animated bounceInRight', // Animate.css class names
+                        close: 'animated bounceOutRight', // Animate.css class names
                     }
 
-                }
-            },
+                });
 
-            tipoVisita: {
-                validators: {
-                    notEmpty: {
-                        message: 'Este campo es requerido'
-                    },
-
-                    stringLength: {
-                        min: 3,
-                        max: 30,
-                        message: 'Este campo debe tener mínimo 3 caracteres y máximo 30'
-                    }
-                }
-            },
-            asistentes: {
-                validators: {
-                    notEmpty: {
-                        message: 'Este campo es requerido'
-                    },
-                    integer: {
-                        message: 'Solo se permite el ingreso de números'
-                    },
-
-                    stringLength: {
-                        min: 1,
-                        max: 11,
-                        message: 'Este campo debe tener mínimo 7 números y máximo 11'
-                    }
-
-                }
-
-
-            },
-
-            lugar: {
-                validators: {
-                    notEmpty: {
-                        message: 'Este campo es requerido'
-                    }
-                }
-            },
-            fechaVisita: {
-                validators: {
-                    date: {
-                        format: 'DD/MM/YYYY',
-                        message: 'Ingrese una fecha válida'
-                    },
-                    notEmpty: {
-                        message: 'Este campo es requerido'
-                    }
-
-                }
-            }
-        }
         });
-});
 
-      $('#tipoVisita').on('change',function(){
-          if($('#tipoVisita').val()=='Asesoria'){
-              $('#producto').hide();
-              $('#tema').show();
-          }else{
-              $('#producto').show();
-              $('#tema').hide();
-          }
-      });
+        $(document).ready(function() {
 
-</script>
-<script>
+            $('span:contains("ACTIVA")').removeClass('label-warning');
+            $('span:contains("ACTIVA")').addClass('label-success');
+        });
 
-    var myvar = <?php if (isset($_GET['mensaje']))
-                {
-                echo json_encode($_GET['mensaje']);
-                } ?>;
-     alert(myvar);
-
-</script>
+    </script>
 </html>

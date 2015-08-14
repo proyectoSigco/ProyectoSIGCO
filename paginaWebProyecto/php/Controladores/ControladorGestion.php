@@ -3,25 +3,23 @@ require_once '../Gestion/gestion.dao/GestionDao.php';
 require_once '../Gestion/gestion.dto/GestionDto.php';
 require_once '../Controladores/ControladorGestion.php';
 require_once '../Utilidades/Conexion.php';
-require_once '../fachada/FacadeProducto.php';
+require_once '../fachada/FacadeGestion.php';
 
-$fachada = new Facade();
+$fachada = new FacadeGestion();
 
-if (isset($_POST['codigoProducto'])) {
+if (isset($_POST['idcliente'])) {
 
-    $producto = new ProductosDto();
-    $producto->setIdProducto($_POST['codigoProducto']);
-    $producto->setNombreProducto($_POST['nombreProducto']);
-    $producto->setDescripcion($_POST['descriptionProducto']);
-    $producto->setUnidadMedida($_POST['unidadProducto']);
-    $producto->setIva($_POST['ivaProducto']);
-    $producto->setValorUnitario($_POST['valorProducto']);
-    //$producto->setImagenProducto($_POST['ImagenProducto']);
-    $producto->setPresentacion($_POST['presentacionProducto']);
-    $producto->setCategoria($_POST['categoriaProducto']);
-    $mensaje = $fachada->registrarProducto($producto);
+    $gestion = new GestionDto();
+    $gestion->setIdCliente ($_POST['idcliente']);
+    $gestion->setTipoVisita($_POST['tipoVisita']);
+    $gestion->setTemaProducto($_POST['tema']);
+    $gestion->setAsistentes($_POST['asistentes']);
+    $gestion->setObservaciones($_POST['observaciones']);
+    $gestion->setLugar($_POST['lugar']);
+    $gestion->setFechaVisita($_POST['fechaVisita']);
+    $mensaje = $fachada->registrarGestion($gestion);
 
-    header("Location: ../../paginas/formularios/producto.php?mensaje=".$mensaje);
+    header("Location: ../../paginas/formularios/gestion.php?mensaje=".$mensaje);
 
 }
 

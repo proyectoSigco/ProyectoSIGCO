@@ -16,17 +16,17 @@ Class FacadeGestion {
         $this->objDao=new GestionDao();
     }
 
-    public function registrarGestion(ProductosDto $productoDto){
+    public function registrarGestion(GestionDto $productoDto){
         return $this->objDao->registrarGestion($productoDto,$this->con);
 
     }
-    public  function getGestion(){
-        return $this->objDao->listarGetion($this->con);
+    public  function getGestiones(){
+        return $this->objDao->listarGestion($this->con);
     }
     public  function  obtenerGestion($userId){
         return $this->objDao->buscarGestion($userId,$this->con);
     }
-    public function modificarGestion(ProductosDto $usuarioDto){
+    public function modificarGestion(GestionDto $usuarioDto){
         return $this->objDao->modificarGestion($usuarioDto,$this->con);
     }
     public function  cancelarGestion($idUser){

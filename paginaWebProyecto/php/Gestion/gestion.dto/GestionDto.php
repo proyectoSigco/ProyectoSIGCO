@@ -1,7 +1,7 @@
 <?php
 
 
-class Gestion {
+class GestionDto {
 
     private $idGestion;
     private $idUsuario;
@@ -12,7 +12,7 @@ class Gestion {
     private $observaciones;
     private $lugar;
     private $fechaVisita;
-    private $idEmpresa;
+    private $tipoVisita;
 
 
     public function getIdGestion()
@@ -121,15 +121,15 @@ class Gestion {
     }
 
 
-    public function getIdEmpresa()
+    public function getTipoVisita()
     {
-        return $this->idEmpresa;
+        return $this->tipoVisita;
     }
 
 
-    public function setIdEmpresa($idEmpresa)
+    public function setTipoVisita($tipoVisita)
     {
-        $this->idEmpresa = $idEmpresa;
+        $this->tipoVisita = $tipoVisita;
     }
 
 

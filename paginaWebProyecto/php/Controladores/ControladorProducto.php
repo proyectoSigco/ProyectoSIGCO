@@ -5,11 +5,7 @@ require_once '../Productos/productos.dto/ProductoDto.php';
 require_once '../Controladores/ControladorProducto.php';
 require_once '../Utilidades/Conexion.php';
 require_once '../fachada/FacadeProducto.php';
-if (isset ($_GET['idproducto'])){
-    $fachada = new Facade();
-    $fachada->cancelarProducto($_GET['idproducto']);
-    echo 'borre';
-}
+
 $fachada = new Facade();
 
 if (isset($_POST['codigoProducto'])) {
@@ -21,7 +17,7 @@ if (isset($_POST['codigoProducto'])) {
     $producto->setUnidadMedida($_POST['unidadProducto']);
     $producto->setIva($_POST['ivaProducto']);
     $producto->setValorUnitario($_POST['valorProducto']);
-    //$producto->setImagenProducto($_POST['ImagenProducto']);
+    //$gestion->setImagenProducto($_POST['ImagenProducto']);
     $producto->setPresentacion($_POST['presentacionProducto']);
     $producto->setCategoria($_POST['categoriaProducto']);
     $mensaje = $fachada->registrarProducto($producto);
@@ -43,4 +39,10 @@ if(isset($_POST['codigoProducto2'])){
     $mensaje = $fachada->actualizarProducto($producto);
 echo $mensaje;
 
+}
+
+if (isset ($_GET['idproducto'])){
+    $fachada = new Facade();
+    $fachada->cancelarProducto($_GET['idproducto']);
+    echo 'borre';
 }
