@@ -342,7 +342,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
                               <select class="form-control" name="categoriaProducto"  id="categoriaProducto" type="text" required title="Este campo es requerido">
-                                <option value="2221">any</option>
+                                  <?php
+                                  $p = new Facade();
+                                  $Productos = $p->obtenerCategoriaProducto();
+                                  foreach($Productos as $category) { ?>
+                                      <option value="<?php echo $category['IdCategoria']; ?>"><?php echo $category['Nombre']; ?></option>
+                                  <?php
+                                  }?>
+
                               </select>
 
 

@@ -19,7 +19,7 @@ class Facade {
         return $this->objDao->listarProductos($this->con);
     }
     public  function  obtenerProducto($userId){
-        return $this->objDao->listarProductos2($userId,$this->con);
+        return $this->objDao->obtenerProducto($userId,$this->con);
     }
     public function actualizarProducto(ProductosDto $usuarioDto){
         return $this->objDao->modificarProducto($usuarioDto,$this->con);
@@ -34,6 +34,6 @@ class Facade {
         return $this->objDao->obtenerPresentacionProducto($this->con);
     }
     public function  obtenerCategoriaProducto(){
-        return $this->objDao->obtenerPresentacionProducto($this->con);
+        return $this->objDao->obtenerCategoriaProducto($this->con);
     }
 }

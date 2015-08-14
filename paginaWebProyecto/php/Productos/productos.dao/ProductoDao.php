@@ -62,7 +62,7 @@ class ProductoDao {
              $cnn=null;
          }
 
-    public function listarProductos2($id,PDO $cnn){
+    public function obtenerProducto($id,PDO $cnn){
         try {
             $query = $cnn->prepare('select * from  productos where IdProducto=?');
             $query->bindParam(1,$id);
