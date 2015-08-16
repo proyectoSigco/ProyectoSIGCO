@@ -71,7 +71,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   |               | sidebar-mini                            |
   |---------------------------------------------------------|
   -->
-  <body class="skin-blue sidebar-mini">
+     <body class="skin-blue sidebar-mini">
     <div class="wrapper">
 
       <!-- Main Header -->
@@ -101,7 +101,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <!-- The user image in the navbar-->
                   <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image" />
                   <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                  <span class="hidden-xs">Julian Castaño</span>
+                  <span class="hidden-xs">Map-234556</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- The user image in the menu -->
@@ -214,7 +214,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <section class="content-header">
                   <h1>
                       Formulario de modificación
-                      <small>Clientes</small>
+                      <small>Productos</small>
                   </h1>
                   <ol class="breadcrumb">
                       <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
@@ -229,11 +229,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                       <!-- right column -->
                       <div class="col-md-6">
-                    <form id="defaultForm" action="#" method="post">
+                    <form id="defaultForm" action="../controllers/ControladorProducto.php" method="post">
 
                       <div class="box box-default">
                                   <div class="box-header with-border">
-                                      <h3 class="box-title">Nuevo cliente</h3>
+                                      <h3 class="box-title">Nuevo producto</h3>
                                   </div>
                                   <!-- /.box-header -->
                                   <div class="box-body">
@@ -241,7 +241,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                           <div class="form-group">
                                               <p>
                                                   Por favor diligencie el siguiente formulario para registrar un nuevo
-                                                  cliente.<br><br>
+                                                  prodcto.<br><br>
                                                   Recuerde que este formulario contiene campos obligatorios(*).
                                               </p>
                                           </div>
@@ -253,57 +253,91 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                           <div class="box box-default">
                               <div class="box-header with-border">
-                                  <h3 class="box-title">Modificar cliente</h3>
+                                  <h3 class="box-title">Modificar Producto</h3>
                               </div>
 
                            <div class="box-body">
                                  
                                       <div class="form-group">
-                                          <label for="cc">Documento*</label>
-                                          <input class="form-control" name="documento" id="cc" type="text" placeholder="10311433222" required>
+                                          <label for="cc">Codigo producto*</label>
+                                          <input class="form-control" name="codigoProducto" id="cc" type="text" placeholder="10311433222" required>
                                       </div>      
                                       <div class="form-group">
-                                          <label for="names">Nombres*</label>
-                                          <input class="form-control" name="nombres" id="names" type="text" placeholder="MK-1234" required>
+                                          <label for="names">Nombre de producto*</label>
+                                          <input class="form-control" name="nombreProducto" id="names" type="text" placeholder="Map-234556" required>
                                       </div>
                                       <div class="form-group">
-                                          <label for="apellido">Apellidos*</label>
-                                       <input class="form-control" name="apellidos" id="apellido" type="text" maxlength="20" placeholder="Castaño Ospina">
+                                          <label for="apellido">Descripción*</label>
+                                       <textarea class="form-control" name="descriptionProducto" id="descriptionProducto" type="text" maxlength="100" placeholder="" rows="5"></textarea>
 
                                       </div>
                                       <div class="form-group">
-                                          <label for="cargo">Empleo*</label>
-                                          <select class="form-control" name="cargo" id="cargo">
+                                          <label for="cargo">Unidad de medida*</label>
+                                          <select class="form-control" name="unidadProducto" id="cargo">
                                          <option value="">Seleccionar</option>
-                                         <option value="1">Asesor</option>
-                                         <option value="2">Coordinador</option>
+                                         <option value="1">cm</option>
+                                         <option value="2">mm</option>
+                                         <option value="2">dm</option>
                                           </select>
                                       </div>
-                                      <div class="form-group">
-                                          <label for="email">Email*</label>
-                                           <input class="form-control" name="email" id="email" type="text" placeholder="julian@sigco.com">
-                                      </div>
+                                       <div class="form-group">
+                                           <label for="cargo">IVA*</label>
+                                           <select class="form-control" name="ivaProducto" id="cargo">
+                                               <option value="">Seleccionar</option>
+                                               <?php
+                                               require '../facades/FacadeProducto.php';
+                                               require '../utilities/Conexion.php';
+                                               require_once  '../models/ProductoDao.php';
+                                               $producto = new Facade();
+                                               $Productos = $producto->obtenerImpuestosProducto();
+                                               foreach($Productos as $iterator) { ?>
+                                                   <option value="<?php echo $iterator['IdIva']; ?>"><?php echo $iterator['Porcentaje']; ?></option>
+                                               <?php
+                                               }?>
+                                           </select>
+                                       </div>
 
                                        <div class="form-group">
-                                          <label for="pass1">Contraseña*</label>
-                                        <input class="form-control" name="pass1" id="pass1" type="password" maxlength="20" required title="Este campo es requerido">
+                                          <label for="pass1">Valor*</label>
+                                        <input class="form-control" name="valorProducto" id="pass1" type="password" maxlength="20" required title="Este campo es requerido">
                                       </div>
-
-                                       <div class="form-group">
-                                          <label for="pass2">Confirmar contraseña*</label>
-                                  <input class="form-control" name="pass2" id="pass2" type="password" maxlength="20" required title="Este campo es requerido" >
-                                      </div>
-                                    
 
                                     <div class="form-group">
                                           <label for="imagen">Imagen</label>
-                                            <input  name="ImagenProducto" id="imagen" type="file" multiple=true class="file"  title="Este campo es requerido">                                  
+                                            <input  name="ImagenProducto" id="imagen" type="file" multiple=true class="file"  title="Este campo es requerido">
                                     </div>
+                                       <div class="form-group">
+                                           <label for="presentacionProducto">Presentación producto*</label>
+                                           <select class="form-control" name="presentacionProducto" id="cargo">
+                                               <option value="">Selecionar </option>
+                                               <?php
+
+                                               $producto = new Facade();
+                                               $Productos = $producto->obtenerPresentacionProducto();
+                                               foreach($Productos as $iterator) { ?>
+                                                   <option value="<?php echo $iterator['IdPresentacion']; ?>"><?php echo $iterator['Nombre']; ?></option>
+                                               <?php
+                                               }?>
+                                           </select>
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="categoriaProducto">Categoria producto*</label>
+                                           <select class="form-control" name="categoriaProducto" id="cargo">
+                                               <option value="">Seleccionar</option>
+                                               <?php
+                                               $producto = new Facade();
+                                               $Productos = $producto->obtenerCategoriaProducto();
+                                               foreach($Productos as $iterator) { ?>
+                                               <option value="<?php echo $iterator['IdCategoria']; ?>"><?php echo $iterator['Nombre']; ?></option>
+                                               <?php
+                                               }?>
+                                           </select>
+                                       </div>
                                     <div class="box-footer">
                                           <input type="button" class="btn btn-warning" tabindex="15"
                                                  onclick="location.href='clientes.php'" value="Cancelar"/>
                                           <button type="submit" class="btn btn-success pull-right" tabindex="14"
-                                                  value="guardar" name=" guardar" id="guardar">Guardar producto
+                                                  value="guardar" name=" guardar" id="guardar">Guardar cliente
                                           </button>
                                       </div>
 

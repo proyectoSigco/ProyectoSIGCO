@@ -10,6 +10,23 @@ class ProductosDto {
     private  $iva;
     private  $valorUnitario;
     private  $imagenProducto;
+
+    /**
+     * @return mixed
+     */
+    public function getImagenProducto()
+    {
+        return $this->imagenProducto;
+    }
+
+    /**
+     * @param mixed $imagenProducto
+     */
+    public function setImagenProducto($imagenProducto)
+    {
+        $this->imagenProducto = $imagenProducto;
+    }
+
     private  $presentacion;
     private  $categoriaProducto;
 
@@ -99,17 +116,5 @@ class ProductosDto {
     {
         $this->valorUnitario = $valorUnitario;
     }
-
-
-    public function getImagenProducto()
-    {
-        return $this->imagenProducto;
-    }
-
-    public function setImagenProducto($imagen)
-    {
-        $this->imagenProducto = $imagen;
-    }
-
 
 }

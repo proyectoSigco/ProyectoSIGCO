@@ -36,4 +36,7 @@ class Facade {
     public function  obtenerCategoriaProducto(){
         return $this->objDao->obtenerCategoriaProducto($this->con);
     }
+    public function  obtenerImpuestosProducto(){
+        return $this->objDao->obtenerIvaProducto($this->con);
+    }
 }
