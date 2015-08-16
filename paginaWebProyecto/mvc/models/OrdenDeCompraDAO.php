@@ -6,7 +6,7 @@ class OrdenDeCompraDAO {
 
     }
 
-    public function ModificarOrdenDeCompra(OrdenDeCompraDTO $ordenDeCompraDTO, PDO $cnn){
+    public function ModificarOrdenDeCompra(OrdenesDeCompraDTO $ordenDeCompraDTO, PDO $cnn){
         try {
             $query = $cnn->prepare("UPDATE OrdenDeCompra SET Estado=?, Fecha=?, Total=?, Descuento=?, GranTotal=?, Observaciones=? WHERE IdOrden=?");
             $query->bindParam(1, $ordenDeCompraDTO->getEstado() );
@@ -26,7 +26,7 @@ class OrdenDeCompraDAO {
         return $mensaje;
     }
 
-    public function CancelarOrdenDeCompra(OrdenDeCompraDTO $ordenDeCompraDTO, PDO $cnn){
+    public function CancelarOrdenDeCompra(OrdenesDeCompraDTO $ordenDeCompraDTO, PDO $cnn){
         try {
             $query = $cnn->prepare("UPDATE OrdenDeCompra SET Estado=? WHERE IdOrden=?)");
             $query->bindParam(1, $Estado());
@@ -42,7 +42,7 @@ class OrdenDeCompraDAO {
     }
 
 
-    public function ListarOrdenDeCompra(OrdenDeCompraDTO $ordenDeCompraDTO, PDO $cnn){
+    public function ListarOrdenDeCompra(OrdenesDeCompraDTO $ordenDeCompraDTO, PDO $cnn){
         try {
             $query = $cnn->prepare("SELECT * FROM OrdenDeCompra SET IdOrden=?");
             $query->bindParam(1, $IdOrden());
@@ -56,7 +56,7 @@ class OrdenDeCompraDAO {
         return $mensaje;
     }
 
-    public function BuscarOrdenDeCompra(OrdenDeCompraDTO $ordenDeCompraDTO, PDO $cnn){
+    public function BuscarOrdenDeCompra(OrdenesDeCompraDTO $ordenDeCompraDTO, PDO $cnn){
         try {
             $query = $cnn->prepare("SELECT IdOrden From OrdenDeCompra SET IdOrden=?");
             $query->bindParam(1, $IdOrden());

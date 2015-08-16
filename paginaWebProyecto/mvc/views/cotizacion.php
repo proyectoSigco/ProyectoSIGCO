@@ -6,7 +6,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>| Inicio</title>
+    <title>| Crear Cotización</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, iterator-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.4 -->
@@ -202,11 +202,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Registrar Cotización
+            Crear Cotización
 <!--            <small>Optional description</small>-->
           </h1>
           <ol class="breadcrumb">
-            <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Registrar Cotización</a></li>
+            <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Crear Cotización</a></li>
           </ol>
         </section>
 
