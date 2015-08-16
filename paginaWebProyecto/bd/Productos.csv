@@ -1,0 +1,101 @@
+IdProucto,Nombre,Descripcion,UnidadMedida,IdIva,ValorBase,IdPresentacion,IdCategoria,Estado,rutaImagen
+1,Simvastatin,In scelerisque scelerisque dui. Suspendisse ac metus vitae,cm3,1,31316,8,39,1,SinCargarImagen
+2,Hydrochlorothiazide,tincidunt,mm3,2,115070,14,15,1,SinCargarImagen
+3,Lidoderm,"vestibulum lorem, sit amet ultricies sem magna nec quam. Curabitur vel lectus.",cm3,3,197805,16,34,1,SinCargarImagen
+4,Triamterene/Hydrochlorothiazide,"ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam",cm3,1,175823,21,46,1,SinCargarImagen
+5,Amoxicillin Trihydrate/Potassium Clavulanate,"lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem ac risus.",dm3,1,88273,6,25,1,SinCargarImagen
+6,Zolpidem Tartrate,"et, magna. Praesent interdum ligula eu enim. Etiam imperdiet dictum magna. Ut tincidunt orci quis lectus.",cm3,3,196841,12,1,1,SinCargarImagen
+7,Metoprolol Succinate,"Cras dolor dolor, tempus non, lacinia at, iaculis quis, pede. Praesent eu dui. Cum sociis natoque penatibus et magnis dis",cm3,2,24127,2,25,1,SinCargarImagen
+8,Sertraline HCl,"ipsum dolor sit amet,",cm3,2,70849,18,17,1,SinCargarImagen
+9,Alprazolam,"pede. Suspendisse dui. Fusce diam nunc, ullamcorper eu,",cm3,3,101573,12,5,0,SinCargarImagen
+10,Nasonex,"Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus.",dm3,2,39843,21,41,1,SinCargarImagen
+11,Lexapro,mauris eu elit. Nulla facilisi. Sed neque. Sed eget lacus.,dm3,1,49007,4,3,1,SinCargarImagen
+12,Spiriva Handihaler,Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis,dm3,2,59717,3,49,1,SinCargarImagen
+13,Diovan,"suscipit, est ac facilisis facilisis, magna tellus faucibus leo, in lobortis tellus justo sit",cm3,3,17864,11,47,1,SinCargarImagen
+14,Sertraline HCl,"porttitor tellus non magna. Nam ligula elit, pretium et, rutrum non, hendrerit id, ante. Nunc mauris sapien, cursus",mm3,1,199197,7,24,1,SinCargarImagen
+15,Lisinopril,"nunc, ullamcorper eu, euismod ac, fermentum vel, mauris.",cm3,2,131063,16,37,1,SinCargarImagen
+16,Losartan Potassium,"tempus eu, ligula. Aenean euismod mauris eu elit. Nulla facilisi. Sed neque. Sed eget lacus. Mauris non dui nec",dm3,2,153260,18,33,1,SinCargarImagen
+17,Januvia,"egestas rhoncus. Proin nisl sem, consequat nec, mollis vitae, posuere",mm3,1,48966,13,33,1,SinCargarImagen
+18,Flovent HFA,Donec tincidunt. Donec vitae erat vel pede blandit congue.,cm3,3,144254,5,29,1,SinCargarImagen
+19,Actos,"mi. Aliquam gravida mauris ut mi. Duis risus odio, auctor vitae, aliquet nec, imperdiet",dm3,3,167542,10,19,1,SinCargarImagen
+20,Pantoprazole Sodium,In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien,dm3,1,174090,15,50,1,SinCargarImagen
+21,Fluticasone Propionate,in felis. Nulla tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem semper,mm3,1,121483,1,26,1,SinCargarImagen
+22,Lisinopril,Pellentesque ut,cm3,3,115207,13,48,1,SinCargarImagen
+23,Folic Acid,"sed dictum eleifend, nunc risus varius orci, in consequat enim diam vel arcu. Curabitur ut odio vel est tempor",mm3,2,44201,2,15,1,SinCargarImagen
+24,Furosemide,pede blandit congue. In scelerisque scelerisque dui. Suspendisse ac metus vitae velit egestas,dm3,1,59100,15,18,1,SinCargarImagen
+25,Doxycycline Hyclate,"sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut quam vel sapien",dm3,3,168977,21,28,1,SinCargarImagen
+26,Gianvi,"ante, iaculis nec, eleifend non, dapibus rutrum, justo. Praesent luctus. Curabitur egestas nunc sed libero.",cm3,3,167438,16,16,1,SinCargarImagen
+27,Nasonex,"ornare, elit elit fermentum risus, at fringilla purus mauris a nunc. In at pede.",dm3,1,117318,9,1,1,SinCargarImagen
+28,Lisinopril,pede blandit congue. In scelerisque scelerisque dui. Suspendisse ac metus vitae velit egestas lacinia. Sed,dm3,1,114372,8,1,1,SinCargarImagen
+29,Citalopram HBR,"Maecenas mi felis, adipiscing fringilla, porttitor vulputate, posuere vulputate, lacus. Cras interdum. Nunc sollicitudin commodo ipsum. Suspendisse",dm3,2,38633,10,43,1,SinCargarImagen
+30,Alprazolam,lectus,mm3,2,117143,8,33,1,SinCargarImagen
+31,Naproxen,Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis,cm3,2,162386,17,5,1,SinCargarImagen
+32,Endocet,est. Mauris eu,dm3,3,175893,4,7,0,SinCargarImagen
+33,Fluticasone Propionate,"eleifend non, dapibus rutrum, justo. Praesent luctus. Curabitur egestas nunc sed libero.",dm3,1,53529,13,5,1,SinCargarImagen
+34,Vyvanse,semper pretium neque. Morbi quis urna. Nunc quis arcu vel quam dignissim pharetra. Nam ac,mm3,2,110460,18,34,1,SinCargarImagen
+35,Zolpidem Tartrate,natoque,cm3,1,134782,13,43,1,SinCargarImagen
+36,Proair HFA,"ornare, elit elit fermentum risus, at fringilla purus mauris a",mm3,1,26016,1,11,1,SinCargarImagen
+37,Clindamycin HCl,"elit, pretium et, rutrum non, hendrerit id, ante. Nunc mauris sapien, cursus in, hendrerit consectetuer, cursus et, magna. Praesent",dm3,2,164679,6,26,1,SinCargarImagen
+38,Ibuprofen (Rx),"ut, pharetra sed, hendrerit",mm3,3,141317,1,26,1,SinCargarImagen
+39,Fluoxetine HCl,"non, lacinia at, iaculis quis, pede. Praesent eu dui.",cm3,3,82348,15,14,1,SinCargarImagen
+40,Amoxicillin,"eleifend egestas. Sed pharetra, felis eget varius ultrices, mauris ipsum porta elit, a",cm3,1,178742,17,14,1,SinCargarImagen
+41,Simvastatin,"sem,",mm3,1,118281,18,46,1,SinCargarImagen
+42,Proair HFA,"diam lorem, auctor quis, tristique ac, eleifend vitae, erat. Vivamus nisi. Mauris nulla.",mm3,3,170701,13,27,1,SinCargarImagen
+43,Metoprolol Succinate,"cursus in, hendrerit consectetuer, cursus et,",mm3,1,82786,5,43,1,SinCargarImagen
+44,Hydrocodone/APAP,turpis non enim. Mauris quis turpis vitae purus gravida sagittis. Duis gravida. Praesent,cm3,2,179284,7,31,1,SinCargarImagen
+45,Amitriptyline HCl,"lorem eu metus. In lorem. Donec elementum, lorem ut aliquam iaculis, lacus pede sagittis",dm3,3,119937,2,42,1,SinCargarImagen
+46,Zolpidem Tartrate,Nam consequat dolor,cm3,3,87104,16,21,1,SinCargarImagen
+47,Warfarin Sodium,"rutrum non, hendrerit id, ante. Nunc mauris sapien, cursus in, hendrerit",dm3,3,158042,9,32,1,SinCargarImagen
+48,Lidoderm,Proin eget odio. Aliquam vulputate ullamcorper magna.,mm3,1,65757,17,26,1,SinCargarImagen
+49,Seroquel,Aliquam vulputate ullamcorper magna. Sed eu eros. Nam consequat dolor vitae dolor. Donec fringilla.,dm3,1,134907,5,47,1,SinCargarImagen
+50,Metoprolol Succinate,"lectus. Nullam suscipit,",cm3,1,113961,15,9,1,SinCargarImagen
+51,Clonazepam,"et tristique pellentesque, tellus sem mollis dui, in sodales elit",mm3,2,152547,13,6,1,SinCargarImagen
+52,Loestrin 24 Fe,velit. Aliquam,mm3,1,93841,17,44,1,SinCargarImagen
+53,Alprazolam,"felis ullamcorper viverra. Maecenas iaculis aliquet diam. Sed diam lorem, auctor quis, tristique ac, eleifend vitae,",mm3,1,125426,7,21,1,SinCargarImagen
+54,Cyclobenzaprin HCl,semper cursus. Integer mollis. Integer tincidunt aliquam arcu. Aliquam ultrices iaculis odio. Nam interdum,mm3,2,19140,13,39,1,SinCargarImagen
+55,Lisinopril,"erat nonummy ultricies ornare, elit elit fermentum risus, at fringilla purus mauris a nunc. In at pede. Cras vulputate",mm3,1,112654,7,24,1,SinCargarImagen
+56,Synthroid,"lectus quis massa. Mauris vestibulum, neque",cm3,1,175448,3,31,1,SinCargarImagen
+57,Gabapentin,nunc interdum feugiat. Sed nec metus facilisis lorem tristique aliquet. Phasellus fermentum convallis ligula. Donec luctus,mm3,3,75912,20,37,1,SinCargarImagen
+58,Digoxin,ligula eu enim. Etiam imperdiet dictum magna. Ut tincidunt orci quis,cm3,2,152480,7,8,1,SinCargarImagen
+59,Fluticasone Propionate,"ante. Nunc mauris sapien, cursus in, hendrerit consectetuer, cursus et, magna. Praesent interdum ligula",cm3,3,38830,8,27,0,SinCargarImagen
+60,Furosemide,"sed leo. Cras vehicula aliquet libero. Integer in magna. Phasellus dolor elit, pellentesque a, facilisis non, bibendum",dm3,2,21309,13,5,1,SinCargarImagen
+61,APAP/Codeine,"a, scelerisque sed, sapien. Nunc pulvinar arcu",mm3,2,177872,15,2,1,SinCargarImagen
+62,Prednisone,"mauris id sapien. Cras dolor dolor, tempus non, lacinia at, iaculis quis, pede. Praesent eu dui. Cum sociis natoque",mm3,2,177912,18,9,1,SinCargarImagen
+63,Niaspan,"sem semper erat, in consectetuer ipsum nunc id enim. Curabitur massa. Vestibulum accumsan",dm3,3,102295,8,33,1,SinCargarImagen
+64,Nexium,non sapien molestie,dm3,1,50108,2,36,1,SinCargarImagen
+65,Lantus,"nulla. Integer vulputate, risus a ultricies adipiscing, enim mi tempor lorem, eget mollis lectus pede",mm3,3,199754,6,29,1,SinCargarImagen
+66,Levothyroxine Sodium,et malesuada,mm3,1,12415,19,45,1,SinCargarImagen
+67,Atenolol,"Proin nisl sem, consequat nec,",dm3,2,197855,18,43,1,SinCargarImagen
+68,Amitriptyline HCl,"at, iaculis quis, pede. Praesent eu",dm3,2,59621,11,10,1,SinCargarImagen
+69,Ibuprofen (Rx),pharetra. Nam ac nulla. In tincidunt congue turpis. In condimentum. Donec at arcu.,cm3,2,173258,18,24,1,SinCargarImagen
+70,Premarin,Nunc pulvinar arcu et pede. Nunc sed orci lobortis augue,cm3,1,32563,17,23,1,SinCargarImagen
+71,Lisinopril,"nec luctus felis purus ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et, rutrum eu, ultrices",dm3,2,21688,3,7,1,SinCargarImagen
+72,Proair HFA,"Nulla tincidunt, neque vitae semper egestas, urna justo faucibus",cm3,1,131459,14,21,1,SinCargarImagen
+73,Oxycontin,ante ipsum primis in faucibus orci luctus et ultrices posuere,dm3,1,116427,4,11,1,SinCargarImagen
+74,Glyburide,In condimentum. Donec at arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;,mm3,2,59993,17,25,1,SinCargarImagen
+75,Alprazolam,"erat nonummy ultricies ornare, elit elit fermentum risus, at fringilla purus mauris a nunc.",mm3,3,104845,6,45,1,SinCargarImagen
+76,Lovastatin,"a, arcu. Sed et libero. Proin mi. Aliquam gravida mauris ut mi. Duis risus",cm3,1,14154,19,33,1,SinCargarImagen
+77,Sertraline HCl,"Maecenas iaculis aliquet diam. Sed diam lorem, auctor quis, tristique ac, eleifend vitae, erat. Vivamus nisi.",dm3,3,181987,13,50,1,SinCargarImagen
+78,Vyvanse,"nonummy ut, molestie in, tempus eu, ligula. Aenean euismod",cm3,3,189143,11,34,1,SinCargarImagen
+79,Flovent HFA,natoque penatibus et magnis dis parturient,dm3,1,65929,10,42,1,SinCargarImagen
+80,Amlodipine Besylate,tincidunt pede ac urna. Ut tincidunt vehicula risus. Nulla eget metus eu erat semper,dm3,1,98361,20,45,1,SinCargarImagen
+81,Risperidone,"et magnis dis parturient montes, nascetur ridiculus mus. Proin",dm3,3,52010,7,50,1,SinCargarImagen
+82,Oxycontin,sodales elit erat vitae,cm3,2,196238,18,22,1,SinCargarImagen
+83,Sertraline HCl,"varius et, euismod et, commodo at, libero. Morbi accumsan laoreet ipsum. Curabitur consequat, lectus sit",dm3,3,35682,17,44,1,SinCargarImagen
+84,Levoxyl,"lacus. Quisque purus sapien, gravida non, sollicitudin a, malesuada id, erat.",cm3,1,104348,11,49,1,SinCargarImagen
+85,Cheratussin AC,feugiat metus sit amet ante. Vivamus,cm3,1,83108,13,48,1,SinCargarImagen
+86,Risperidone,vitae semper,mm3,2,115182,19,24,1,SinCargarImagen
+87,Nuvaring,mus.,cm3,3,184725,6,47,1,SinCargarImagen
+88,Seroquel,"ultricies adipiscing, enim mi tempor lorem, eget mollis lectus pede et risus. Quisque libero lacus, varius",cm3,3,162350,4,49,1,SinCargarImagen
+89,Levaquin,"non, luctus",dm3,1,169740,20,50,1,SinCargarImagen
+90,Metoprolol Tartrate ,augue. Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad,mm3,3,189180,12,31,1,SinCargarImagen
+91,Synthroid,"mollis lectus pede et risus. Quisque libero lacus, varius et, euismod et, commodo at, libero. Morbi",cm3,3,10077,18,2,1,SinCargarImagen
+92,Metoprolol Succinatee,Vestibulum ante,cm3,1,144425,3,44,1,SinCargarImagen
+93,Plavix,"aliquet odio. Etiam ligula tortor, dictum eu, placerat eget, venenatis a, magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",mm3,2,120803,4,9,1,SinCargarImagen
+94,Alprazolam,at fringilla purus mauris a nunc. In,mm3,1,64122,3,1,1,SinCargarImagen
+95,Zolpidem Tartrate,Proin eget odio. Aliquam vulputate,mm3,1,120457,18,1,1,SinCargarImagen
+96,Ventolin HFA,"rutrum non, hendrerit id, ante. Nunc mauris sapien, cursus in, hendrerit consectetuer, cursus et, magna. Praesent interdum",dm3,3,183008,5,4,1,SinCargarImagen
+97,Vitamin D (Rx),urna. Nunc quis arcu vel quam dignissim pharetra. Nam ac nulla. In tincidunt congue turpis. In condimentum. Donec,dm3,3,26172,15,12,1,SinCargarImagen
+98,Cheratussin AC,Aenean eget magna. Suspendisse tristique neque venenatis lacus. Etiam bibendum fermentum metus. Aenean sed pede nec,dm3,1,83362,6,25,1,SinCargarImagen
+99,Lexapro,"ultricies ligula. Nullam enim. Sed nulla ante, iaculis nec, eleifend non, dapibus rutrum, justo. Praesent luctus.",dm3,1,118443,14,25,1,SinCargarImagen
+100,Metoprolol Tartrate ,"vel, faucibus id, libero. Donec consectetuer",dm3,2,53669,18,2,1,SinCargarImagen
