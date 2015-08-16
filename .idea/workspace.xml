@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0173a252-b2e2-4aac-b651-27681a005fb4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/mvc/views/borrar.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/cotizacion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/gestion.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/indexCotizacionDetalles.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/listarGestion.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/modificar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/producto.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/productoListar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorGestion.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorProducto.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dao/GestionDao.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dto/GestionDto.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Productos/productos.dao/ProductoDao.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Productos/productos.dto/ProductoDto.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Utilidades/Conexion.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeGestion.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeProducto.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="0173a252-b2e2-4aac-b651-27681a005fb4" name="Default" comment="" />
     <ignored path="ProyectoSIGCO.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -151,28 +132,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paginaWebProyecto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
