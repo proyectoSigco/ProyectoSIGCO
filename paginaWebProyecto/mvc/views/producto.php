@@ -97,7 +97,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <!-- The user image in the navbar-->
                   <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image" />
                   <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                  <span class="hidden-xs">Julian Castaño</span>
+                  <span class="hidden-xs">Luis Carlos Diaz</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- The user image in the menu -->
@@ -513,16 +513,15 @@ $(document).ready(function() {
 </html>
 <script>
 
-    /*var myvar = <?php if (isset($_GET['mensaje']))
+    var myvar =JSON.parse(' <?php if (isset($_GET['mensaje']))
                 {
                 echo json_encode($_GET['mensaje']);
-                } ?>;
-    alert(myvar);*/
+                } ?>');
 
-    /*$("#registro").click(function() {
+    $("#registro").click(function() {
 
             var n = noty({
-                text:$.get( "producto.php" ) ,
+                text:myvar ,
                 theme: 'relax',
                 layout: 'centerRight',
                 closeWith: ['click', 'hover'],
@@ -533,12 +532,8 @@ $(document).ready(function() {
                 }
 
             });
-    });*/
-    $("#registro").click(function(){
-        $.get("producto.php", function(data, status){
-            alert("Data: " + data + "\nStatus: " + status);
-        });
     });
+
 
 
 </script>

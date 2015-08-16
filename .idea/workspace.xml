@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0173a252-b2e2-4aac-b651-27681a005fb4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeGestion.php" afterPath="$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeGestion.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dao/GestionDao.php" afterPath="$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dao/GestionDao.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/gestion.php" afterPath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/gestion.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/mvc/views/borrar.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/cotizacion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/gestion.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/indexCotizacionDetalles.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/listarGestion.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/modificar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/producto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/productoListar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorGestion.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorProducto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dao/GestionDao.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dto/GestionDto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Productos/productos.dao/ProductoDao.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Productos/productos.dto/ProductoDto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/Utilidades/Conexion.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeGestion.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeProducto.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ProyectoSIGCO.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,84 +43,7 @@
     <favorites_list name="ProyectoSIGCO" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="gestion.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/gestion.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22823985" vertical-offset="4148" max-vertical-offset="8748">
-              <caret line="237" column="127" selection-start-line="237" selection-start-column="127" selection-end-line="237" selection-end-column="127" />
-              <folding>
-                <marker date="1439536662480" expanded="true" signature="17693:17908" placeholder="..." />
-                <marker date="1439536662480" expanded="true" signature="17954:17996" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="producto.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/producto.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.47541" vertical-offset="5606" max-vertical-offset="9882">
-              <caret line="330" column="37" selection-start-line="321" selection-start-column="33" selection-end-line="330" selection-end-column="37" />
-              <folding>
-                <marker date="1439535358212" expanded="true" signature="18583:18794" placeholder="..." />
-                <marker date="1439535358212" expanded="true" signature="18840:18878" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductoDao.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Productos/productos.dao/ProductoDao.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.4074073" vertical-offset="1501" max-vertical-offset="2322">
-              <caret line="90" column="48" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="48" />
-              <folding>
-                <marker date="1439533923312" expanded="true" signature="199:307" placeholder="INSERT INTO ..." />
-                <marker date="1439533923312" expanded="true" signature="199:317" placeholder="INSERT INTO ..." />
-                <marker date="1439533923312" expanded="true" signature="199:323" placeholder="INSERT INTO ..." />
-                <marker date="1439533923312" expanded="true" signature="199:527" placeholder="INSERT INTO ..." />
-                <marker date="1439533923312" expanded="true" signature="1204:1333" placeholder="UPDATE produ..." />
-                <marker date="1439533923312" expanded="true" signature="2362:2411" placeholder="SELECT * FRO..productos..." />
-                <marker date="1439533923312" expanded="true" signature="2362:2427" placeholder="SELECT * FRO..productos..." />
-                <marker date="1439533923312" expanded="true" signature="2800:2843" placeholder="select * fro..productos..." />
-                <marker date="1439533923312" expanded="true" signature="3223:3273" placeholder="UPDATE produ..." />
-                <marker date="1439533923312" expanded="true" signature="3681:3707" placeholder="select * fro..presentacion..." />
-                <marker date="1439533923312" expanded="true" signature="3987:4036" placeholder="select * fro..presentacion..." />
-                <marker date="1439533923312" expanded="true" signature="4359:4390" placeholder="select * fro..categoriaproducto..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FacadeGestion.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeGestion.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="792">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestionDao.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dao/GestionDao.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.740741" vertical-offset="1375" max-vertical-offset="1926">
-              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-              <folding>
-                <marker date="1439536479140" expanded="true" signature="179:340" placeholder="INSERT INTO ..." />
-                <marker date="1439536479140" expanded="true" signature="1111:1232" placeholder="UPDATE gesti..." />
-                <marker date="1439536479140" expanded="true" signature="2129:2168" placeholder="SELECT * FRO..Gestion..." />
-                <marker date="1439536479140" expanded="true" signature="2564:2611" placeholder="UPDATE Gesti..." />
-                <marker date="1439536479140" expanded="true" signature="2985:3006" placeholder="Select * fro..gestion..." />
-                <marker date="1439536479140" expanded="true" signature="3349:3370" placeholder="Select * fro..cliente..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -119,11 +57,11 @@
         <option value="$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorProducto.php" />
         <option value="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/listarGestion.php" />
         <option value="$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorGestion.php" />
-        <option value="$PROJECT_DIR$/paginaWebProyecto/php/Productos/productos.dao/ProductoDao.php" />
-        <option value="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/producto.php" />
         <option value="$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeProducto.php" />
         <option value="$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dao/GestionDao.php" />
         <option value="$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeGestion.php" />
+        <option value="$PROJECT_DIR$/paginaWebProyecto/php/Productos/productos.dao/ProductoDao.php" />
+        <option value="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/producto.php" />
         <option value="$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/gestion.php" />
       </list>
     </option>
@@ -165,6 +103,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -211,7 +150,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
+              <option name="myItemId" value="mvc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -229,161 +168,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Productos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paginaWebProyecto" />
+              <option name="myItemId" value="mvc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Productos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="productos.dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paginaWebProyecto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gestion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gestion.dto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paginaWebProyecto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gestion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gestion.dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paginaWebProyecto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fachada" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paginaWebProyecto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controladores" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProyectoSIGCO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paginaWebProyecto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paginas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="formularios" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,6 +205,9 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -418,9 +215,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="1">
@@ -447,27 +241,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -491,549 +285,5 @@
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="630">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="792">
-          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dao/GestionDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1692">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <marker date="1439536479140" expanded="true" signature="179:340" placeholder="INSERT INTO ..." />
-            <marker date="1439536479140" expanded="true" signature="1111:1232" placeholder="UPDATE gesti..." />
-            <marker date="1439536479140" expanded="true" signature="2129:2168" placeholder="SELECT * FRO..Gestion..." />
-            <marker date="1439536479140" expanded="true" signature="2564:2611" placeholder="UPDATE Gesti..." />
-            <marker date="1439536479140" expanded="true" signature="2985:3006" placeholder="Select * fro..gestion..." />
-            <marker date="1439536479140" expanded="true" signature="3349:3370" placeholder="Select * fro..cliente..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/listarGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6120">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorProducto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="954">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Productos/productos.dao/ProductoDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="2322">
-          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
-          <folding>
-            <marker date="1439533923312" expanded="true" signature="199:307" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:317" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:323" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:527" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="1204:1333" placeholder="UPDATE produ..." />
-            <marker date="1439533923312" expanded="true" signature="2362:2411" placeholder="SELECT * FRO..productos..." />
-            <marker date="1439533923312" expanded="true" signature="2362:2427" placeholder="SELECT * FRO..productos..." />
-            <marker date="1439533923312" expanded="true" signature="2800:2843" placeholder="select * fro..productos..." />
-            <marker date="1439533923312" expanded="true" signature="3223:3273" placeholder="UPDATE produ..." />
-            <marker date="1439533923312" expanded="true" signature="3681:3707" placeholder="select * fro..presentacion..." />
-            <marker date="1439533923312" expanded="true" signature="3987:4036" placeholder="select * fro..presentacion..." />
-            <marker date="1439533923312" expanded="true" signature="4359:4390" placeholder="select * fro..categoriaproducto..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/modificar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5660" max-vertical-offset="9792">
-          <caret line="336" column="38" selection-start-line="336" selection-start-column="38" selection-end-line="336" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/producto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6451" max-vertical-offset="9756">
-          <caret line="526" column="0" selection-start-line="526" selection-start-column="0" selection-end-line="526" selection-end-column="0" />
-          <folding>
-            <marker date="1439535358212" expanded="true" signature="18583:18794" placeholder="..." />
-            <marker date="1439535358212" expanded="true" signature="18840:18878" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dto/GestionDto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1812" max-vertical-offset="2862">
-          <caret line="113" column="34" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/gestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8514">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1439536662480" expanded="true" signature="17693:17908" placeholder="..." />
-            <marker date="1439536662480" expanded="true" signature="17954:17996" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="666">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="792">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dao/GestionDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1656">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <marker date="1439536479140" expanded="true" signature="179:340" placeholder="INSERT INTO ..." />
-            <marker date="1439536479140" expanded="true" signature="1111:1232" placeholder="UPDATE gesti..." />
-            <marker date="1439536479140" expanded="true" signature="2129:2168" placeholder="SELECT * FRO..Gestion..." />
-            <marker date="1439536479140" expanded="true" signature="2564:2611" placeholder="UPDATE Gesti..." />
-            <marker date="1439536479140" expanded="true" signature="2985:3006" placeholder="Select * fro..gestion..." />
-            <marker date="1439536479140" expanded="true" signature="3349:3370" placeholder="Select * fro..cliente..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorProducto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="918">
-          <caret line="30" column="1" selection-start-line="2" selection-start-column="0" selection-end-line="30" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Productos/productos.dao/ProductoDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="2340">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-          <folding>
-            <marker date="1439533923312" expanded="true" signature="199:307" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:317" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:323" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:527" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="1204:1333" placeholder="UPDATE produ..." />
-            <marker date="1439533923312" expanded="true" signature="2362:2411" placeholder="SELECT * FRO..productos..." />
-            <marker date="1439533923312" expanded="true" signature="2362:2427" placeholder="SELECT * FRO..productos..." />
-            <marker date="1439533923312" expanded="true" signature="2800:2843" placeholder="select * fro..productos..." />
-            <marker date="1439533923312" expanded="true" signature="3223:3273" placeholder="UPDATE produ..." />
-            <marker date="1439533923312" expanded="true" signature="3681:3707" placeholder="select * fro..presentacion..." />
-            <marker date="1439533923312" expanded="true" signature="3987:4036" placeholder="select * fro..presentacion..." />
-            <marker date="1439533923312" expanded="true" signature="4359:4390" placeholder="select * fro..categoriaproducto..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeProducto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="792">
-          <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/modificar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5660" max-vertical-offset="9792">
-          <caret line="336" column="38" selection-start-line="336" selection-start-column="38" selection-end-line="336" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/producto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9098" max-vertical-offset="9684">
-          <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
-          <folding>
-            <marker date="1439535358212" expanded="true" signature="18583:18794" placeholder="..." />
-            <marker date="1439535358212" expanded="true" signature="18840:18878" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dto/GestionDto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1812" max-vertical-offset="2862">
-          <caret line="113" column="34" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/gestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4559" max-vertical-offset="8262">
-          <caret line="261" column="113" selection-start-line="261" selection-start-column="113" selection-end-line="261" selection-end-column="113" />
-          <folding>
-            <marker date="1439536662480" expanded="true" signature="17693:17908" placeholder="..." />
-            <marker date="1439536662480" expanded="true" signature="17954:17996" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="666">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="792">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dao/GestionDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1439536479140" expanded="true" signature="179:340" placeholder="INSERT INTO ..." />
-            <marker date="1439536479140" expanded="true" signature="1111:1232" placeholder="UPDATE gesti..." />
-            <marker date="1439536479140" expanded="true" signature="2129:2168" placeholder="SELECT * FRO..Gestion..." />
-            <marker date="1439536479140" expanded="true" signature="2564:2611" placeholder="UPDATE Gesti..." />
-            <marker date="1439536479140" expanded="true" signature="2985:3006" placeholder="Select * fro..gestion..." />
-            <marker date="1439536479140" expanded="true" signature="3349:3370" placeholder="Select * fro..cliente..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorProducto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="918">
-          <caret line="30" column="1" selection-start-line="2" selection-start-column="0" selection-end-line="30" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Productos/productos.dao/ProductoDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="2340">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-          <folding>
-            <marker date="1439533923312" expanded="true" signature="199:307" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:317" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:323" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:527" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="1204:1333" placeholder="UPDATE produ..." />
-            <marker date="1439533923312" expanded="true" signature="2362:2411" placeholder="SELECT * FRO..productos..." />
-            <marker date="1439533923312" expanded="true" signature="2362:2427" placeholder="SELECT * FRO..productos..." />
-            <marker date="1439533923312" expanded="true" signature="2800:2843" placeholder="select * fro..productos..." />
-            <marker date="1439533923312" expanded="true" signature="3223:3273" placeholder="UPDATE produ..." />
-            <marker date="1439533923312" expanded="true" signature="3681:3707" placeholder="select * fro..presentacion..." />
-            <marker date="1439533923312" expanded="true" signature="3987:4036" placeholder="select * fro..presentacion..." />
-            <marker date="1439533923312" expanded="true" signature="4359:4390" placeholder="select * fro..categoriaproducto..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeProducto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="792">
-          <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/modificar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5660" max-vertical-offset="9792">
-          <caret line="336" column="38" selection-start-line="336" selection-start-column="38" selection-end-line="336" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/producto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9098" max-vertical-offset="9684">
-          <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
-          <folding>
-            <marker date="1439535358212" expanded="true" signature="18583:18794" placeholder="..." />
-            <marker date="1439535358212" expanded="true" signature="18840:18878" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/productoListar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4076" max-vertical-offset="6138">
-          <caret line="227" column="34" selection-start-line="227" selection-start-column="29" selection-end-line="227" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dto/GestionDto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1812" max-vertical-offset="2862">
-          <caret line="113" column="34" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/gestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9756">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1439536662480" expanded="true" signature="17693:17908" placeholder="..." />
-            <marker date="1439536662480" expanded="true" signature="17954:17996" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Productos/productos.dao/ProductoDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="2340">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-          <folding>
-            <marker date="1439533923312" expanded="true" signature="199:307" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:317" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:323" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:527" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="1204:1333" placeholder="UPDATE produ..." />
-            <marker date="1439533923312" expanded="true" signature="2362:2411" placeholder="SELECT * FRO..productos..." />
-            <marker date="1439533923312" expanded="true" signature="2362:2427" placeholder="SELECT * FRO..productos..." />
-            <marker date="1439533923312" expanded="true" signature="2800:2843" placeholder="select * fro..productos..." />
-            <marker date="1439533923312" expanded="true" signature="3223:3273" placeholder="UPDATE produ..." />
-            <marker date="1439533923312" expanded="true" signature="3681:3707" placeholder="select * fro..presentacion..." />
-            <marker date="1439533923312" expanded="true" signature="3987:4036" placeholder="select * fro..presentacion..." />
-            <marker date="1439533923312" expanded="true" signature="4359:4390" placeholder="select * fro..categoriaproducto..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeProducto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="792">
-          <caret line="14" column="61" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/modificar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4310" max-vertical-offset="9792">
-          <caret line="234" column="55" selection-start-line="234" selection-start-column="55" selection-end-line="234" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/producto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9018" max-vertical-offset="9684">
-          <caret line="511" column="21" selection-start-line="508" selection-start-column="4" selection-end-line="511" selection-end-column="21" />
-          <folding>
-            <marker date="1439535358212" expanded="true" signature="18583:18794" placeholder="..." />
-            <marker date="1439535358212" expanded="true" signature="18840:18878" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/productoListar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6138">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Productos/productos.dao/ProductoDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2340">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding>
-            <marker date="1439533923312" expanded="true" signature="199:307" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:317" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:323" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:527" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="1204:1333" placeholder="UPDATE produ..." />
-            <marker date="1439533923312" expanded="true" signature="2362:2411" placeholder="SELECT * FRO..productos..." />
-            <marker date="1439533923312" expanded="true" signature="2362:2427" placeholder="SELECT * FRO..productos..." />
-            <marker date="1439533923312" expanded="true" signature="2800:2843" placeholder="select * fro..productos..." />
-            <marker date="1439533923312" expanded="true" signature="3223:3273" placeholder="UPDATE produ..." />
-            <marker date="1439533923312" expanded="true" signature="3681:3707" placeholder="select * fro..presentacion..." />
-            <marker date="1439533923312" expanded="true" signature="3987:4036" placeholder="select * fro..presentacion..." />
-            <marker date="1439533923312" expanded="true" signature="4359:4390" placeholder="select * fro..categoriaproducto..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/modificar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4094" max-vertical-offset="9792">
-          <caret line="237" column="32" selection-start-line="237" selection-start-column="23" selection-end-line="237" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/producto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9018" max-vertical-offset="9684">
-          <caret line="511" column="21" selection-start-line="508" selection-start-column="4" selection-end-line="511" selection-end-column="21" />
-          <folding>
-            <marker date="1439535358212" expanded="true" signature="18583:18794" placeholder="..." />
-            <marker date="1439535358212" expanded="true" signature="18840:18878" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/modificar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5660" max-vertical-offset="9792">
-          <caret line="336" column="38" selection-start-line="336" selection-start-column="38" selection-end-line="336" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dto/GestionDto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="54" max-vertical-offset="2862">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/listarGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.196721" vertical-offset="5333" max-vertical-offset="6282">
-          <caret line="341" column="13" selection-start-line="341" selection-start-column="13" selection-end-line="341" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="630">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Productos/productos.dao/ProductoDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4074073" vertical-offset="1501" max-vertical-offset="2322">
-          <caret line="90" column="48" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="48" />
-          <folding>
-            <marker date="1439533923312" expanded="true" signature="199:307" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:317" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:323" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="199:527" placeholder="INSERT INTO ..." />
-            <marker date="1439533923312" expanded="true" signature="1204:1333" placeholder="UPDATE produ..." />
-            <marker date="1439533923312" expanded="true" signature="2362:2411" placeholder="SELECT * FRO..productos..." />
-            <marker date="1439533923312" expanded="true" signature="2362:2427" placeholder="SELECT * FRO..productos..." />
-            <marker date="1439533923312" expanded="true" signature="2800:2843" placeholder="select * fro..productos..." />
-            <marker date="1439533923312" expanded="true" signature="3223:3273" placeholder="UPDATE produ..." />
-            <marker date="1439533923312" expanded="true" signature="3681:3707" placeholder="select * fro..presentacion..." />
-            <marker date="1439533923312" expanded="true" signature="3987:4036" placeholder="select * fro..presentacion..." />
-            <marker date="1439533923312" expanded="true" signature="4359:4390" placeholder="select * fro..categoriaproducto..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Controladores/ControladorProducto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="954">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeProducto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.0" vertical-offset="0" max-vertical-offset="792">
-          <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/productoListar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.819672" vertical-offset="3914" max-vertical-offset="6138">
-          <caret line="227" column="34" selection-start-line="227" selection-start-column="29" selection-end-line="227" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/producto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.47541" vertical-offset="5606" max-vertical-offset="9882">
-          <caret line="330" column="37" selection-start-line="321" selection-start-column="33" selection-end-line="330" selection-end-column="37" />
-          <folding>
-            <marker date="1439535358212" expanded="true" signature="18583:18794" placeholder="..." />
-            <marker date="1439535358212" expanded="true" signature="18840:18878" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/fachada/FacadeGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="792">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/php/Gestion/gestion.dao/GestionDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.740741" vertical-offset="1375" max-vertical-offset="1926">
-          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding>
-            <marker date="1439536479140" expanded="true" signature="179:340" placeholder="INSERT INTO ..." />
-            <marker date="1439536479140" expanded="true" signature="1111:1232" placeholder="UPDATE gesti..." />
-            <marker date="1439536479140" expanded="true" signature="2129:2168" placeholder="SELECT * FRO..Gestion..." />
-            <marker date="1439536479140" expanded="true" signature="2564:2611" placeholder="UPDATE Gesti..." />
-            <marker date="1439536479140" expanded="true" signature="2985:3006" placeholder="Select * fro..gestion..." />
-            <marker date="1439536479140" expanded="true" signature="3349:3370" placeholder="Select * fro..cliente..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/paginas/formularios/gestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22823985" vertical-offset="4148" max-vertical-offset="8748">
-          <caret line="237" column="127" selection-start-line="237" selection-start-column="127" selection-end-line="237" selection-end-column="127" />
-          <folding>
-            <marker date="1439536662480" expanded="true" signature="17693:17908" placeholder="..." />
-            <marker date="1439536662480" expanded="true" signature="17954:17996" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

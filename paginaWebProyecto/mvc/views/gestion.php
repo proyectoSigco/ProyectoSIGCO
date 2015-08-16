@@ -470,11 +470,19 @@ $(document).ready(function() {
 </script>
 <script>
 
-    var myvar = <?php if (isset($_GET['mensaje']))
+    var myvar =JSON.parse(' <?php if (isset($_GET['mensaje']))
                 {
                 echo json_encode($_GET['mensaje']);
-                } ?>;
+                } ?>;');
      alert(myvar);
-
+    $('#idcliente').on('change',function(){
+        $.ajax({ url: '../../php/fachada/FacadeGestion.php',
+            data: {action: '$empresa->obtenerGestion'},
+            type: 'post',
+            success: function(output) {
+                alert(output);
+            }
+        });
+    });
 </script>
 </html>

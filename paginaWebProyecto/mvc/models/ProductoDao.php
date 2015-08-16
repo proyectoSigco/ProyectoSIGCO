@@ -47,7 +47,7 @@ class ProductoDao {
             return $this->mensaje;
             }
          public function listarProductos(PDO $cnn){
-             $state='Cancelado%';
+             $state='Cancelado';
              try {
                  $query = $cnn->prepare('SELECT * FROM SIGCO.productos where (estado  LIKE ?)  IS NOT TRUE');
                  $query->bindParam(1,$state);
