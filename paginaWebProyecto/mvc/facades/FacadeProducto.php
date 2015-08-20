@@ -12,8 +12,8 @@ class Facade {
     }
 
     public function registrarProducto(ProductosDto $productoDto){
-         return $this->objDao->registrarProducto($productoDto,$this->con);
 
+          return $this->objDao->registrarProducto($productoDto,$this->con);
     }
     public  function getProductos(){
         return $this->objDao->listarProductos($this->con);
@@ -39,4 +39,5 @@ class Facade {
     public function  obtenerImpuestosProducto(){
         return $this->objDao->obtenerIvaProducto($this->con);
     }
+
 }

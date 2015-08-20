@@ -1,7 +1,7 @@
 <?php
 
 
-class ProductoDao {
+class ProductoDao  {
 
    private $mensaje="";
     public function registrarProducto(ProductosDto $productoDto,PDO $cnn) {
@@ -49,17 +49,16 @@ class ProductoDao {
          public function listarProductos(PDO $cnn){
              $state='Cancelado';
              try {
-                 $query = $cnn->prepare('SELECT * FROM SIGCO.Productos where (estado  LIKE ?)  IS NOT TRUE');
-                 $query->bindParam(1,$state);
+                 $query = $cnn->prepare('SELECT * FROM SIGCO.Productos ');
                  $query->execute();
-
                 return $query->fetchAll();
 
              }
              catch(Exception $ex){
-               print $ex->getMessage();
+               $this->mensaje= $ex->getMessage();
              }
              $cnn=null;
+             return $this->mensaje;
          }
 
     public function obtenerProducto($id,PDO $cnn){
@@ -130,4 +129,5 @@ class ProductoDao {
         }
         $cnn=null;
     }
+
     }

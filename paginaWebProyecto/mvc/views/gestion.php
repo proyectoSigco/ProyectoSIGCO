@@ -28,7 +28,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script type="text/javascript" src="../../plugins/jQuery/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="../../plugins/formvalidation/formValidation.js"></script>
     <script type="text/javascript" src="../../plugins/formvalidation/framework/bootstrap.js"></script>
-    <script type="text/javascript" src="../../plugins/js/language/es_ES.js"></script>
+
 
     
     <!-- FORMVALIDATION -->
@@ -218,7 +218,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <h1 class="box-title">Los campos con * son obligatorios</h1>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form class="form-horizontal" id="defaultForm" method="post" action="../../php/Controladores/ControladorGestion.php">
+                <form class="form-horizontal" id="defaultForm" method="post" action="../controllers/ControladorGestion.php">
                   <div class="box-body">
 
                           <div class="form-group">
@@ -226,19 +226,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <label class="col-sm-2 col-sm-2 control-label" for="idcliente">NIT Cliente* </label>
 
                               <div class="col-sm-6">
-
-                                  <select class="form-control" name="idcliente" id="idcliente">
-                                      <?php
-                                      require '../../php/fachada/FacadeGestion.php';
-                                      require '../../php/Utilidades/Conexion.php';
-                                      require_once  '../../php/Gestion/gestion.dao/GestionDao.php';
-                                      $empresa = new FacadeGestion();
-                                      $empresas = $empresa->obtenerEmpresas();
-                                      foreach($empresas as $iterator) { ?>
-                                          <option value="<?php echo $iterator['IdCliente']; ?>"><?php echo $iterator['IdCliente']; ?></option>
-                                      <?php
-                                      }?>
-                                  </select>
+                                  <select class="form-control" name="idCliente" id="idCliente" >
+                                  <?php
+                                  require_once '../facades/FacadeGestion.php';
+                                  require_once '../utilities/Conexion.php';
+                                  require_once  '../models/GestionDao.php';
+                                  require_once '../facades/FacadeProducto.php';
+                                  require_once '../utilities/Conexion.php';
+                                  require_once  '../models/ProductoDao.php';
+                                  $empresa = new FacadeGestion();
+                                  $empresas = $empresa->obtenerEmpresas();
+                                  foreach($empresas as $iterator) { ?>
+                                      <option value="<?php echo $iterator['IdCliente']; ?>"><?php echo $iterator['IdCliente']; ?></option>
+                                   <?php  }?>
+                                </select>
 
                               </div>
                           </div>
@@ -248,7 +249,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <!--FinLabel-->
                               <div class="col-sm-6">
                                   <!-- InicioInput poner class="form-control"-->
-                                  <input class="form-control" name="cliente" id="cliente" type="text" maxlength="20" value="<?php echo $iterator['Nombre']?>" readonly>
+                                  <input class="form-control" name="cliente" id="cliente" type="text" maxlength="20" value="<?php echo $iterator['RazonSocial']; ?>" readonly>
+
                                   <!-- FinInput -->
                               </div>
                           </div>
@@ -259,8 +261,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="col-sm-6">
 
                                   <select class="form-control" name="tipoVisita" id="tipoVisita" >
-                                      <option>Asesoria</option>
-                                      <option>Capacitación</option>
+                                      <option value="ASESORIA">Asesoria</option>
+                                      <option value="CAPACITACION">Capacitación</option>
                                   </select>
                               </div>
                           </div>
@@ -272,8 +274,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <div class="col-sm-6">
                             <!-- InicioInput poner class="form-control"-->
                                 <select class="form-control" name="temaproducto" id="producto">
-                                        <option value="1">Ecopetrol</option>
-                                        <option value="1">Texaco</option>
+                                    <?php
+                                    $producto = new Facade();
+                                    $Productos = $producto->getProductos();
+                                    foreach($Productos as $iterator) { ?>
+                                    <option value="<?php echo $iterator['IdProducto']; ?>"><?php echo $iterator['Nombre']; ?></option>
+                                    <?php
+                                    }?>
+
 
                                 </select>
                             <!-- FinInput -->
@@ -336,8 +344,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           </div>
 
 
+
                   <div class="box-footer">
-                    <button type="submit" id="registrar" class="btn btn-info pull-left">Registrar</button>
+                    <button type="submit" id="registrar" name="registrar" class="btn btn-info pull-left">Registrar</button>
                   </div><!-- /.box-footer -->
                    </div>
                 </form>
@@ -374,6 +383,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
           Both of these plugins are recommended to enhance the
           iterator experience. Slimscroll is required when using the
           fixed layout. -->
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="search">
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+                <h2> Resultados de  Busqueda</h2>
+                <select class="form-control" name="idcliente" id="idcliente">
+
+                </select>
+
+            </div>
+        </div>
+    </div>
+
   </body>
   <script type="text/javascript">
 $(document).ready(function() {    
@@ -464,25 +486,28 @@ $(document).ready(function() {
           }else{
               $('#producto').show();
               $('#tema').hide();
+
           }
       });
 
 </script>
 <script>
 
-    var myvar =JSON.parse(' <?php if (isset($_GET['mensaje']))
-                {
-                echo json_encode($_GET['mensaje']);
-                } ?>;');
-     alert(myvar);
-    $('#idcliente').on('change',function(){
-        $.ajax({ url: '../../php/fachada/FacadeGestion.php',
-            data: {action: '$empresa->obtenerGestion'},
-            type: 'post',
-            success: function(output) {
-                alert(output);
-            }
-        });
+    $('#idCliente').on('change',function(){
+        $.post("../controllers/ControladorGestion.php",
+            {
+                reload: $('#idCliente').val(),
+            },
+            function (data)
+            {
+                $('#cliente').val(data);
+
+            });
+
     });
+
+
+
 </script>
+
 </html>

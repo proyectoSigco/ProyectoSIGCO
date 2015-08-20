@@ -8,7 +8,7 @@ require_once '../facades/FacadeProducto.php';
 
 $fachada = new Facade();
 
-if (isset($_POST['codigoProducto'])) {
+if (isset($_POST['guardar'])) {
 
     $producto = new ProductosDto();
     $producto->setIdProducto($_POST['codigoProducto']);
@@ -17,9 +17,9 @@ if (isset($_POST['codigoProducto'])) {
     $producto->setUnidadMedida($_POST['unidadProducto']);
     $producto->setIva($_POST['ivaProducto']);
     $producto->setValorUnitario($_POST['valorProducto']);
-    $producto->setImagenProducto($_POST['ImagenProducto']);
     $producto->setPresentacion($_POST['presentacionProducto']);
     $producto->setCategoria($_POST['categoriaProducto']);
+    $producto->setImagenProducto($_POST['ImagenProducto']);
     $mensaje = $fachada->registrarProducto($producto);
 
     header("Location: ../views/registrarProducto.php?mensaje=".$mensaje);

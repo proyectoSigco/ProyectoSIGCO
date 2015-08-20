@@ -337,7 +337,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                           <input type="button" class="btn btn-warning" tabindex="15"
                                                  onclick="location.href='clientes.php'" value="Cancelar"/>
                                           <button type="submit" class="btn btn-success pull-right" tabindex="14"
-                                                  value="guardar" name=" guardar" id="guardar">Guardar cliente
+                                                  value="guardar" name="guardar" id="guardar">Guardar cliente
                                           </button>
                                       </div>
 
