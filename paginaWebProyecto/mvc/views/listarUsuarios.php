@@ -26,11 +26,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <!-- FORMVALIDATION -->
     <script type="text/javascript" src="../../plugins/jQuery/jquery-1.11.3.js"></script>
-    <script type="text/javascript" src="../../plugins/formvalidation/formValidation.js"></script>
-    <script type="text/javascript" src="../../plugins/formvalidation/framework/bootstrap.js"></script>
+    <script type="text/javascript" src="../../plugins/formValidation/formValidation.js"></script>
+    <script type="text/javascript" src="../../plugins/formValidation/framework/bootstrap.js"></script>
+    <script type="text/javascript" src="../../plugins/formValidation/language/es_ES.js"></script>
 
 
-    
+
+    <link rel="stylesheet" href="../../date/jquery-ui.css">
+  <script src="../../date/jquery-ui.js"></script>
+  <script src="../../date/jquery-ui.theme.css"></script>
+<!--  <link rel="stylesheet" href="/resources/demos/style.css">-->
+
+    <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
     <!-- FORMVALIDATION -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -39,13 +50,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-      <!--noty messajes-->
-      <link href="../../plugins/animate/animate.css" rel="stylesheet" type="text/css" />
-      <script src="../../plugins/messajes/jquery.noty.packaged.min.js"></script>
-      <!-- FORMVALIDATION -->
-
-
   </head>
   <!--
   BODY TAG OPTIONS:
@@ -76,9 +80,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Logo -->
         <a href="index2.html" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>A</b>LT</span>
+          <span class="logo-mini"><b></b>LT</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Admin</b>LTE</span>
+          <span class="logo-lg"><b>SI</b>GCO</span>
         </a>
 
         <!-- Header Navbar -->
@@ -209,79 +213,73 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Gestión de visitas
+            Registrar Cotización
 <!--            <small>Optional description</small>-->
           </h1>
           <ol class="breadcrumb">
-            <li class="active"><a href="#"><i class="fa fa-dashboard"></i>Gestión</a></li>
+            <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Registrar Usuarios</a></li>
           </ol>
         </section>
 
         <!-- Main content -->
-        <section class="content">
+          <section class="content">
               <!-- Horizontal Form -->
               <div class="box box-info">
-                <div class="box-header with-border">
-                   <p><h2 class="box-title">Capacitaciónes-Asesorias</h2></p>
-                </div><!-- /.box-header -->
+                  <div class="box-header with-border">
+                      <p><h2 class="box-title">Listado de Productos </h2></p>
+                  </div><!-- /.box-header -->
                   <div class="content-panel">
                       <table class="table table-striped table-advance table-hover">
-                          <hr>
-                          <thead>
                           <tr>
-                              <th><i class="fa fa-bullhorn"></i> Codigo Gestion</th>
-                              <th><i class="fa fa-bookmark"></i>Tema</th>
-                              <th><i class=" fa fa-edit"></i> Asistentes</th>
-                              <th><i class=" fa fa-edit"></i>Observaciones</th>
-                              <th><i class=" fa fa-actions"></i>Lugar</th>
-                              <th><i class=" fa fa-actions"></i>Estado</th>
-                              <th><i class=" fa fa-actions"></i>Fecha</th>
-                              <th>Acciónes</th>
+                               <td><i class="fa fa-bullhorn"></i>Documento</td>
+                              <td><i class="fa fa-question-circle"></i>Nombres</td>
+                              <td><i class="fa fa-bookmark"></i>Apellidos</td>
+                              <td><i class=" fa fa-edit"></i>Empleo</td>
+                              <td><i class=" fa fa-edit"></i>Estado</td>
+                              <td><i class=" fa fa-actions"></i> Acciones</td>
                           </tr>
-                          </thead>
-                          <tbody>
+
                           <?php
-                          require '../../php/fachada/FacadeGestion.php';
-                          require '../../php/Utilidades/Conexion.php';
-                          require_once  '../../php/Gestion/gestion.dao/GestionDao.php';
-                          $gestion = new FacadeGestion();
-                          $gestiones = $gestion->getGestiones();
-                          foreach($gestiones as $iterator) { ?>
-                          <tr>
-                              <td><?php echo $iterator['IdGestion']; ?> <a href="#"></a></td>
-                              <td><?php echo $iterator['TemaProducto']; ?></td>
-                              <td><?php echo $iterator['Asistentes']; ?></td>
-                              <td ><?php echo $iterator['Observaciones']; ?></td>
-                              <td><?php echo $iterator['Lugar']; ?></td>
-                              <td  ><span id="<?php echo $iterator['IdGestion']; ?>" class="label label-warning label-mini"><?php echo $iterator['Estado']; ?></span></td>
-                              <td><?php echo $iterator['Fecha']; ?></td>
-                              <td>
-                                  <a href="ModificarUsuarios.php?id=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
-                                  <a href="../../php/Controladores/ControladorGestion.php?idproducto=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
+                          require '../facades/FacadeUsuario.php';
+                          $usuarios = new FacadeUsuario();
+                          $listado = $usuarios->listarUsuarios();
+                          foreach($listado as $iterator) { ?>
+                              <tr>
+                                  <td><?php echo $iterator['IdUsuario']; ?></td>
+                                  <td><?php echo $iterator['Nombres']; ?></td>
+                                  <td><?php echo $iterator['Apellidos']; ?></td>
+                                  <td><?php echo $iterator['Empleo']; ?></td>
+                                  <td><?php if ($iterator['Estado']){
+                                          echo 'Activo';}
+                                          else{
+                                          echo 'Inactivo';}
+                                      ; ?></td>
+                                  <td>
+                                      <a href="../controllers/controladorUsuario.php?id=<?php echo $iterator['IdUsuario']; ?>"><button  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
+                                      <a href="ModificarUsuarios.php?id=<?php echo $iterator['IdUsuario']; ?>"><button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
 
-                              </td>
+                                  </td>
 
-                          </tr>
-                        <?php
-                        }?>
-                        </tbody>
+                              </tr>
+                              <?php
+                          }?>
                       </table>
                   </div><!-- /content-panel -->
-            </div>
+              </div>
 
-        </section><!-- /.content -->
+          </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
 
       <!-- Main Footer -->
       <footer class="main-footer">
         <!-- To the right -->
-
+       
         <!-- Default to the left -->
         <strong>Copyright &copy; 2015 <a href="#">NOMBRE EMPRESA</a>.</strong> All rights reserved.
       </footer>
 
       <!-- Control Sidebar -->
-
+      
       <!-- Add the sidebar's background. This div must be placed
            immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
@@ -300,44 +298,5 @@ scratch. This page gets rid of all links and provides the needed markup only.
           user experience. Slimscroll is required when using the
           fixed layout. -->
   </body>
-    <script>
-        $("#modificar").click(function() {
-                var n = noty({
-                    text:'Desea eliminar este Registro' ,
-                    theme: 'relax',
-                    layout: 'center',
-                    closeWith: ['click', 'hover'],
-                    buttons: [
-                        {addClass: 'btn btn-primary', text: 'Ok', onClick: function($noty) {
 
-                            // this = button element
-                            // $noty = $noty element
-
-                            $noty.close();
-                            noty({text: 'You clicked "Ok" button', type: 'success'});
-                        }
-                        },
-                        {addClass: 'btn btn-danger', text: 'Cancel', onClick: function($noty) {
-                            $noty.close();
-                            noty({text: 'You clicked "Cancel" button', type: 'error'});
-                        }
-                        }
-                    ],
-                    type: 'confirm',
-                    animation: {
-                        open: 'animated bounceInRight', // Animate.css class names
-                        close: 'animated bounceOutRight', // Animate.css class names
-                    }
-
-                });
-
-        });
-
-        $(document).ready(function() {
-
-            $('span:contains("ACTIVA")').removeClass('label-warning');
-            $('span:contains("ACTIVA")').addClass('label-success');
-        });
-
-    </script>
 </html>

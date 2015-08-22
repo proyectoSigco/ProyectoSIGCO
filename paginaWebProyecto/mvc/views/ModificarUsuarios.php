@@ -226,10 +226,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- Main content -->
               <section class="content">
                   <div class="row">
-
+                      <?php
+                      require'../facades/FacadeUsuario.php';
+                      $fachada= new FacadeUsuario();
+                      $idviejo=$_GET['id'];
+                      $user=$fachada->obtenerUsuario($idviejo);
+                      ?>
                       <!-- right column -->
                       <div class="col-md-6">
-                    <form id="defaultForm" action="../controllers/controladorUsuario.php" method="post">
+                    <form id="defaultForm" action="../controllers/controladorUsuario.php?idv=<?php echo $idviejo ?>" method="post">
 
                       <div class="box box-default">
                                   <div class="box-header with-border">
@@ -256,37 +261,54 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                   <h3 class="box-title">Modificar cliente</h3>
                               </div>
 
+
+
+
                            <div class="box-body">
                                  
                                       <div class="form-group">
                                           <label for="cc">Documento*</label>
-                                          <input class="form-control" name="documento" id="cc" type="text" placeholder="10311433222" required>
+                                          <input class="form-control" name="documento2" id="cc" type="text" placeholder="10311433222" required value="<?php echo $user['IdUsuario'] ?>">
                                       </div>      
                                       <div class="form-group">
                                           <label for="names">Nombres*</label>
-                                          <input class="form-control" name="nombres" id="names" type="text" placeholder="Julian Camilo" required>
+                                          <input class="form-control" name="nombres" id="names" type="text" placeholder="Julian Camilo" required  value="<?php echo $user['Nombres'] ?>">
                                       </div>
                                       <div class="form-group">
                                           <label for="apellido">Apellidos*</label>
-                                       <input class="form-control" name="apellidos" id="apellido" type="text" maxlength="20" placeholder="Castaño Ospina">
+                                       <input class="form-control" name="apellidos" id="apellido" type="text" maxlength="20" placeholder="Castaño Ospina" value="<?php echo $user['Apellidos'] ?>">
 
                                       </div>
                                       <div class="form-group">
                                           <label for="cargo">Empleo*</label>
                                           <select class="form-control" name="cargo" id="cargo">
-                                         <option value="">Seleccionar</option>
+                                         <option value="<?php echo $user['Empleo'] ?>"><?php echo $user['Empleo'] ?></option>
                                          <option value="Asesor">Asesor</option>
                                          <option value="Coordinador">Coordinador</option>
                                           </select>
                                       </div>
+
+                                    <div class="form-group">
+                                   <label for="estado">Estado*</label>
+                                   <select class="form-control" name="estado" id="estado">
+                                       <option value="<?php echo $user['Estado'] ?>"> <?php if ($user['Empleo']==1){
+                                               echo 'Activo';}
+                                               else{
+                                                   echo 'Inactivo';
+
+                                           } ?></option>
+                                       <option value=1>Activo</option>
+                                       <option value=0>Inactivo</option>
+                                   </select>
+                                    </div>
                                       <div class="form-group">
                                           <label for="email">Email*</label>
-                                           <input class="form-control" name="email" id="email" type="text" placeholder="julian@sigco.com">
+                                           <input class="form-control" name="email" id="email" type="text" placeholder="julian@sigco.com" value="<?php echo $user['Email'] ?>">
                                       </div>
 
                                        <div class="form-group">
                                           <label for="pass1">Contraseña*</label>
-                                        <input class="form-control" name="pass1" id="pass1" type="password" maxlength="20" required title="Este campo es requerido">
+                                        <input class="form-control" name="pass1" id="pass1" type="password" maxlength="20" required title="Este campo es requerido" >
                                       </div>
 
                                        <div class="form-group">
@@ -297,7 +319,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                                     <div class="form-group">
                                           <label for="imagen">Imagen</label>
-                                            <input  name="imagen" id="imagen" type="file" multiple=true class="file"  title="Este campo es requerido">
+                                            <input  name="imagen" id="imagen" type="file" multiple=true class="file" value="<?php echo $user['rutaImagen'] ?>">
                                     </div>
                                     <div class="box-footer">
                                           <input type="button" class="btn btn-warning" tabindex="15"
@@ -377,7 +399,7 @@ $(document).ready(function() {
                 locale: 'es_ES',
 
         fields: {
-            documento: {
+            documento2: {
                 validators: {
                     notEmpty: {
                         message: 'Este campo es requerido'
