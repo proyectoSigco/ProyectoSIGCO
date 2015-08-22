@@ -229,7 +229,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <hr>
                           <thead>
                           <tr>
-                              <th><i class="fa fa-bullhorn"></i> Codigo Gestion</th>
+                              <th><button  class="btn btn-primary btn-success"><i class="fa fa-bullhorn"></i>Actividad</button></th>
                               <th><i class="fa fa-bookmark"></i>Tema</th>
                               <th><i class=" fa fa-edit"></i> Asistentes</th>
                               <th><i class=" fa fa-edit"></i>Observaciones</th>
@@ -241,23 +241,28 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           </thead>
                           <tbody>
                           <?php
-                          require '../../php/fachada/FacadeGestion.php';
-                          require '../../php/Utilidades/Conexion.php';
-                          require_once  '../../php/Gestion/gestion.dao/GestionDao.php';
+                          require '../facades/FacadeGestion.php';
+                          require '../utilities/Conexion.php';
+                          require_once  '../models/GestionDao.php';
                           $gestion = new FacadeGestion();
                           $gestiones = $gestion->getGestiones();
                           foreach($gestiones as $iterator) { ?>
                           <tr>
-                              <td><?php echo $iterator['IdGestion']; ?> <a href="#"></a></td>
-                              <td><?php echo $iterator['TemaProducto']; ?></td>
+                              <td><?php echo $iterator['Tipo']; ?> <a href="#"></a></td>
+                              <td><?php echo $iterator['Asunto']; ?></td>
                               <td><?php echo $iterator['Asistentes']; ?></td>
                               <td ><?php echo $iterator['Observaciones']; ?></td>
                               <td><?php echo $iterator['Lugar']; ?></td>
-                              <td  ><span id="<?php echo $iterator['IdGestion']; ?>" class="label label-warning label-mini"><?php echo $iterator['Estado']; ?></span></td>
-                              <td><?php echo $iterator['Fecha']; ?></td>
+                              <td  ><span id="<?php echo $iterator['IdEmpresa']; ?>" class="label label-warning label-mini"><?php echo $iterator['Estado']; ?></span></td>
+                              <td><?php echo $iterator['FechaProgramada']; ?></td>
                               <td>
+<<<<<<< HEAD
                                   <a href="ModificarUsuarios.php?id=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
                                   <a href="../../php/Controladores/ControladorGestion.php?idproducto=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
+=======
+                                  <a href="modificar.php?id=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
+                                  <a href="../controllers/ControladorGestion.php?idproducto=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
+>>>>>>> origin/master
 
                               </td>
 

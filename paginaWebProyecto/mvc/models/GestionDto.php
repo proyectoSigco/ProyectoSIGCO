@@ -13,6 +13,23 @@ class GestionDto {
     private $lugar;
     private $fechaVisita;
     private $tipoVisita;
+    private $asunto;
+
+    /**
+     * @return mixed
+     */
+    public function getAsunto()
+    {
+        return $this->asunto;
+    }
+
+    /**
+     * @param mixed $asunto
+     */
+    public function setAsunto($asunto)
+    {
+        $this->asunto = $asunto;
+    }
 
 
     public function getIdGestion()

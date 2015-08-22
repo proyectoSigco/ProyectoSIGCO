@@ -232,11 +232,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <form class="form-horizontal" id="defaultForm" action="../../php/Controladores/ControladorProducto.php" method="post">
                   <div class="box-body">
                       <?php
-                      require '../../php/fachada/FacadeProducto.php';
-                      require '../../php/Utilidades/Conexion.php';
-                      require_once  '../../php/Productos/productos.dao/ProductoDao.php';
+                      require '../facades/FacadeProducto.php';
+                      require '../utilities/Conexion.php';
+                      require_once  '../models/ProductoDao.php';
                       $modificar= new Facade();
                       $T=$modificar->obtenerProducto($_GET['id']);
+                      uniqid(rand());
                       foreach($T as $iterator) {
 
                       ?>

@@ -2,7 +2,7 @@
 require_once '../models/CotizacionesDAO.php';
 require_once '../models/CotizacionesDTO.php';
 require_once '../facades/facadeCotizacion.php';
-require_once '../Utilities/';
+require_once '../utilities/Conexion.php';
 
 $fachada = new FacadeGestion();
 
@@ -18,7 +18,7 @@ if (isset($_POST['idcliente'])) {
     $gestion->setFechaVisita($_POST['fechaVisita']);
     $mensaje = $fachada->registrarGestion($gestion);
 
-    header("Location: ../../paginas/formularios/gestion.php?mensaje=".$mensaje);
+    header("Location: ../views/gestion.php?mensaje=".$mensaje);
 
 }
 

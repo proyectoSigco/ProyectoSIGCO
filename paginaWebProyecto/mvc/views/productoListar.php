@@ -241,9 +241,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           </thead>
                           <tbody>
                           <?php
-                          require '../../php/fachada/FacadeProducto.php';
-                          require '../../php/Utilidades/Conexion.php';
-                          require_once  '../../php/Productos/productos.dao/ProductoDao.php';
+                          require '../facades/FacadeProducto.php';
+                          require '../utilities/Conexion.php';
+                          require_once  '../models/ProductoDao.php';
                           $producto = new Facade();
                           $Productos = $producto->getProductos();
                           foreach($Productos as $iterator) { ?>
@@ -251,11 +251,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <td><?php echo $iterator['IdProducto']; ?> <a href="#"></a></td>
                               <td class="hidden-phone"><?php echo $iterator['Nombre']; ?></td>
                               <td><?php echo $iterator['Descripcion']; ?></td>
-                              <td><?php echo $iterator['Iva']; ?></td>
-                              <td><?php echo $iterator['Valor']; ?></td>
+                              <td><?php echo $iterator['IdIva']; ?></td>
+                              <td><?php echo $iterator['ValorBase']; ?></td>
                               <td>
                                   <a href="modificar.php?id=<?php echo $iterator['IdProducto']; ?>"><button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
-                                  <a href="../../php/Controladores/ControladorProducto.php?idproducto=<?php echo $iterator['IdProducto']; ?>"><button  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
+                                  <a href="../controllers/ControladorProducto.php?idproducto=<?php echo $iterator['IdProducto']; ?>"><button  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
 
                               </td>
 

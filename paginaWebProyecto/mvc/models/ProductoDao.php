@@ -1,14 +1,14 @@
 <?php
 
 
-class ProductoDao {
+class ProductoDao  {
 
    private $mensaje="";
     public function registrarProducto(ProductosDto $productoDto,PDO $cnn) {
 
         $estado=1;
         try {
-            $query = $cnn->prepare('INSERT INTO productos (Nombre,Descripcion,UnidadMedida,Iva,Valor,IdPresentacion,IdCategoria,estado ) VALUES(?,?,?,?,?,?,?,?)');
+            $query = $cnn->prepare('INSERT INTO Productos (Nombre,Descripcion,UnidadMedida,IdIva,ValorBase,IdPresentacion,IdCategoria,estado ) VALUES(?,?,?,?,?,?,?,?)');
             $query->bindParam(1, $productoDto->getNombreProducto());
             $query->bindParam(2, $productoDto->getDescripcion());
             $query->bindParam(3, $productoDto->getUnidadMedida());
@@ -27,7 +27,7 @@ class ProductoDao {
     }
         public function modificarProducto(ProductosDto $productoDto,PDO $cnn){
             try {
-                $query = $cnn->prepare('UPDATE productos SET  Nombre=?, Descripcion=?, UnidadMedida=?, Iva=?, Valor=?, IdPresentacion=?, IdCategoria=? WHERE IdProducto=?');
+                $query = $cnn->prepare('UPDATE productos SET  Nombre=?, Descripcion=?, UnidadMedida=?, IdIva=?, Valor=?, IdPresentacion=?, IdCategoria=? WHERE IdProducto=?');
                 $query->bindParam(1, $productoDto->getNombreProducto());
                 $query->bindParam(2, $productoDto->getDescripcion());
                 $query->bindParam(3, $productoDto->getUnidadMedida());
@@ -49,22 +49,21 @@ class ProductoDao {
          public function listarProductos(PDO $cnn){
              $state='Cancelado';
              try {
-                 $query = $cnn->prepare('SELECT * FROM SIGCO.productos where (estado  LIKE ?)  IS NOT TRUE');
-                 $query->bindParam(1,$state);
+                 $query = $cnn->prepare('SELECT * FROM SIGCO.Productos ');
                  $query->execute();
-
                 return $query->fetchAll();
 
              }
              catch(Exception $ex){
-               print $ex->getMessage();
+               $this->mensaje= $ex->getMessage();
              }
              $cnn=null;
+             return $this->mensaje;
          }
 
     public function obtenerProducto($id,PDO $cnn){
         try {
-            $query = $cnn->prepare('select * from  productos where IdProducto=?');
+            $query = $cnn->prepare('select * from  Productos where IdProducto=?');
             $query->bindParam(1,$id);
             $query->execute();
             return $query->fetchAll();
@@ -90,7 +89,7 @@ class ProductoDao {
         }
     public function  obtenerPresentacionProducto(PDO $cnn){
         try {
-            $query = $cnn->prepare('select * from presentacion');
+            $query = $cnn->prepare('select * from Presentaciones');
             $query->execute();
             return $query->fetchAll();
         } catch(Exception $ex){
@@ -101,7 +100,7 @@ class ProductoDao {
 
     public function  presentacionId($id,PDO $cnn){
         try {
-            $query = $cnn->prepare('select * from presentacion where IdPresentacion=?');
+            $query = $cnn->prepare('select * from Presentaciones where IdPresentacion=?');
             $query->bindParam(1,$id);
             $query->execute();
             return $query->fetchAll();
@@ -112,7 +111,7 @@ class ProductoDao {
     }
     public function  obtenerCategoriaProducto(PDO $cnn){
         try {
-            $query = $cnn->prepare('select * from categoriaproducto');
+            $query = $cnn->prepare('select * from CategoriasProductos');
             $query->execute();
             return $query->fetchAll();
         } catch(Exception $ex){
@@ -120,4 +119,15 @@ class ProductoDao {
         }
         $cnn=null;
     }
+    public function  obtenerIvaProducto(PDO $cnn){
+        try {
+            $query = $cnn->prepare('select * from Impuestos');
+            $query->execute();
+            return $query->fetchAll();
+        } catch(Exception $ex){
+            print $ex->getMessage();
+        }
+        $cnn=null;
+    }
+
     }
