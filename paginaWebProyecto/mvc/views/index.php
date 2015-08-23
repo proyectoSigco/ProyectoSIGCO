@@ -5,9 +5,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <?php
 session_start();
-print_r($_SESSION['rol']);
-print_r($_SESSION['datosLogin']);
-
+$_SESSION['rol'];
+if ($_SESSION['datosLogin']['Estado']==0 or !isset($_SESSION['datosLogin'])){
+  header('location: Invalido.php');
+}
 ?>
 <html>
   <head>
