@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0173a252-b2e2-4aac-b651-27681a005fb4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paginaWebProyecto/mvc/views/index.php" afterPath="$PROJECT_DIR$/paginaWebProyecto/mvc/views/index.php" />
-    </list>
+    <list default="true" id="0173a252-b2e2-4aac-b651-27681a005fb4" name="Default" comment="" />
     <ignored path="ProyectoSIGCO.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -24,106 +22,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gestion.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/gestion.php">
+      <file leaf-file-name="buscarClientes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/buscarClientes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="283" column="0" selection-start-line="283" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.7272725">
+              <caret line="556" column="44" selection-start-line="556" selection-start-column="44" selection-end-line="556" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControladorGestion.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/controllers/ControladorGestion.php">
+      <file leaf-file-name="ClientesController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/controllers/ClientesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            <state vertical-scroll-proportion="-2.7818182">
+              <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nuevoCliente.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/nuevoCliente.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.1818182">
+              <caret line="555" column="72" selection-start-line="555" selection-start-column="66" selection-end-line="555" selection-end-column="72" />
               <folding>
-                <marker date="1440217119000" expanded="true" signature="1122:1123" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControladorProducto.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/controllers/ControladorProducto.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FacadeGestion.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/facades/FacadeGestion.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listarGestion.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/listarGestion.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125">
-              <caret line="236" column="75" selection-start-line="236" selection-start-column="75" selection-end-line="236" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Invalido.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/Invalido.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.4117646">
-              <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17736487">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#1;n#div#0;n#div#0;n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#3;n#ul#1;n#div#0;n#div#0;n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductoDao.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/models/ProductoDao.php">
+      <file leaf-file-name="ClientesDao.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/models/ClientesDao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestionDao.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/models/GestionDao.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestionDto.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/models/GestionDto.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.59238094">
+              <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
+              <folding>
+                <marker date="1440405420037" expanded="true" signature="203:257" placeholder="INSERT INTO ..." />
+                <marker date="1440405420037" expanded="true" signature="1655:1695" placeholder="DELETE FROM ..." />
+                <marker date="1440405420037" expanded="true" signature="2128:2234" placeholder="Select clien..Clientes..." />
+                <marker date="1440405420037" expanded="true" signature="2621:2663" placeholder="SELECT * FRO..Clientes..." />
+                <marker date="1440405420037" expanded="true" signature="3178:3305" placeholder="SELECT clien..clientes..." />
+                <marker date="1440405420037" expanded="true" signature="3706:3840" placeholder="SELECT Clien..clientes..." />
+                <marker date="1440405420037" expanded="true" signature="4321:4467" placeholder="SELECT clien..clientes..." />
+                <marker date="1440405420037" expanded="true" signature="4868:5021" placeholder="SELECT Clien..clientes..." />
+                <marker date="1440405420037" expanded="true" signature="5657:5886" placeholder="UPDATE Clien..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,6 +118,13 @@
         <option value="$PROJECT_DIR$/paginaWebProyecto/mvc/views/listarGestion.php" />
         <option value="$PROJECT_DIR$/paginaWebProyecto/mvc/views/Invalido.php" />
         <option value="$PROJECT_DIR$/paginaWebProyecto/mvc/views/index.php" />
+        <option value="$PROJECT_DIR$/paginaWebProyecto/mvc/utilities/Conexion.php" />
+        <option value="$PROJECT_DIR$/paginaWebProyecto/plugins/datatables/jquery.dataTables.min.js" />
+        <option value="$PROJECT_DIR$/paginaWebProyecto/plugins/select2/select2.full.min.js" />
+        <option value="$PROJECT_DIR$/paginaWebProyecto/mvc/views/buscarClientes.php" />
+        <option value="$PROJECT_DIR$/paginaWebProyecto/mvc/controllers/ClientesController.php" />
+        <option value="$PROJECT_DIR$/paginaWebProyecto/mvc/views/nuevoCliente.php" />
+        <option value="$PROJECT_DIR$/paginaWebProyecto/mvc/models/ClientesDao.php" />
       </list>
     </option>
   </component>
@@ -175,13 +135,17 @@
   <component name="NamedScopeManager">
     <order />
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.6">
     <include_path>
       <path value="/usr/share/php" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
+    <option name="x" value="200" />
+    <option name="y" value="58" />
     <option name="width" value="1280" />
     <option name="height" value="740" />
   </component>
@@ -208,6 +172,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -326,17 +292,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hotel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -398,11 +363,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1280" height="740" extended-state="0" />
+    <frame x="200" y="58" width="1280" height="740" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23688525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -440,69 +406,21 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/registrarProducto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="339" column="79" selection-start-line="339" selection-start-column="72" selection-end-line="339" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/gestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="275" column="73" selection-start-line="275" selection-start-column="67" selection-end-line="275" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/controllers/ControladorGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-          <folding>
-            <marker date="1440217119000" expanded="true" signature="1122:1123" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/facades/FacadeProducto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/controllers/ControladorProducto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/facades/FacadeGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/listarGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/models/ProductoDao.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Productos..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Productos..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Presentaciones..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Presentaciones..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..CategoriasProductos..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Impuestos..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -510,7 +428,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="UPDATE Gesti..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Gestiones..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="UPDATE Gesti..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="Select * fro..Gestiones..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="Select * fro..Clientes..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="Select * fro..Clientes..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -526,7 +452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="306" column="72" selection-start-line="306" selection-start-column="58" selection-end-line="306" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -542,9 +467,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1440217119000" expanded="true" signature="1122:1123" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -589,7 +512,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="96" column="39" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="39" />
-          <folding />
+          <folding>
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="UPDATE Gesti..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Gestiones..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="UPDATE Gesti..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="Select * fro..Gestiones..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="Select * fro..Clientes..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="Select * fro..Clientes..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -597,7 +528,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="124" column="59" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="59" />
-          <folding />
+          <folding>
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Productos..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Productos..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Presentaciones..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Presentaciones..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..CategoriasProductos..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Impuestos..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -612,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -657,7 +597,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="79" column="52" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
-          <folding />
+          <folding>
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="UPDATE Gesti..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Gestiones..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="UPDATE Gesti..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="Select * fro..Gestiones..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="Select * fro..Clientes..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="Select * fro..Clientes..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -665,7 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,7 +620,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-          <folding />
+          <folding>
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Productos..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Productos..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Presentaciones..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Presentaciones..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..CategoriasProductos..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Impuestos..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -726,18 +683,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/utilities/Conexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/facades/FacadeProducto.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="339" column="79" selection-start-line="339" selection-start-column="72" selection-end-line="339" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,26 +705,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/models/ProductoDao.php">
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/utilities/Conexion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/models/GestionDto.php">
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/Invalido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20216607">
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/listarGestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="236" column="75" selection-start-line="236" selection-start-column="75" selection-end-line="236" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/controllers/ControladorProducto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.1101083">
           <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/controllers/ControladorGestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2635379">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -789,12 +761,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/controllers/ControladorGestion.php">
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/models/ProductoDao.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
-            <marker date="1440217119000" expanded="true" signature="1122:1123" placeholder="..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Productos..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Productos..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="UPDATE produ..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Presentaciones..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Presentaciones..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..CategoriasProductos..." />
+            <marker date="1440054683376" expanded="true" signature="-1:-1" placeholder="select * fro..Impuestos..." />
           </folding>
         </state>
       </provider>
@@ -803,32 +783,109 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/listarGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="236" column="75" selection-start-line="236" selection-start-column="75" selection-end-line="236" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/Invalido.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4117646">
-          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17736487">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="UPDATE Gesti..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Gestiones..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="UPDATE Gesti..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="Select * fro..Gestiones..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="Select * fro..Clientes..." />
+            <marker date="1440054683302" expanded="true" signature="-1:-1" placeholder="Select * fro..Clientes..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/models/GestionDto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/plugins/datatables/jquery.dataTables.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="137" column="411" selection-start-line="137" selection-start-column="411" selection-end-line="137" selection-end-column="411" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginaWebPlantilla/pages/forms/advanced.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.345454">
+          <caret line="27" column="92" selection-start-line="5" selection-start-column="4" selection-end-line="27" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/plugins/select2/select2.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.055343512">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/plugins/select2/select2.full.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="238.55556">
+          <caret line="1" column="14403" selection-start-line="1" selection-start-column="14403" selection-end-line="1" selection-end-column="14403" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/nuevoCliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.1818182">
+          <caret line="555" column="72" selection-start-line="555" selection-start-column="66" selection-end-line="555" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#1;n#div#0;n#div#0;n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#3;n#ul#1;n#div#0;n#div#0;n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/views/buscarClientes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.7272725">
+          <caret line="556" column="44" selection-start-line="556" selection-start-column="44" selection-end-line="556" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/controllers/ClientesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7818182">
+          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginaWebProyecto/mvc/models/ClientesDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59238094">
+          <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
+          <folding>
+            <marker date="1440405420037" expanded="true" signature="203:257" placeholder="INSERT INTO ..." />
+            <marker date="1440405420037" expanded="true" signature="1655:1695" placeholder="DELETE FROM ..." />
+            <marker date="1440405420037" expanded="true" signature="2128:2234" placeholder="Select clien..Clientes..." />
+            <marker date="1440405420037" expanded="true" signature="2621:2663" placeholder="SELECT * FRO..Clientes..." />
+            <marker date="1440405420037" expanded="true" signature="3178:3305" placeholder="SELECT clien..clientes..." />
+            <marker date="1440405420037" expanded="true" signature="3706:3840" placeholder="SELECT Clien..clientes..." />
+            <marker date="1440405420037" expanded="true" signature="4321:4467" placeholder="SELECT clien..clientes..." />
+            <marker date="1440405420037" expanded="true" signature="4868:5021" placeholder="SELECT Clien..clientes..." />
+            <marker date="1440405420037" expanded="true" signature="5657:5886" placeholder="UPDATE Clien..." />
           </folding>
         </state>
       </provider>
