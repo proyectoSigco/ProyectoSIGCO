@@ -32,21 +32,22 @@ class GestionDao {
             $cnn =null;
             return $this->mensaje;
     }
-    public function modificarGestion(GestionDto $gestionDto,PDO $cnn) {
+    public function modificarGestion(GestionDto $gestionDto,PDO $cnn,$idGestion) {
 
 
         try {
-            $query = $cnn->prepare("UPDATE  Gestiones SET IdUsuario=?,IdCliente=?,TemaProducto=?,Asistentes=?,Observaciones=?,Lugar=?,Fecha=? where IdGestion=?");
+            $query = $cnn->prepare("UPDATE  Gestiones SET IdUsuario=1032404,IdEmpresa=?,Estado=?,Asunto=?,Asistentes=?,Observaciones=?,Lugar=?,FechaProgramada=?,Tipo=? where IdGestion=?");
 
-            $query->bindParam(1, $gestionDto->getIdUsuario());
-            $query->bindParam(2, $gestionDto->getIdCliente());
-            $query->bindParam(3, $gestionDto->getEstado());
-            $query->bindParam(4, $gestionDto->getTemaProducto());
-            $query->bindParam(5, $gestionDto->getAsistentes());
-            $query->bindParam(6, $gestionDto->getObservaciones());
-            $query->bindParam(7, $gestionDto->getLugar());
-            $query->bindParam(8, $gestionDto->getFechaVisita());
-            $query->bindParam(9, $gestionDto->getIdGestion());
+            //$query->bindParam(1, $gestionDto->getIdUsuario());
+            $query->bindParam(1, $gestionDto->getIdCliente());
+            $query->bindParam(2, $gestionDto->getEstado());
+            $query->bindParam(3, $gestionDto->getTemaProducto());
+            $query->bindParam(4, $gestionDto->getAsistentes());
+            $query->bindParam(5, $gestionDto->getObservaciones());
+            $query->bindParam(6, $gestionDto->getLugar());
+            $query->bindParam(7, $gestionDto->getFechaVisita());
+            $query->bindParam(8,$gestionDto->getTipoVisita());
+            $query->bindParam(9, $idGestion);
             $query->execute();
             $this->mensaje = "Registro Actualizado";
         } catch (Exception $ex) {
@@ -62,6 +63,18 @@ class GestionDao {
             $query->bindParam(1, $idGestion);
             $query->execute();
             return $query->fetch();
+        } catch (Exception $ex) {
+            echo 'Error' . $ex->getMessage();
+        }
+        $cnn=null;
+    }
+    public function obtenerGestion($idGestion,PDO $cnn) {
+
+        try {
+            $query = $cnn->prepare('SELECT Nombre FROM Gestiones WHERE IdGestion=?');
+            $query->bindParam(1, $idGestion);
+            $query->execute();
+            return $query->fetchall();
         } catch (Exception $ex) {
             echo 'Error' . $ex->getMessage();
         }
@@ -95,7 +108,7 @@ class GestionDao {
         }
         return $this->mensaje;
     }
-    public function obtenerEmpresasById($criteria,PDO $cnn) {
+    public function obtenerEmpresaById($criteria,PDO $cnn) {
 
         try {
             $listarGesion = 'Select * from SIGCO.Clientes WHERE IdCliente=?';

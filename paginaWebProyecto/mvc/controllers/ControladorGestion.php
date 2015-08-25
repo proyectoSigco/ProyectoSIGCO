@@ -35,3 +35,26 @@ if(isset($_POST['reload'])){
            print $iterator['RazonSocial'];
     }
 }
+if (isset($_POST['modificar'])) {
+
+    $gestion = new GestionDto();
+    $idviejo=$_GET['idv'];
+    $gestion->setIdCliente ($_POST['idCliente']);
+    $gestion->setTipoVisita($_POST['tipoVisita']);
+    if($_POST['tipoVisita']=='CAPACITACION'){
+        $gestion->setTemaProducto($_POST['temaproducto']);
+    }else{
+        $gestion->setTemaProducto($_POST['tema']);
+    }
+
+    $gestion->setAsistentes($_POST['asistentes']);
+    $gestion->setObservaciones($_POST['observaciones']);
+    $gestion->setAsunto($_POST['temaproducto']);
+    $gestion->setLugar($_POST['lugar']);
+    $gestion->setFechaVisita($_POST['fechaVisita']);
+    $gestion->setEstado($_POST['estado']);
+    $mensaje = $fachada->modificarGestion($gestion,$idviejo);
+
+    header("Location: ../views/listarGestion.php?mensaje=".$mensaje);
+
+}

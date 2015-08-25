@@ -8,7 +8,7 @@ class ProductoDao  {
 
         $estado=1;
         try {
-            $query = $cnn->prepare('INSERT INTO Productos (Nombre,Descripcion,UnidadMedida,IdIva,ValorBase,IdPresentacion,IdCategoria,estado ) VALUES(?,?,?,?,?,?,?,?)');
+            $query = $cnn->prepare('INSERT INTO Productos (Nombre,Descripcion,UnidadMedida,IdIva,ValorBase,IdPresentacion,IdCategoria,estado,rutaImagen) VALUES(?,?,?,?,?,?,?,?,?)');
             $query->bindParam(1, $productoDto->getNombreProducto());
             $query->bindParam(2, $productoDto->getDescripcion());
             $query->bindParam(3, $productoDto->getUnidadMedida());
@@ -17,6 +17,7 @@ class ProductoDao  {
             $query->bindParam(6, $productoDto->getPresentacion());
             $query->bindParam(7, $productoDto->getCategoriaProducto());
             $query->bindParam(8,$estado);
+            $query->bindParam(9,$productoDto->getImagenProducto());
             $query->execute();
             $this->mensaje="Producto  Registrado";
         } catch (Exception $ex) {
@@ -25,9 +26,9 @@ class ProductoDao  {
         $cnn =null;
         return $this->mensaje;
     }
-        public function modificarProducto(ProductosDto $productoDto,PDO $cnn){
+        public function modificarProducto(ProductosDto $productoDto,PDO $cnn,$idProducto){
             try {
-                $query = $cnn->prepare('UPDATE productos SET  Nombre=?, Descripcion=?, UnidadMedida=?, IdIva=?, Valor=?, IdPresentacion=?, IdCategoria=? WHERE IdProducto=?');
+                $query = $cnn->prepare('UPDATE Productos SET Nombre=?,Descripcion=?,UnidadMedida=?,IdIva=?,ValorBase=?,IdPresentacion=?,IdCategoria=?,rutaImagen=? WHERE IdProducto=?');
                 $query->bindParam(1, $productoDto->getNombreProducto());
                 $query->bindParam(2, $productoDto->getDescripcion());
                 $query->bindParam(3, $productoDto->getUnidadMedida());
@@ -35,7 +36,8 @@ class ProductoDao  {
                 $query->bindParam(5, $productoDto->getValorUnitario());
                 $query->bindParam(6, $productoDto->getPresentacion());
                 $query->bindParam(7, $productoDto->getCategoriaProducto());
-                $query->bindParam(8, $productoDto->getIdProducto());
+                $query->bindParam(8, $productoDto->getImagenProducto());
+                $query->bindParam(9,$idProducto);
                 $query->execute();
                 $this->mensaje = "Producto Actualizado";
             }
@@ -66,7 +68,7 @@ class ProductoDao  {
             $query = $cnn->prepare('select * from  Productos where IdProducto=?');
             $query->bindParam(1,$id);
             $query->execute();
-            return $query->fetchAll();
+            return $query->fetch();
 
         }
         catch(Exception $ex){

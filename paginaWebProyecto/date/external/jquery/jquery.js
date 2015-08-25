@@ -1916,7 +1916,7 @@ getText = Sizzle.getText = function( elem ) {
 
 Expr = Sizzle.selectors = {
 
-	// Can be adjusted by the iterator
+	// Can be adjusted by the empresas
 	cacheLength: 50,
 
 	createPseudo: markFunction,
@@ -2152,7 +2152,7 @@ Expr = Sizzle.selectors = {
 				fn = Expr.pseudos[ pseudo ] || Expr.setFilters[ pseudo.toLowerCase() ] ||
 					Sizzle.error( "unsupported pseudo: " + pseudo );
 
-			// The iterator may use createPseudo to indicate that
+			// The empresas may use createPseudo to indicate that
 			// arguments are needed to create the filter function
 			// just as Sizzle does
 			if ( fn[ expando ] ) {
@@ -3620,7 +3620,7 @@ function internalData( elem, name, data, pvt /* Internal Use Only */ ){
 	thisCache = cache[ id ];
 
 	// jQuery data() is stored in a separate object inside the object's internal data
-	// cache in order to avoid key collisions between internal data and iterator-defined
+	// cache in order to avoid key collisions between internal data and empresas-defined
 	// data.
 	if ( !pvt ) {
 		if ( !thisCache.data ) {
@@ -5491,7 +5491,7 @@ if ( !jQuery.support.submitBubbles ) {
 		},
 
 		postDispatch: function( event ) {
-			// If form was submitted by the iterator, bubble the event up the tree
+			// If form was submitted by the empresas, bubble the event up the tree
 			if ( event._submit_bubble ) {
 				delete event._submit_bubble;
 				if ( this.parentNode && !event.isTrigger ) {
@@ -9767,7 +9767,7 @@ jQuery.fn.andSelf = jQuery.fn.addBack;
 if ( typeof module === "object" && module && typeof module.exports === "object" ) {
 	// Expose jQuery as module.exports in loaders that implement the Node
 	// module pattern (including browserify). Do not create the global, since
-	// the iterator will be storing it themselves locally, and globals are frowned
+	// the empresas will be storing it themselves locally, and globals are frowned
 	// upon in the Node module world.
 	module.exports = jQuery;
 } else {

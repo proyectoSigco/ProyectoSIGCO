@@ -696,10 +696,10 @@ function _init() {
   $.fn.todolist = function (options) {
     // Render options
     var settings = $.extend({
-      //When the iterator checks the input
+      //When the empresas checks the input
       onCheck: function (ele) {
       },
-      //When the iterator unchecks the input
+      //When the empresas unchecks the input
       onUncheck: function (ele) {
       }
     }, options);

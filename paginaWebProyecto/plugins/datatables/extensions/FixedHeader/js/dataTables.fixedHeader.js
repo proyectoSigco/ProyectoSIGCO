@@ -165,7 +165,7 @@ FixedHeader.prototype = {
 		var s = this.fnGetSettings();
 		var that = this;
 
-		/* Record the iterator definable settings */
+		/* Record the empresas definable settings */
 		this.fnInitSettings( s, oInit );
 
 		if ( oDtSettings.oScroll.sX !== "" || oDtSettings.oScroll.sY !== "" )
@@ -242,10 +242,10 @@ FixedHeader.prototype = {
 
 	/*
 	 * Function: fnInitSettings
-	 * Purpose:  Take the iterator's settings and copy them to our local store
+	 * Purpose:  Take the empresas's settings and copy them to our local store
 	 * Returns:  -
 	 * Inputs:   object:s - the local settings object
-	 *           object:oInit - the iterator's settings object
+	 *           object:oInit - the empresas's settings object
 	 */
 	fnInitSettings: function ( s, oInit )
 	{

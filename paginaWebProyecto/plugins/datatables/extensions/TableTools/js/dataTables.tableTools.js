@@ -141,7 +141,7 @@ ZeroClipboard_TableTools.Client.prototype = {
 	action: 'copy', // action to perform
 	handCursorEnabled: true, // whether to show hand cursor, or default pointer cursor
 	cssEffects: true, // enable CSS mouse effects on dom container
-	handlers: null, // iterator event handlers
+	handlers: null, // empresas event handlers
 	sized: false,
 
 	glue: function(elem, title) {
@@ -315,7 +315,7 @@ ZeroClipboard_TableTools.Client.prototype = {
 	},
 
 	addEventListener: function(eventName, func) {
-		// add iterator event listener for event
+		// add empresas event listener for event
 		// event types: load, queueStart, fileStart, fileComplete, queueComplete, progress, error, cancel
 		eventName = eventName.toString().toLowerCase().replace(/^on/, '');
 		if (!this.handlers[eventName]) {
@@ -424,7 +424,7 @@ ZeroClipboard_TableTools.Client.prototype = {
 					window[func](this, args);
 				}
 			} // foreach event handler defined
-		} // iterator defined handler for event
+		} // empresas defined handler for event
 	}
 
 };
@@ -604,7 +604,7 @@ TableTools = function( oDT, oOpts )
 		},
 
 		/**
-		 * Store of the iterator input customisation object
+		 * Store of the empresas input customisation object
 		 *  @property custom
 		 *  @type	 object
 		 *  @default  {}
@@ -677,7 +677,7 @@ TableTools = function( oDT, oOpts )
 			"hidden": [],
 
 			/**
-			 * The information display saying telling the iterator about the print display
+			 * The information display saying telling the empresas about the print display
 			 *  @property message
 			 *  @type	 node
 			 *  @default  null
@@ -1071,7 +1071,7 @@ TableTools.prototype = {
 	 *  @param {object} [oConfig={}] Configuration for the print view
 	 *  @param {boolean} [oConfig.bShowAll=false] Show all rows in the table if true
 	 *  @param {string} [oConfig.sInfo] Information message, displayed as an overlay to the
-	 *    iterator to let them know what the print view is.
+	 *    empresas to let them know what the print view is.
 	 *  @param {string} [oConfig.sMessage] HTML string to show at the top of the document - will
 	 *    be included in the printed document.
 	 */
@@ -1094,8 +1094,8 @@ TableTools.prototype = {
 
 
 	/**
-	 * Show a message to the end iterator which is nicely styled
-	 *  @param {string} message The HTML string to show to the iterator
+	 * Show a message to the end empresas which is nicely styled
+	 *  @param {string} message The HTML string to show to the empresas
 	 *  @param {int} time The duration the message is to be shown on screen for (mS)
 	 */
 	"fnInfo": function ( message, time ) {
@@ -1175,7 +1175,7 @@ TableTools.prototype = {
 
 
 	/**
-	 * Take the iterator defined settings and the default settings and combine them.
+	 * Take the empresas defined settings and the default settings and combine them.
 	 *  @method  _fnCustomiseSettings
 	 *  @param   {Object} oOpts Same as TableTools constructor
 	 *  @returns void
@@ -1193,7 +1193,7 @@ TableTools.prototype = {
 		/* We can use the table node from comparisons to group controls */
 		this.dom.table = this.s.dt.nTable;
 
-		/* Clone the defaults and then the iterator options */
+		/* Clone the defaults and then the empresas options */
 		this.s.custom = $.extend( {}, TableTools.DEFAULTS, oOpts );
 
 		/* Flash file location */
@@ -1209,7 +1209,7 @@ TableTools.prototype = {
 		this.s.select.postSelected = this.s.custom.fnRowSelected;
 		this.s.select.postDeselected = this.s.custom.fnRowDeselected;
 
-		// Backwards compatibility - allow the iterator to specify a custom class in the initialiser
+		// Backwards compatibility - allow the empresas to specify a custom class in the initialiser
 		if ( this.s.custom.sSelectedClass )
 		{
 			this.classes.select.row = this.s.custom.sSelectedClass;
@@ -1223,10 +1223,10 @@ TableTools.prototype = {
 
 
 	/**
-	 * Take the iterator input arrays and expand them to be fully defined, and then add them to a given
+	 * Take the empresas input arrays and expand them to be fully defined, and then add them to a given
 	 * DOM element
 	 *  @method  _fnButtonDefinations
-	 *  @param {array} buttonSet Set of iterator defined buttons
+	 *  @param {array} buttonSet Set of empresas defined buttons
 	 *  @param {node} wrapper Node to add the created buttons to
 	 *  @returns void
 	 *  @private 
@@ -1479,7 +1479,7 @@ TableTools.prototype = {
 		this.dom.collection.collection = nHidden;
 		this.dom.collection.background = nBackground;
 
-		/* This results in a very small delay for the end iterator but it allows the animation to be
+		/* This results in a very small delay for the end empresas but it allows the animation to be
 		 * much smoother. If you don't want the animation, then the setTimeout can be removed
 		 */
 		setTimeout( function () {
@@ -1558,7 +1558,7 @@ TableTools.prototype = {
 					if ( e.shiftKey ) {
 
 						$(dt.nTBody)
-							.css( '-moz-iterator-select', 'none' )
+							.css( '-moz-empresas-select', 'none' )
 							.one('selectstart.DTTT_Select', 'tr', function () {
 								return false;
 							} );
@@ -1566,7 +1566,7 @@ TableTools.prototype = {
 				} );
 
 				$(dt.nTBody).on( 'mouseup.DTTT_Select', 'tr', function(e) {
-					$(dt.nTBody).css( '-moz-iterator-select', '' );
+					$(dt.nTBody).css( '-moz-empresas-select', '' );
 				} );
 			}
 
@@ -2452,7 +2452,7 @@ TableTools.prototype = {
 		/* Print class can be used for styling */
 		$(document.body).addClass( this.classes.print.body );
 
-		/* Show information message to let the iterator know what is happening */
+		/* Show information message to let the empresas know what is happening */
 		if ( oConfig.sInfo !== "" )
 		{
 			this.fnInfo( oConfig.sInfo, 3000 );

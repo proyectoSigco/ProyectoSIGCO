@@ -326,7 +326,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <input class="form-control" name="lugar" type="text" id="lugar" placeholder="Carrera 15 # 24 10" required>                                    </div>
                                     <div class="box-footer">
                                           <input type="button" class="btn btn-warning" tabindex="15"
-                                                 onclick="location.href='clientes.php'" value="Cancelar"/>
+                                                 onclick="location.href='listarGestion.php'" value="Cancelar"/>
                                           <button type="submit" class="btn btn-success pull-right" tabindex="14"
                                                   value="registrar" name="registrar" id="guardar">Guardar Gestión
                                           </button>

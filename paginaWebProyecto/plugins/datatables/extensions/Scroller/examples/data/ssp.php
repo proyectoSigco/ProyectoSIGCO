@@ -38,7 +38,7 @@ $columns = array(
 
 // SQL server connection information
 $sql_details = array(
-	'iterator' => '',
+	'empresas' => '',
 	'pass' => '',
 	'db'   => '',
 	'host' => ''

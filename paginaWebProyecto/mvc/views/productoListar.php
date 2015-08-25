@@ -74,7 +74,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <header class="main-header">
 
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="index.php" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
@@ -248,15 +248,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           $Productos = $producto->getProductos();
                           foreach($Productos as $iterator) { ?>
                           <tr>
+                              <?php
+                              if (strpos($iterator['rutaImagen'],'../') !== false) {?>
+                              <td><img src="<?php echo $iterator['rutaImagen']?>" class="img-rounded" class="img-circle" alt="Responsive image" width="50" height="50"></td>
+                              <?php } else{?>
+                              <td><img src="../images/download.jpg" alt="..." class="img-thumbnail"></td>
+                              <?php } ?>
+
                               <td><?php echo $iterator['IdProducto']; ?> <a href="#"></a></td>
                               <td class="hidden-phone"><?php echo $iterator['Nombre']; ?></td>
                               <td><?php echo $iterator['Descripcion']; ?></td>
                               <td><?php echo $iterator['IdIva']; ?></td>
                               <td><?php echo $iterator['ValorBase']; ?></td>
-                              <td>
-                                  <a href="modificar.php?id=<?php echo $iterator['IdProducto']; ?>"><button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
-                                  <a href="../controllers/ControladorProducto.php?idproducto=<?php echo $iterator['IdProducto']; ?>"><button  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
 
+                              <td>
+                                  <a href="../views/ModificarProducto.php?id=<?php echo $iterator['IdProducto']; ?>"><button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
+                                  <a href="../views/ModificarProducto.php?id=<?php echo $iterator['IdProducto']; ?>"><button  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
+                                  <a href="../views/ModificarProducto.php?id=<?php echo $iterator['IdProducto']; ?>"><button  class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></button></a>
                               </td>
 
                           </tr>

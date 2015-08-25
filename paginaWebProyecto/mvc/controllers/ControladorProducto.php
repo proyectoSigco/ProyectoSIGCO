@@ -9,7 +9,15 @@ require_once '../facades/FacadeProducto.php';
 $fachada = new Facade();
 
 if (isset($_POST['guardar'])) {
+    $file = $_FILES['ImagenProducto'];
+    $name = uniqid().$file['name'];
+    $path = "../images/" . basename($name);
+    if (move_uploaded_file($file['tmp_name'], $path)) {
+        echo "move succeed";
 
+    } else {
+        echo 'fail to upload image';
+    }
     $producto = new ProductosDto();
     $producto->setIdProducto($_POST['codigoProducto']);
     $producto->setNombreProducto($_POST['nombreProducto']);
@@ -19,16 +27,25 @@ if (isset($_POST['guardar'])) {
     $producto->setValorUnitario($_POST['valorProducto']);
     $producto->setPresentacion($_POST['presentacionProducto']);
     $producto->setCategoria($_POST['categoriaProducto']);
-    $producto->setImagenProducto($_POST['ImagenProducto']);
+    $producto->setImagenProducto('../images/'.$name);
     $mensaje = $fachada->registrarProducto($producto);
-
-    header("Location: ../views/registrarProducto.php?mensaje=".$mensaje);
+     header("Location: ../views/productoListar.php?".$mensaje);
 
 }
-if(isset($_POST['codigoProducto2'])){
+if(isset($_POST['modificar'])){
 
+    $file = $_FILES['ImagenProducto'];
+    $name = uniqid().$file['name'];
+    $path = "../images/" . basename($name);
+    if (move_uploaded_file($file['tmp_name'], $path)) {
+        echo "move succeed";
+
+    } else {
+        echo 'fail to upload image';
+    }
+    $idviejo=$_GET['idv'];
     $producto = new ProductosDto();
-    $producto->setIdProducto($_POST['codigoProducto2']);
+    //$producto->setIdProducto($_POST['codigoProducto']);
     $producto->setNombreProducto($_POST['nombreProducto']);
     $producto->setDescripcion($_POST['descriptionProducto']);
     $producto->setUnidadMedida($_POST['unidadProducto']);
@@ -36,8 +53,9 @@ if(isset($_POST['codigoProducto2'])){
     $producto->setValorUnitario($_POST['valorProducto']);
     $producto->setPresentacion($_POST['presentacionProducto']);
     $producto->setCategoria($_POST['categoriaProducto']);
-    $mensaje = $fachada->actualizarProducto($producto);
-echo $mensaje;
+    $producto->setImagenProducto('../images/'.$name);
+    $mensaje = $fachada->actualizarProducto($producto,$idviejo);
+    header("Location: ../views/productoListar.php?".$mensaje);
 
 }
 

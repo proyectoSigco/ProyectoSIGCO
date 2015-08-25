@@ -1232,7 +1232,7 @@
             showFields = this.options.get('tooltipFormatFieldlist');
             showFieldsKey = this.options.get('tooltipFormatFieldlistKey');
             if (showFields && showFieldsKey) {
-                // iterator-selected ordering of fields
+                // empresas-selected ordering of fields
                 newFields = [];
                 for (i = fields.length; i--;) {
                     fv = fields[i][showFieldsKey];

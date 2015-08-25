@@ -52,7 +52,7 @@
 
 		return this;
 	};
-	//Globally expose the defaults to allow for iterator updating/changing
+	//Globally expose the defaults to allow for empresas updating/changing
 	Chart.defaults = {
 		global: {
 			// Boolean - Whether to animate the chart
@@ -424,9 +424,9 @@
 				}
 				//We can fit in double the amount of scale points on the scale
 				else{
-					//If iterator has declared ints only, and the step value isn't a decimal
+					//If empresas has declared ints only, and the step value isn't a decimal
 					if (integersOnly && rangeOrderOfMagnitude >= 0){
-						//If the iterator has said integers only, we need to check that making the scale more granular wouldn't make it a float
+						//If the empresas has said integers only, we need to check that making the scale more granular wouldn't make it a float
 						if(stepValue/2 % 1 === 0){
 							stepValue /=2;
 							numberOfSteps = Math.round(graphRange/stepValue);
@@ -497,7 +497,7 @@
 					"');}return p.join('');"
 				);
 
-				// Provide some basic currying to the iterator
+				// Provide some basic currying to the empresas
 				return data ? fn( data ) : fn;
 			}
 			return tmpl(templateString,valuesObject);

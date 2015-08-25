@@ -273,8 +273,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                               $id=$_GET['id'];
                                               $empresas = $empresa->obtenerGestion($id);
                                               $factory=$empresa->obtenerEmpresas();
-                                              foreach($empresas as $iterator){?>
-                                                  <option value="<?php echo $iterator['IdEmpresa']; ?>"><?php echo $iterator['IdEmpresa']; ?></option>
+                                              ?>
+                                                  <option value="<?php echo $empresas['IdEmpresa']; ?>"><?php echo $empresas['IdEmpresa']; ?></option>
                                                     <?php foreach($factory as $f){ ?>
                                                     <option value="<?php echo $f['IdCliente']; ?>"><?php echo $f['IdCliente']; ?></option>
                                                     <?php }?>
@@ -290,7 +290,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                           <label for="apellido">Tipo visita*</label>
                                        <select class="form-control" name="tipoVisita" id="tipoVisita">
 
-                                           <option value="<?php echo $iterator['Tipo'] ?>"><?php echo $iterator['Tipo'] ?></option>
+                                           <option value="<?php echo $empresas['Tipo'] ?>"><?php echo $empresas['Tipo'] ?></option>
                                            <option value="ASESORIA">Asesoria</option>
                                            <option value="CAPACITACION">Capacitación</option>
 
@@ -311,38 +311,38 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                       </div>
                                       <div class="form-group" id="tema">
                                           <label for="email" >Tema*</label>
-                                          <input class="form-control" name="tema" value="<?php echo $iterator['Asunto']  ?>" type="text" maxlength="20" placeholder="Desengrasantes">
+                                          <input class="form-control" name="tema" value="<?php echo $empresas['Asunto']  ?>" type="text" maxlength="20" placeholder="Desengrasantes">
                                       </div>
 
                                        <div class="form-group">
                                           <label for="pass1">Asistentes*</label>
-                                           <input class="form-control" name="asistentes" value="<?php echo $iterator['Asistentes']  ?>" id="asistentes" type="number" placeholder="" min="1">
+                                           <input class="form-control" name="asistentes" value="<?php echo $empresas['Asistentes']  ?>" id="asistentes" type="number" placeholder="" min="1">
                                       </div>
 
                                        <div class="form-group">
                                           <label for="pass2">Descripccion*</label>
-                                           <textarea class="form-control" name="observaciones" id="observaciones"   type="text" maxlength="100" placeholder="" rows="5"><?php  echo $iterator['Observaciones']?> </textarea>
+                                           <textarea class="form-control" name="observaciones" id="observaciones"   type="text" maxlength="100" placeholder="" rows="5"><?php  echo $empresas['Observaciones']?> </textarea>
 
                                        </div>
                                        <div class="form-group">
                                            <label for="pass1">Fecha*</label>
-                                           <input class="form-control" name="fechaVisita" id="fechaVisita" value="<?php echo $iterator['FechaProgramada']?>" type="date" maxlength="20" placeholder="2010-08-12">
+                                           <input class="form-control" name="fechaVisita" id="fechaVisita" value="<?php echo $empresas['FechaProgramada']?>" type="date" maxlength="20" placeholder="2010-08-12">
                                        </div>
                                        <div class="form-group">
                                            <label for="pass1">Lugar*</label>
-                                           <input class="form-control" name="lugar" id="lugar" value="<?php echo $iterator['Lugar']?>" type="text" maxlength="20">
+                                           <input class="form-control" name="lugar" id="lugar" value="<?php echo $empresas['Lugar']?>" type="text" maxlength="20">
                                        </div>
 
                                     <div class="form-group">
                                           <label for="imagen">Estado de visita</label>
                                             <select class="form-control" name="estado" type="text"  id="lugar" placeholder="Carrera 15 # 24 10" required>
-                                                <option value="<?php echo $iterator['Estado']?>"><?php echo $iterator['Estado']?></option>
+                                                <option value="<?php echo $empresas['Estado']?>"><?php echo $empresas['Estado']?></option>
                                                 <option value="CANCELADA">CANCELADA</option>
                                                 <option value="COMPLETADA">COMPLETADA</option>
                                             </select>
                                     </div>
                                     <div class="box-footer">
-                                        <?php }?>
+
                                           <input type="button" class="btn btn-warning" tabindex="15"
                                                  onclick="location.href='listarGestion.php'" value="Cancelar"/>
                                           <button type="submit" class="btn btn-success pull-right" tabindex="14"

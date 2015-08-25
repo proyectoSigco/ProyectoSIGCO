@@ -229,7 +229,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                       <!-- right column -->
                       <div class="col-md-6">
-                    <form id="defaultForm" action="../controllers/ControladorProducto.php" method="post">
+                    <form id="defaultForm" action="../controllers/ControladorProducto.php" method="post" enctype="multipart/form-data">
 
                       <div class="box box-default">
                                   <div class="box-header with-border">
@@ -299,11 +299,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                                        <div class="form-group">
                                           <label for="pass1">Valor*</label>
-                                        <input class="form-control" name="valorProducto" id="pass1" type="password" maxlength="20" required title="Este campo es requerido">
+                                        <input class="form-control" name="valorProducto" id="pass1" type="number" maxlength="20" required title="Este campo es requerido">
                                       </div>
 
                                     <div class="form-group">
-                                          <label for="imagen">Imagen</label>
+                                          <label for="imagen">Imágen</label>
                                             <input  name="ImagenProducto" id="imagen" type="file" multiple=true class="file"  title="Este campo es requerido">
                                     </div>
                                        <div class="form-group">
@@ -335,7 +335,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                        </div>
                                     <div class="box-footer">
                                           <input type="button" class="btn btn-warning" tabindex="15"
-                                                 onclick="location.href='clientes.php'" value="Cancelar"/>
+                                                 onclick="location.href='productoListar.php'" value="Cancelar"/>
                                           <button type="submit" class="btn btn-success pull-right" tabindex="14"
                                                   value="guardar" name="guardar" id="guardar">Guardar cliente
                                           </button>

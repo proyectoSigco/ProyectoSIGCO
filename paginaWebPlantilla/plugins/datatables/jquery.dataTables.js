@@ -7211,7 +7211,7 @@
 	 * refers to.
 	 *
 	 * @name    DataTable.Api#tables
-	 * @param {string|integer} [selector] Selector to pick which tables the iterator
+	 * @param {string|integer} [selector] Selector to pick which tables the empresas
 	 *   should operate on. If not given, all tables in the current context are
 	 *   used. This can be given as a jQuery selector (for example `':gt(0)'`) to
 	 *   select multiple tables or as an integer to select a single table.
@@ -8155,7 +8155,7 @@
 	
 	
 	// r1 and r2 are redundant - but it means that the parameters match for the
-	// iterator callback in columns().data()
+	// empresas callback in columns().data()
 	var __columnData = function ( settings, column, r1, r2, rows ) {
 		var a = [];
 		for ( var row=0, ien=rows.length ; row<ien ; row++ ) {

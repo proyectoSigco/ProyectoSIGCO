@@ -244,25 +244,36 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           require '../facades/FacadeGestion.php';
                           require '../utilities/Conexion.php';
                           require_once  '../models/GestionDao.php';
+                          require_once '../models/ProductoDao.php';
+                          require_once '../facades/FacadeProducto.php';
                           $gestion = new FacadeGestion();
+                          $productos =new Facade();
                           $gestiones = $gestion->getGestiones();
                           foreach($gestiones as $iterator) { ?>
                           <tr>
                               <td><?php echo $iterator['Tipo']; ?> <a href="#"></a></td>
-                              <td><?php echo $iterator['Asunto']; ?></td>
+
+                              <td><?php
+                                     if (is_numeric($iterator['Asunto'])) {
+                                         echo $productos->obtenerProducto($iterator['Asunto'])['Nombre'];
+                                     }
+
+                                  if(!is_numeric($iterator['Asunto'])){
+                                      echo $iterator['Asunto'];
+                                  }
+                                  ?></td>
                               <td><?php echo $iterator['Asistentes']; ?></td>
                               <td ><?php echo $iterator['Observaciones']; ?></td>
                               <td><?php echo $iterator['Lugar']; ?></td>
-                              <td  ><span id="<?php echo $iterator['IdEmpresa']; ?>" class="label label-warning label-mini"><?php echo $iterator['Estado']; ?></span></td>
+                              <td  ><span id="<?php echo $iterator['IdEmpresa']; ?>" class="label  label-mini"><?php echo $iterator['Estado']; ?></span></td>
                               <td><?php echo $iterator['FechaProgramada']; ?></td>
                               <td>
-<<<<<<< HEAD
-                                  <a href="ModificarUsuarios.php?id=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
-                                  <a href="../../php/Controladores/ControladorGestion.php?idproducto=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
-=======
-                                  <a href="modificar.php?id=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
+
+                                  <a href=""><button  class="btn btn-primary btn-xs"><i class="fa fa-eye"></i></button></a>
+
+                                  <a href="ModificarGestion.php?id=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
                                   <a href="../controllers/ControladorGestion.php?idproducto=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
->>>>>>> origin/master
+
 
                               </td>
 
@@ -340,8 +351,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         $(document).ready(function() {
 
-            $('span:contains("ACTIVA")').removeClass('label-warning');
-            $('span:contains("ACTIVA")').addClass('label-success');
+            $('span:contains("PENDIENTE")').addClass('label-warning');
+            $('span:contains("COMPLETADA")').addClass('label-success');
+            $('span:contains("CANCELADA")').addClass('label-danger');
         });
 
     </script>

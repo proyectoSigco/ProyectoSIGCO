@@ -53,7 +53,7 @@ if (typeof jQuery === 'undefined') {
         this.STATUS_VALID         = 'VALID';
         this.STATUS_IGNORED       = 'IGNORED';
 
-        // Determine the event that is fired when iterator change the field value
+        // Determine the event that is fired when empresas change the field value
         // Most modern browsers supports input event except IE 7, 8.
         // IE 9 supports input event but the event is still not fired if I press the backspace key.
         // Get IE version
@@ -168,7 +168,7 @@ if (typeof jQuery === 'undefined') {
                 })
                 .on('click.' + ns, this.options.button.selector, function() {
                     that.$submitButton  = $(this);
-                    // The iterator just click the submit button
+                    // The empresas just click the submit button
                     that._submitIfValid = true;
                 });
 
@@ -330,7 +330,7 @@ if (typeof jQuery === 'undefined') {
                 var $field    = fields.eq(i),
                     row       = this.options.fields[field].row || this.options.row.selector,
                     $parent   = $field.closest(row),
-                    // Allow iterator to indicate where the error messages are shown
+                    // Allow empresas to indicate where the error messages are shown
                     // Support backward
                     container = ('function' === typeof (this.options.fields[field].container || this.options.fields[field].err || this.options.err.container))
                                 ? (this.options.fields[field].container || this.options.fields[field].err || this.options.err.container).call(this, $field, this)
@@ -345,7 +345,7 @@ if (typeof jQuery === 'undefined') {
                 $message.find('.' + this.options.err.clazz.split(' ').join('.') + '[data-' + ns + '-validator][data-' + ns + '-for="' + field + '"]').remove();
                 $parent.find('i[data-' + ns + '-icon-for="' + field + '"]').remove();
 
-                // Whenever the iterator change the field value, mark it as not validated yet
+                // Whenever the empresas change the field value, mark it as not validated yet
                 $field.off(events).on(events, function() {
                     that.updateStatus($(this), that.STATUS_NOT_VALIDATED);
                 });
@@ -2252,9 +2252,9 @@ if (typeof jQuery === 'undefined') {
         // Whether to be verbose when validating a field or not.
         // Possible values:
         // - true:  when a field has multiple validators, all of them will be checked, and respectively - if errors occur in
-        //          multiple validators, all of them will be displayed to the iterator
+        //          multiple validators, all of them will be displayed to the empresas
         // - false: when a field has multiple validators, validation for this field will be terminated upon the first encountered error.
-        //          Thus, only the very first error message related to this field will be displayed to the iterator
+        //          Thus, only the very first error message related to this field will be displayed to the empresas
         verbose: true,
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -7540,7 +7540,7 @@ if (typeof jQuery === 'undefined') {
                     "(?:(?:" + protocol + ")://)" +
                     // allow empty protocol
                     (allowEmptyProtocol ? '?' : '') +
-                    // iterator:pass authentication
+                    // empresas:pass authentication
                     "(?:\\S+(?::\\S*)?@)?" +
                     "(?:" +
                     // IP address exclusion

@@ -454,7 +454,7 @@ FixedColumns.prototype = /** @lends FixedColumns.prototype */{
 			return;
 		}
 
-		/* Apply the settings from the iterator / defaults */
+		/* Apply the settings from the empresas / defaults */
 		this.s = $.extend( true, this.s, FixedColumns.defaults, oInit );
 
 		/* Set up the DOM as we need it and cache nodes */

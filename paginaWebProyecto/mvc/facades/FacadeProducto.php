@@ -21,8 +21,8 @@ class Facade {
     public  function  obtenerProducto($userId){
         return $this->objDao->obtenerProducto($userId,$this->con);
     }
-    public function actualizarProducto(ProductosDto $usuarioDto){
-        return $this->objDao->modificarProducto($usuarioDto,$this->con);
+    public function actualizarProducto(ProductosDto $usuarioDto,$idProducto){
+        return $this->objDao->modificarProducto($usuarioDto,$this->con,$idProducto);
     }
     public function  cancelarProducto($idUser){
         return $this->objDao->cancelarProducto($idUser,$this->con);
