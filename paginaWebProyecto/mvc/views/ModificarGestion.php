@@ -290,9 +290,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                           <label for="apellido">Tipo visita*</label>
                                        <select class="form-control" name="tipoVisita" id="tipoVisita">
 
-                                           <option value="<?php echo $empresas['Tipo'] ?>"><?php echo $empresas['Tipo'] ?></option>
-                                           <option value="ASESORIA">Asesoria</option>
-                                           <option value="CAPACITACION">Capacitación</option>
+                                           <option value="ASESORIA"<?php if($empresas['Tipo']=='ASESORIA') {echo 'selected';} ?>><?php echo $empresas['Tipo'] ?></option>
+                                           <option value="CAPACITACION" <?php if($empresas['Tipo']=='CAPACITACION') {echo 'selected';}?>>CAPACITACIÓN</option>
 
                                        </select>
 

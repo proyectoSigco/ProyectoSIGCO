@@ -6,26 +6,26 @@
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <!-- Bootstrap 3.3.4 -->
-      <link href="../../../../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
       <!-- Font Awesome Icons -->
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
       <!-- Ionicons -->
       <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
       <!-- daterange picker -->
-      <link href="../../../../plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+      <link href="../../plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
       <!-- iCheck for checkboxes and radio inputs -->
-      <link href="../../../../plugins/iCheck/all.css" rel="stylesheet" type="text/css" />
+      <link href="../../plugins/iCheck/all.css" rel="stylesheet" type="text/css" />
       <!-- Bootstrap Color Picker -->
-      <link href="../../../../plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet" type="text/css" />
+      <link href="../../plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet" type="text/css" />
       <!-- Bootstrap time Picker -->
-      <link href="../../../../plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" />
+      <link href="../../plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" />
       <!-- Select2 -->
-      <link href="../../../../plugins/select2/select2.min.css" rel="stylesheet" type="text/css" />
+      <link href="../../plugins/select2/select2.min.css" rel="stylesheet" type="text/css" />
       <!-- Theme style -->
-      <link href="../../../../dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+      <link href="../../dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
       <!-- AdminLTE Skins. Choose a skin from the css/skins
            folder instead of downloading all of them to reduce the load. -->
-      <link href="../../../../dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+      <link href="../../dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
 
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +39,7 @@
 
         <header class="main-header">
           <!-- Logo -->
-          <a href="../../../../index2.html" class="logo">
+          <a href="../../index.php" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>A</b>LT</span>
             <!-- logo for regular state and mobile devices -->
@@ -70,7 +70,7 @@
                         <li><!-- start message -->
                           <a href="#">
                             <div class="pull-left">
-                              <img src="../../../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                              <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                             </div>
                             <h4>
                               Support Team
@@ -82,7 +82,7 @@
                         <li>
                           <a href="#">
                             <div class="pull-left">
-                              <img src="../../../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image" />
+                              <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image" />
                             </div>
                             <h4>
                               AdminLTE Design Team
@@ -94,7 +94,7 @@
                         <li>
                           <a href="#">
                             <div class="pull-left">
-                              <img src="../../../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image" />
+                              <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image" />
                             </div>
                             <h4>
                               Developers
@@ -106,7 +106,7 @@
                         <li>
                           <a href="#">
                             <div class="pull-left">
-                              <img src="../../../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image" />
+                              <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image" />
                             </div>
                             <h4>
                               Sales Department
@@ -118,7 +118,7 @@
                         <li>
                           <a href="#">
                             <div class="pull-left">
-                              <img src="../../../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image" />
+                              <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image" />
                             </div>
                             <h4>
                               Reviewers
@@ -322,7 +322,7 @@
                   <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                  <li><a href="../../../../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+                  <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
                   <li><a href="../../../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
                 </ul>
               </li>
@@ -333,7 +333,7 @@
                   <span class="label label-primary pull-right">4</span>
                 </a>
                 <ul class="treeview-menu">
-                  <li><a href="../../../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+                  <li><a href="../../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
                   <li><a href="../../../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
                   <li><a href="../../../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
                   <li><a href="../../../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
