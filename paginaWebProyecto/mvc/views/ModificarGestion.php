@@ -274,9 +274,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                               $empresas = $empresa->obtenerGestion($id);
                                               $factory=$empresa->obtenerEmpresas();
                                               ?>
-                                                  <option value="<?php echo $empresas['IdEmpresa']; ?>"><?php echo $empresas['IdEmpresa']; ?></option>
                                                     <?php foreach($factory as $f){ ?>
-                                                    <option value="<?php echo $f['IdCliente']; ?>"><?php echo $f['IdCliente']; ?></option>
+                                                    <option value="<?php  echo $f['Nit']; ?>" <?php if($empresas['IdEmpresa']==$f['Nit']) {echo 'selected';} ?>><?php echo $f['Nit']; ?></option>
                                                     <?php }?>
                                           </select>
                                       </div>
@@ -303,7 +302,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                               $producto = new Facade();
                                               $productos = $producto->getProductos();
                                               foreach($productos as $iterator2) { ?>
-                                                  <option value="<?php echo $iterator2['IdProducto']; ?>"><?php echo $iterator2['Nombre']; ?></option>
+                                                  <option value="<?php echo $iterator2['IdProducto'];?>" <?php if(is_numeric($empresas['Asunto'])&&$empresas['Asunto']==$iterator2['IdProducto'] ){ echo' selected';} ?>><?php echo $iterator2['Nombre']; ?></option>
                                               <?php
                                               }?>
                                           </select>
@@ -335,9 +334,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <div class="form-group">
                                           <label for="imagen">Estado de visita</label>
                                             <select class="form-control" name="estado" type="text"  id="lugar" placeholder="Carrera 15 # 24 10" required>
-                                                <option value="<?php echo $empresas['Estado']?>"><?php echo $empresas['Estado']?></option>
-                                                <option value="CANCELADA">CANCELADA</option>
-                                                <option value="COMPLETADA">COMPLETADA</option>
+                                                <option value="PENDIENTE" <?php if($empresas['Estado']=='Pendiente'){ echo 'selected'; }  ?> >PENDIENTE</option>
+                                                <option value="CANCELADA" <?php if($empresas['Estado']=='Cancelada'){ echo 'selected'; }  ?>>CANCELADA</option>
+                                                <option value="REALIZADA"<?php if($empresas['Estado']=='Realizada'){ echo 'selected'; }  ?>>REALIZADA</option>
                                             </select>
                                     </div>
                                     <div class="box-footer">

@@ -1,7 +1,6 @@
 <?php
 require_once '../models/GestionDao.php';
 require_once '../models/GestionDto.php';
-require_once '../controllers/ControladorGestion.php';
 require_once '../utilities/Conexion.php';
 require_once '../facades/FacadeGestion.php';
 
@@ -19,8 +18,7 @@ if (isset($_POST['registrar'])) {
     $gestion->setLugar($_POST['lugar']);
     $gestion->setFechaVisita($_POST['fechaVisita']);
     $mensaje = $fachada->registrarGestion($gestion);
-
-    header("Location: ../views/gestion.php?mensaje=".$mensaje);
+    header("Location: ../views/listarGestion.php?mensaje=".$mensaje);
 
 }
 
@@ -34,6 +32,11 @@ if(isset($_POST['reload'])){
     foreach ($fachada->obtenerEmpresasById($_POST['reload']) as $iterator){
            print $iterator['RazonSocial'];
     }
+}
+if(isset($_POST['detail'])){
+     $rows=$fachada->completeGestion($_POST['detail']);
+        echo json_encode($rows);
+
 }
 if (isset($_POST['modificar'])) {
 
@@ -58,3 +61,4 @@ if (isset($_POST['modificar'])) {
     header("Location: ../views/listarGestion.php?mensaje=".$mensaje);
 
 }
+

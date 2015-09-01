@@ -67,7 +67,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   |               | sidebar-mini                            |
   |---------------------------------------------------------|
   -->
-  <body class="skin-blue sidebar-mini">
+  <body class="skin-blue sidebar-mini" >
     <div class="wrapper">
 
       <!-- Main Header -->
@@ -225,15 +225,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                    <p><h2 class="box-title">Capacitaciónes-Asesorias</h2></p>
                 </div><!-- /.box-header -->
                   <div class="content-panel">
-                      <table class="table table-striped table-advance table-hover">
+                      <table class="table table-striped table-advance table-hover" id="tableClick">
                           <hr>
                           <thead>
                           <tr>
                               <th><button  class="btn btn-primary btn-success"><i class="fa fa-bullhorn"></i>Actividad</button></th>
                               <th><i class="fa fa-bookmark"></i>Tema</th>
-                              <th><i class=" fa fa-edit"></i> Asistentes</th>
-                              <th><i class=" fa fa-edit"></i>Observaciones</th>
-                              <th><i class=" fa fa-actions"></i>Lugar</th>
+                              <th><i class=" fa fa-edit"></i>Lugar</th>
                               <th><i class=" fa fa-actions"></i>Estado</th>
                               <th><i class=" fa fa-actions"></i>Fecha</th>
                               <th>Acciónes</th>
@@ -249,6 +247,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           $gestion = new FacadeGestion();
                           $productos =new Facade();
                           $gestiones = $gestion->getGestiones();
+
                           foreach($gestiones as $iterator) { ?>
                           <tr>
                               <td><?php echo $iterator['Tipo']; ?> <a href="#"></a></td>
@@ -262,14 +261,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                       echo $iterator['Asunto'];
                                   }
                                   ?></td>
-                              <td><?php echo $iterator['Asistentes']; ?></td>
-                              <td ><?php echo $iterator['Observaciones']; ?></td>
+
                               <td><?php echo $iterator['Lugar']; ?></td>
                               <td  ><span id="<?php echo $iterator['IdEmpresa']; ?>" class="label  label-mini"><?php echo $iterator['Estado']; ?></span></td>
                               <td><?php echo $iterator['FechaProgramada']; ?></td>
                               <td>
 
-                                  <a href=""><button  class="btn btn-primary btn-xs"><i class="fa fa-eye"></i></button></a>
+                                  <button id="btn<?php echo $iterator['IdGestion'] ?>" value="<?php echo $iterator['IdGestion'] ?>" class="btn btn-primary btn-xs click"><i class="fa fa-eye"></i></button>
 
                                   <a href="ModificarGestion.php?id=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></a>
                                   <a href="../controllers/ControladorGestion.php?idproducto=<?php echo $iterator['IdGestion']; ?>"><button  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
@@ -279,10 +277,42 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                           </tr>
                         <?php
+
                         }?>
                         </tbody>
                       </table>
-                  </div><!-- /content-panel -->
+                      <div class="modal fade" id="myModal" >
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                      <h4 class="modal-title">Detalle de Gestión</h4>
+                                  </div>
+                                  <div class="modal-body" class="pull-left col-md-8">
+                                      <dl class="dl-horizontal">
+                                          <dt>Actividad</dt>
+                                          <dd id="actividad">A description list is perfect for defining terms.</dd>
+                                          <dt>Tema</dt>
+                                          <dd id="tema">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                          <dt >Asistentes</dt>
+                                          <dd id="asistentes">Etiam porta sem malesuada magna mollis euismod.</dd>
+                                          <dt>Obsevaciones</dt>
+                                          <dd id="observaciones">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+                                          <dt>Lugar</dt>
+                                          <dd id="lugar"></dd>
+                                          <dt>Fecha</dt>
+                                          <dd id="fecha"></dd>
+                                      </dl>
+                                      <!--<p><input type="text" class="input-sm" id="txtfname"/></p>
+                                      <p><input type="text" class="input-sm" id="txtlname"/></p>-->
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                  </div>
+                              </div><!-- /.modal-content -->
+                          </div><!-- /.modal-dialog -->
+                      </div><!-- /.modal -->
             </div>
 
         </section><!-- /.content -->
@@ -351,10 +381,31 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         $(document).ready(function() {
 
-            $('span:contains("PENDIENTE")').addClass('label-warning');
-            $('span:contains("COMPLETADA")').addClass('label-success');
-            $('span:contains("CANCELADA")').addClass('label-danger');
+            $('span:contains("Pendiente")').addClass('label-warning');
+            $('span:contains("Realizada")').addClass('label-success');
+            $('span:contains("Cancelada")').addClass('label-danger');
         });
+
+        $('.click').click( function () {
+            console.log($(this).attr("value"));
+            $.post("../controllers/ControladorGestion.php",
+
+                {
+                    detail: $(this).attr("value")
+                },
+                function (data) {
+                   var json = $.parseJSON(data);
+                    $('#actividad').text(json.Tipo);
+                    $('#tema').text(json.Asunto);
+                    $('#asistentes').text(json.Asistentes);
+                    $('#observaciones').text(json.Observaciones);
+                    $('#lugar').text(json.Lugar);
+                    $('#fecha').text(json.FechaProgramada);
+                    $("#myModal").modal("show");
+
+                });
+        });
+
 
     </script>
 </html>

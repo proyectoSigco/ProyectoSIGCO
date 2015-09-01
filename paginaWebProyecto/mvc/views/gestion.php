@@ -237,7 +237,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                   $empresa = new FacadeGestion();
                                   $empresas = $empresa->obtenerEmpresas();
                                   foreach($empresas as $iterator) { ?>
-                                      <option value="<?php echo $iterator['IdCliente']; ?>"><?php echo $iterator['IdCliente']; ?></option>
+                                      <option value="<?php echo $iterator['IdCliente'];?>"><?php echo $iterator['IdCliente']; ?></option>
                                    <?php  }?>
                                 </select>
 

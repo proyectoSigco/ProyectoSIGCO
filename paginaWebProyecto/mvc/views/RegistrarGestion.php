@@ -271,7 +271,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                               $empresa = new FacadeGestion();
                                               $empresas = $empresa->obtenerEmpresas();
                                               foreach($empresas as $iterator) { ?>
-                                                  <option value="<?php echo $iterator['IdCliente']; ?>"><?php echo $iterator['IdCliente']; ?></option>
+                                                  <option value="<?php echo $iterator['Nit']; ?>"><?php echo $iterator['Nit']; ?></option>
                                               <?php  }?>
                                           </select>
                                       </div>      
@@ -326,7 +326,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <input class="form-control" name="lugar" type="text" id="lugar" placeholder="Carrera 15 # 24 10" required>                                    </div>
                                     <div class="box-footer">
                                           <input type="button" class="btn btn-warning" tabindex="15"
-                                                 onclick="location.href='listarGestion.php'" value="Cancelar"/>
+                                                  value="Cancelar"/>
                                           <button type="submit" class="btn btn-success pull-right" tabindex="14"
                                                   value="registrar" name="registrar" id="guardar">Guardar Gestión
                                           </button>
@@ -511,8 +511,8 @@ $(document).ready(function() {
               },
               function (data) {
                   $('#cliente').val(data);
+            });
 
-              });
 
       });
 
@@ -526,5 +526,7 @@ $(document).ready(function() {
 
           }
       });
+
+
 </script>
 </html>

@@ -45,4 +45,7 @@ Class FacadeGestion {
     public function  datosEmpresa($id){
         return $this->objDao->obtenerGestion($id,$this->con);
     }
+    public function  completeGestion($id){
+        return $this->objDao->completeGestion($id,$this->con);
+    }
 }

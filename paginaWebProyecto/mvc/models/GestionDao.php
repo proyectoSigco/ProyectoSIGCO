@@ -16,7 +16,7 @@ class GestionDao {
 
 
         try {
-            $query = $cnn->prepare("INSERT INTO Gestiones (Estado,Tipo,Asunto,Asistentes,Observaciones,Lugar,FechaProgramada,IdEmpresa,IdUsuario)VALUES ('PENDIENTE',?,?,?,?,?,?,?,1032404)");
+            $query = $cnn->prepare("INSERT INTO Gestiones (Estado,Tipo,Asunto,Asistentes,Observaciones,Lugar,FechaProgramada,IdEmpresa,IdUsuario)VALUES ('PENDIENTE',?,?,?,?,?,?,?,1022)");
             $query->bindParam(1, $gestionDto->getTipoVisita());
             $query->bindParam(2, $gestionDto->getTemaProducto());
             $query->bindParam(3, $gestionDto->getAsistentes());
@@ -32,11 +32,11 @@ class GestionDao {
             $cnn =null;
             return $this->mensaje;
     }
+
     public function modificarGestion(GestionDto $gestionDto,PDO $cnn,$idGestion) {
 
-
-        try {
-            $query = $cnn->prepare("UPDATE  Gestiones SET IdUsuario=1032404,IdEmpresa=?,Estado=?,Asunto=?,Asistentes=?,Observaciones=?,Lugar=?,FechaProgramada=?,Tipo=? where IdGestion=?");
+     try {
+            $query = $cnn->prepare("UPDATE  Gestiones SET IdUsuario=1022,IdEmpresa=?,Estado=?,Asunto=?,Asistentes=?,Observaciones=?,Lugar=?,FechaProgramada=?,Tipo=? where IdGestion=?");
 
             //$query->bindParam(1, $gestionDto->getIdUsuario());
             $query->bindParam(1, $gestionDto->getIdCliente());
@@ -51,7 +51,7 @@ class GestionDao {
             $query->execute();
             $this->mensaje = "Registro Actualizado";
         } catch (Exception $ex) {
-            $mensaje = $ex->getMessage();
+            $this->mensaje = $ex->getMessage();
         }
         $cnn=null;
         return $this->mensaje;
@@ -111,7 +111,7 @@ class GestionDao {
     public function obtenerEmpresaById($criteria,PDO $cnn) {
 
         try {
-            $listarGesion = 'Select * from SIGCO.Clientes WHERE IdCliente=?';
+            $listarGesion = 'Select * from SIGCO.Clientes WHERE Nit=?';
             $query = $cnn->prepare($listarGesion);
             $query->bindParam(1,$criteria);
             $query->execute();
@@ -134,6 +134,18 @@ class GestionDao {
             $this->mensaje= $ex->getMessage();
         }
         return $this->mensaje;
+    }
+    public function completeGestion($idGestion,PDO $cnn) {
+
+        try {
+            $query = $cnn->prepare('SELECT * FROM Gestiones WHERE IdGestion=?');
+            $query->bindParam(1, $idGestion);
+            $query->execute();
+            return $query->fetch();
+        } catch (Exception $ex) {
+            echo 'Error' . $ex->getMessage();
+        }
+        $cnn=null;
     }
 
 }
